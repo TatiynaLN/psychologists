@@ -26,4 +26,30 @@ body {
 }
 // .logo-text {
 // }
+
+.header__address {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+.adress {
+    &__text {
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 140%;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #565b62;
+    }
+    &__text-bold {
+        font-weight: bold;
+        font-size: 1.8rem;
+
+        color: #646c79;
+    }
+}
+.contact__icons-address {
+    width: 3.8rem;
+    height: 3.8rem;
+}
 @import "../scss/nav";

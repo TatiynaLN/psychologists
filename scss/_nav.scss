@@ -84,23 +84,24 @@
     }
     &__item {
         display: block;
-        padding: 0.8rem 2.4rem;
-        transition-duration: 0.05s;
         text-decoration: none;
-        font-size: 1.8rem;
-        line-height: 1.5rem;
-        letter-spacing: 0.01em;
-        text-indent: 1rem;
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+        // text-indent: 1rem;
+        text-align: center;
         color: #565b62;
         transition-duration: 0.1s;
         &:hover {
             font-weight: bold;
         }
         &:active {
-            color: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
+            color: #56d0c9;
         }
     }
 }
+// a.active {
+//     color: #56d0c9;
+// }
 @media (min-width: 900px) {
     .hamburger-menu {
         display: block;
