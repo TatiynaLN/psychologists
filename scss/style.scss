@@ -1,0 +1,29 @@
+//FONTS
+@import "../scss/fonts";
+//
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+/***********  HEADER   **************/
+/********** БЛОК АДРЕС ***********/
+// .address {
+//     display: none;
+// }
+.icons-address {
+    width: 3.8rem;
+    height: 3.8rem;
+}
+/**********  БЛОК ЛОГО  ***********/
+.logo {
+    width: 10.3rem;
+    height: 7.2rem;
+    text-align: center;
+}
+.logo-img {
+    width: 5.3rem;
+    height: 5rem;
+}
+// .logo-text {
+// }
+@import "../scss/nav";
