@@ -1,0 +1,76 @@
+.width__form {
+    width: 90%;
+    height: auto;
+    margin-top: 3rem;
+}
+.form__bg {
+    box-shadow: 0rem 8rem 2rem rgba(128, 128, 128, 0.07), 0rem 2.1rem 2.3rem rgba(128, 128, 128, 0.0503198),
+        0rem 2.2rem 1.7rem rgba(128, 128, 128, 0.0417275), 0rem 1.2rem 10rem rgba(128, 128, 128, 0.035),
+        0rem 6rem 5rem rgba(128, 128, 128, 0.0282725), 0rem 2rem 2rem rgba(128, 128, 128, 0.0196802);
+    border-radius: 1.62em;
+}
+.form-section {
+    margin: 0 auto;
+    height: 35rem;
+}
+// .form__displiy-indent {
+//     padding: 0 2rem;
+// }
+.head {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 18rem;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+.form__block {
+    display: block;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    text-align: center;
+    width: 354px;
+    height: 390px;
+    background: #ffffff;
+    box-shadow: 0px 100px 80px rgba(128, 128, 128, 0.07), 0px 41.7776px 33.4221px rgba(128, 128, 128, 0.0503198),
+        0px 22.3363px 17.869px rgba(128, 128, 128, 0.0417275), 0px 12.5216px 10.0172px rgba(128, 128, 128, 0.035),
+        0px 6.6501px 5.32008px rgba(128, 128, 128, 0.0282725), 0px 2.76726px 2.21381px rgba(128, 128, 128, 0.0196802);
+    border-radius: 10px;
+}
+.text-center {
+    text-align: center;
+}
+.mainTexts {
+    padding-top: 3rem;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #646c79;
+}
+@media screen and (min-width: 1320px) {
+    .content {
+        padding-top: 0rem;
+    }
+}
+@media screen and (min-width: 1520px) {
+    .head {
+        height: 100vh;
+        padding-top: 10rem;
+    }
+    .width__form {
+        margin-top: -11rem;
+    }
+}

@@ -1,0 +1,57 @@
+/***    LOGO    ***/
+.logo {
+    margin: 0 auto;
+    width: 100%;
+    height: 7.2rem;
+    text-align: center;
+    display: block;
+}
+.logo__img {
+    width: 4.3rem;
+    height: 3.7rem;
+    fill: #646c79;
+    position: absolute;
+    z-index: 2;
+    margin-left: 1.8rem;
+    margin-top: 1.6rem;
+}
+.logo__img2 {
+    width: 2.9rem;
+    height: 2.9rem;
+    fill: #4dc8c0; /* заливкa */
+    position: relative;
+    top: 1.5rem;
+    left: 1.2rem;
+    z-index: 1;
+}
+.logo__img3 {
+    width: 2.9rem;
+    height: 2.9rem;
+    fill: #e89160; /* заливкa */
+    position: relative;
+    top: 3rem;
+    z-index: 0;
+}
+.logo__name {
+    margin: 0 auto;
+    width: 13.9rem;
+    height: 1.4rem;
+    top: 3.6rem;
+    left: 1rem;
+    position: relative;
+    display: block;
+    font-family: "Raleway";
+    color: #565b62;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 120%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    text-decoration: none;
+}
+@media screen and (min-width: 1120px) {
+    .logo {
+        width: 13.9rem;
+        position: relative;
+    }
+}

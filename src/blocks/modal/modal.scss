@@ -1,0 +1,166 @@
+.modal__thanks,
+.modalDialog {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    z-index: 7;
+    transition: opacity 400ms ease-in;
+    pointer-events: none; /* делаем ссылку некликабельной */
+}
+/****form спасибо***/
+.form__blocks {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.form__thanks {
+    margin-left: 3rem;
+    background: #ffffff;
+    box-shadow: 0rem 8rem 2rem rgba(128, 128, 128, 0.07), 0rem 2.1rem 2.3rem rgba(128, 128, 128, 0.0503198),
+        0rem 2.2rem 1.7rem rgba(128, 128, 128, 0.0417275), 0rem 1.2rem 10rem rgba(128, 128, 128, 0.035),
+        0rem 6rem 5rem rgba(128, 128, 128, 0.0282725), 0rem 2rem 2rem rgba(128, 128, 128, 0.0196802);
+    border-radius: 1.62em;
+}
+/**************/
+.modal__thanks:target,
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal__thanks > div,
+.modalDialog > div {
+    position: relative;
+    margin: 35% auto;
+    background: #ffffff;
+    box-shadow: 0rem 8rem 2rem rgba(128, 128, 128, 0.07), 0rem 2.1rem 2.3rem rgba(128, 128, 128, 0.0503198),
+        0rem 2.2rem 1.7rem rgba(128, 128, 128, 0.0417275), 0rem 1.2rem 10rem rgba(128, 128, 128, 0.035),
+        0rem 6rem 5rem rgba(128, 128, 128, 0.0282725), 0rem 2rem 2rem rgba(128, 128, 128, 0.0196802);
+    border-radius: 1.62em;
+}
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 5rem;
+    width: 22.12em;
+    transition: 0.3s ease-in-out;
+    z-index: 2;
+}
+.modal__challenge-height {
+    height: 24.37em;
+}
+
+/* modal magic */
+.close {
+    display: block;
+    position: absolute;
+    width: 22.12em;
+
+    z-index: 6;
+}
+.closeOne {
+    margin-top: -29rem;
+    padding-left: 20em;
+}
+.close > span,
+.close > span::before {
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 0.125em;
+    background: #565b62;
+    transition-duration: 0.3s;
+    border-radius: 1rem;
+    margin-top: -3rem;
+}
+.close > span {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.close > span::before {
+    content: "";
+    transform: rotate(90deg);
+}
+
+/**********ADAPTIV MODAL*************/
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 41.75em;
+    }
+    .modal__challenge-height {
+        height: 19.43em;
+    }
+    .closeOne {
+        margin-top: -21rem;
+        padding-left: 38em;
+    }
+    .close {
+        width: 22.12em;
+    }
+}
+@media screen and (min-width: 900px) {
+    .modal {
+        width: 49.25em;
+    }
+    .modal__challenge-height {
+        height: 29.06em;
+    }
+    .modal__thanks > div,
+    .modalDialog > div {
+        margin: 10% auto;
+    }
+
+    .closeOne {
+        margin-top: -35rem;
+        padding-left: 43.5em;
+    }
+    .close > span,
+    .close > span::before {
+        width: 1.7em;
+        height: 0.125em;
+    }
+    .form__blocks {
+        margin-top: 6rem;
+    }
+    .text-main {
+        line-height: 7.6rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .modal {
+        width: 56.25em;
+    }
+    .modal__challenge-height {
+        height: 39.06em;
+    }
+    .modal__thanks > div,
+    .modalDialog > div {
+        margin: 10% auto;
+    }
+    .close {
+        width: 28.12em;
+    }
+    .closeOne {
+        margin-top: -49rem;
+        padding-left: 49em;
+    }
+    .close > span,
+    .close > span::before {
+        width: 1.7em;
+        height: 0.125em;
+    }
+}

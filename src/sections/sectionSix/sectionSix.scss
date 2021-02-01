@@ -1,0 +1,48 @@
+.sectionSix__width {
+    margin: 0 auto;
+    width: 90%;
+}
+.slider__text-right {
+    text-align: right;
+}
+.slider__contants {
+    padding: 3rem 2rem;
+}
+.slider__text-italic {
+    font-family: "Raleway";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.24rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #565b62;
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+}
+.reviews__indent {
+    margin-top: 7rem;
+}
+.swiper__bg {
+    background: #ffffff;
+    border: 0.1rem solid #fbfbfb;
+    box-sizing: border-box;
+    box-shadow: 0px 10rem 8rem rgba(157, 157, 157, 0.07), 0rem 3rem 2.4rem rgba(157, 157, 157, 0.0456112),
+        0rem 1.25rem 1rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
+    border-radius: 1rem;
+    opacity: 0.7;
+}
+.swiper__bg.swiper-slide-active {
+    opacity: 1;
+}
+.reviews__text-width {
+    width: 16.5rem;
+    padding: 1rem;
+}
+.min__text-center {
+    margin: 0 auto;
+}
+@media screen and (min-width: 1020px) {
+    .sectionSix__width {
+        width: 100%;
+    }
+}

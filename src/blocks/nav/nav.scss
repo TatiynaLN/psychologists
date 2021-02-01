@@ -1,0 +1,209 @@
+/************ MENU *****************/
+.hamburger-menu {
+    width: 100%;
+}
+#menu__toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.hamburger-menu {
+    position: relative;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    z-index: 99;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #646c79;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: #646c79;
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    margin: 0;
+    width: 100%;
+    // height: 100vh;
+    position: fixed;
+    background: #f8f8f8;
+    z-index: 8;
+    margin: 0 auto;
+    transition-duration: 0.2s;
+    animation: menu 0.5s ease-in-out forwards;
+    // animation-delay: 0.3s;
+}
+//
+@-webkit-keyframes menu {
+    0% {
+        opacity: 0;
+        height: 0;
+        left: 100%;
+    }
+    100% {
+        opacity: 1;
+        left: 0%;
+        height: 100h;
+    }
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+        height: 0;
+        transform: translate3d(50%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        height: 100vh;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*****************/
+
+.menu__box {
+    opacity: 0;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+}
+//
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 3.9rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index: 9;
+    margin-top: 2rem;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 3.125em !important;
+    height: 0.125em;
+    background: #565b62;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.menu__btn > span::before {
+    content: "";
+    top: -0.5em;
+}
+
+.menu__btn > span::after {
+    content: "";
+    top: 0.5em;
+}
+
+.menu__box {
+    visibility: hidden;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 4rem 0 0;
+    transition-duration: 0.1s;
+}
+
+.menu__item {
+    display: block;
+    text-decoration: none;
+    font-size: 2.4rem;
+    line-height: 4.7rem;
+    text-align: center;
+    color: #565b62;
+    transition-duration: 0.01s;
+}
+
+.menu__item:hover {
+    font-weight: bold;
+    color: #565b62;
+}
+
+.menu__item:active {
+    // text-transform: uppercase;
+    background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #4dc8c0;
+}
+.menu__list {
+    margin-top: 8.4rem;
+    transition-duration: 0.01s;
+}
+// Не влазило на экраны 540px
+@media screen and (min-width: 540px) {
+    .menu__list {
+        margin-top: 5.4rem;
+        transition-duration: 0.01s;
+    }
+    .menu__btn {
+        margin-right: 3rem;
+    }
+}
+@media screen and (min-width: 1320px) {
+    label.menu__btn {
+        display: none;
+    }
+    .menu__box {
+        opacity: 1;
+        visibility: visible;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu__list {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        background: #ffffff;
+        border-radius: 0.5rem;
+        margin-top: 0rem;
+        li {
+            width: 16%; /*убираем скачок при hover*/
+        }
+    }
+    .menu__item {
+        font-size: 1.8rem;
+        transition-duration: 0.01s;
+        line-height: 4.7rem;
+    }
+}

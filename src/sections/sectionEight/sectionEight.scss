@@ -1,0 +1,72 @@
+.sectionEight {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.form__displiy {
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+}
+.section__form {
+    margin: 0 auto;
+}
+.form__policy-center {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+.formInput-flex {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.form__input-block {
+    display: block;
+}
+.section__form {
+    padding: 2.8rem 0;
+}
+.form__displiy {
+    .form__policy {
+        margin: 0;
+
+        margin-left: -1rem;
+    }
+}
+.form__displiy-indent {
+    padding: 4.4rem 0;
+    .form__policy {
+        margin-top: 3rem;
+    }
+}
+@media screen and (min-width: 868px) {
+    .section__form {
+        padding: 4.8rem 0;
+    }
+}
+@media screen and (min-width: 868px) {
+    .formInput-indent {
+        margin: 0;
+    }
+    .formInput-flex {
+        margin: 2.5rem 0;
+    }
+}
+@media screen and (min-width: 1260px) {
+    .form__policy-center {
+        width: 40%;
+    }
+    .formInput-flex {
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .section__form {
+        padding: 8.9rem 0;
+    }
+}

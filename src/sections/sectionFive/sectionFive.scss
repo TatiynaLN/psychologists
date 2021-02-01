@@ -1,0 +1,108 @@
+.sectionFive {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.advantage__indent {
+    margin-top: 3rem;
+    padding: 2.8rem 0;
+}
+.adventige__width {
+    width: 32.2rem;
+    height: 100%;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        background: linear-gradient(180deg, rgba(236, 234, 232, 0) 57.92%, #eceaea 100%);
+    }
+}
+.advantage__text-width {
+    width: 22.5rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+.advantage {
+    text-align: center;
+}
+.sectionFive__block {
+    text-align: left;
+    margin-top: 3rem;
+}
+button.btn {
+    outline: none;
+}
+
+.picture-female {
+    width: 100%;
+}
+.adventige__text {
+    width: 32rem;
+}
+.adventige__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.titl {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.52rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #565b62;
+}
+@media screen and (min-width: 768px) {
+    .adventige__width {
+        width: 29rem;
+        height: 100%;
+    }
+    .adventige__text {
+        width: 50%;
+    }
+    .adventige__flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+@media screen and (min-width: 900px) {
+    .adventige__width {
+        width: 32rem;
+        height: 100%;
+    }
+    .adventige__text {
+        width: 55%;
+    }
+}
+@media screen and (min-width: 1120px) {
+    .adventige__text {
+        width: 64%;
+    }
+    .advantage__indent {
+        margin-top: 5rem;
+        padding: 7.3rem 0;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .adventige__width {
+        width: 44rem;
+    }
+    .titl {
+        font-size: 2.4rem;
+        line-height: 3.36rem;
+    }
+}

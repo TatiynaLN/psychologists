@@ -1,0 +1,33 @@
+.text {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #828282;
+    justify-self: center;
+    align-self: center;
+}
+.text_width {
+    width: 35.4rem;
+}
+@media screen and (min-width: 620px) {
+    .text {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .text_width {
+        width: 46rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .text {
+        margin-top: 2rem;
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+    }
+    .text_width {
+        width: 63.3rem;
+    }
+}

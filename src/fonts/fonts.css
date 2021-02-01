@@ -1,0 +1,165 @@
+/* FONTS */
+
+/* @font-face {
+  font-family: 'Century Gothic';
+  src: url('../fonts/century-gothic/century-gothic.svg#CenturyGothic') format('svg'),
+       url('../fonts/century-gothic/century-gothic.ttf') format('truetype'),
+       url('../fonts/century-gothic/century-gothic.woff') format('woff'),
+       url('../fonts/century-gothic/century-gothic.eot'),
+       url('../fonts/century-gothic/century-gothic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/century-gothic/century-gothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/***** ПОДКЛЮЧЕНИЕ ШРИФТОВ *****/
+
+/************* Raleway ********************/
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway-Regular"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Regular.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-ExtraBold.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Light.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Black"), local("Raleway-Black"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Black.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Medium"), local("Raleway-Medium"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Medium.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-ExtraLight.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Thin"), local("Raleway-Thin"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Thin.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-SemiBold.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Bold.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Italic"), local("Raleway-Italic"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Italic.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+/**********************/
+/************* Gotham Pro ********************/
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro-Bold.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro Light"), local("GothamPro-Light"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro-Light.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro Black"), local("GothamPro-Black"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro-Black.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro Narrow";
+  src: local("Gotham Pro Narrow Bold"), local("GothamProNarrow-Bold"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamProNarrow-Bold.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamProNarrow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro Medium"), local("GothamPro-Medium"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro-Medium.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro"), local("GothamPro"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro Narrow";
+  src: local("Gotham Pro Narrow Medium"), local("GothamProNarrow-Medium"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamProNarrow-Medium.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/GothamPro/GothamProNarrow-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+/***************************/

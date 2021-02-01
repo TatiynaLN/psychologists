@@ -1,0 +1,31 @@
+.contacts {
+    margin: 0 auto;
+    width: 29.9rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.contacts__indent {
+    margin-top: 2.8rem;
+}
+.contacts__img-left {
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+@media screen and (min-width: 1120px) {
+    .contacts__indent {
+        margin-top: 0;
+        justify-content: center;
+        align-content: center;
+    }
+    .contacts__img-left {
+        justify-content: flex-start;
+        position: relative;
+    }
+}
+@media screen and (min-width: 1320px) {
+    .contacts__none-desctop {
+        display: none;
+    }
+}

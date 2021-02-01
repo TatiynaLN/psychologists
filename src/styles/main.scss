@@ -1,0 +1,53 @@
+/* FONTS */
+
+//@import './../fonts/fonts';
+
+/* BASE STYLES */
+
+@import "bootstrap5/bootstrap-custom";
+@import "global";
+@import "base";
+
+/* MIXINS & VARIABLES */
+
+@import "mixins";
+@import "variables";
+
+/* CSS-LIBRARIES */
+
+/* PAGES */
+
+/* SECTIONS */
+@import "../sections/header/header";
+@import "../sections/head/head";
+@import "../sections/sectionOne/sectionOne";
+@import "../sections/sectionTwo/sectionTwo";
+@import "../sections/sectionThree/sectionThree";
+@import "../sections/sectionFour/sectionFour";
+@import "../sections/sectionFive/sectionFive";
+@import "../sections/sectionSix/sectionSix";
+@import "../sections/sectionSeven/sectionSeven";
+@import "../sections/sectionEight/sectionEight";
+@import "../sections/sectionNine/sectionNine";
+@import "../sections/footer/footer";
+
+/* BLOCKS */
+@import "../blocks/logo/logo";
+@import "../blocks/address/address";
+@import "../blocks/addressimg/addressimg";
+@import "../blocks/addres/addres";
+@import "../blocks/contacts/contacts";
+@import "../blocks/phoneimg/phoneimg";
+@import "../blocks/tel/tel";
+@import "../blocks/nav/nav";
+@import "../blocks/button/button";
+@import "../blocks/form/form";
+@import "../blocks/modal/modal";
+@import "../blocks/title/title";
+@import "../blocks/text/text";
+@import "../blocks/min-text/min-text";
+@import "../blocks/titles/titles";
+@import "../blocks/txt/txt";
+@import "../blocks/picture/picture";
+@import "../blocks/slider/slider";
+@import "../blocks/accordion/accordion";

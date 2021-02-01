@@ -1,0 +1,42 @@
+.prices__indent {
+    margin-top: 4rem;
+}
+.min-text__indent {
+    margin-top: 2rem;
+}
+.block__content {
+    margin: 0 auto;
+    width: 100%;
+}
+.picture-female {
+    width: 100%;
+}
+.prices__width {
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        background: linear-gradient(180deg, rgba(236, 234, 232, 0) 57.92%, #eceaea 100%);
+    }
+}
+
+.flex__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+@media screen and (min-width: 768px) {
+    .block__content {
+        width: 46.7rem;
+    }
+}

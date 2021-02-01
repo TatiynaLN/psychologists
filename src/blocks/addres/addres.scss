@@ -1,0 +1,23 @@
+.adress__text {
+    font-size: 1.4rem;
+    line-height: 140%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #565b62;
+}
+.adress__text-bold {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #646c79;
+}
+.addres {
+    width: 20.9rem;
+}
+.adress__none {
+    justify-content: center;
+    align-content: center;
+}
+@media screen and (min-width: 1120px) {
+    .addres__left {
+        margin-left: 2rem;
+    }
+}

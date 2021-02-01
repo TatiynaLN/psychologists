@@ -1,0 +1,40 @@
+.picture-female {
+    width: 100%;
+
+    border-radius: 1rem;
+}
+
+.picture__indent {
+    margin-top: 3rem;
+}
+.picture__width {
+    width: 100%;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        background: linear-gradient(180deg, rgba(236, 234, 232, 0) 57.92%, #eceaea 100%);
+    }
+}
+@media screen and (min-width: 768px) {
+    .picture__width {
+        max-width: 66.8rem;
+    }
+}
+@media screen and (min-width: 1560px) {
+    .picture__width {
+        max-width: 71rem;
+    }
+    .picture__indent {
+        margin-top: 0;
+    }
+    .picture {
+        order: 0;
+    }
+}

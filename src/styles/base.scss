@@ -1,0 +1,41 @@
+@import 'mixins';
+@import 'variables';
+
+
+
+html{
+  font-size: 62.5%;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  max-width: 144rem;
+  height: 100%;
+  margin: auto;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}

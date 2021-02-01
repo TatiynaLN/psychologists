@@ -1,0 +1,52 @@
+.block__content-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 30rem;
+
+    margin: 0 1.5rem;
+}
+.block__content {
+    margin-top: 4rem;
+}
+.btn__center {
+    margin: 0 auto;
+}
+.txt__blog {
+    text-decoration: none;
+    text-decoration-line: underline;
+    font-feature-settings: "pnum" on, "lnum" on;
+    &:hover {
+        color: #4dc8c0;
+    }
+}
+
+.flex__blocks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+.blog__one-width {
+    padding: 1rem 2rem;
+    width: 12.9rem;
+}
+.blog__two-width {
+    padding: 1rem 2rem;
+    width: 16.9rem;
+}
+.blog__three-width {
+    padding: 1rem 2rem;
+    width: 22.2rem;
+}
+.sectionNine {
+    width: 100%;
+    overflow: hidden;
+}
+.blog-width {
+    width: 100%;
+    overflow: hidden;
+}
+// .flex__blocks {
+// }

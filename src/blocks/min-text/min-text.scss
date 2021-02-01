@@ -1,0 +1,48 @@
+.min-text {
+    width: 28.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5rem;
+}
+.min-text__color {
+    background: #e89160;
+}
+.min-text__text {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #e9e8e9;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 0.5rem;
+}
+.min-text__margins {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+}
+@media screen and (min-width: 768px) {
+    .min-text {
+        width: 52.7rem;
+    }
+    .min-text__margins {
+        margin: 1rem 1rem;
+    }
+}
+@media screen and (min-width: 900px) {
+    .min-text {
+        width: 55.7rem;
+    }
+    .min-text__text {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+    }
+}

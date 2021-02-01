@@ -1,0 +1,22 @@
+.address__icons2 {
+    width: 3.8rem;
+    height: 3.8rem;
+    padding: 0.7rem;
+    fill: none; /* заливка */
+    stroke: #e89160; /* цвет обводки */
+    stroke-width: 0.1rem; /* толщина обводки */
+    position: relative;
+    z-index: 0;
+    border-radius: 50%;
+    border: solid 0.1rem #e89160;
+}
+.img-svg path,
+.img-svg polygon {
+    fill-opacity: 0.5; /* прозрачность заливки */
+    stroke: #e89160; /* цвет обводки */
+    stroke-width: 10px; /* толщина обводки */
+    stroke-opacity: 0.8; /* прозрачность обводки */
+}
+.adress__img {
+    align-self: center;
+}

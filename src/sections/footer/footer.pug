@@ -1,0 +1,57 @@
+footer.footer(style='background-image: url("/wp-content/themes/twentytwenty-child/img/footerBg.png");')
+    .footer__top
+        include ../../blocks/logo/logo.pug
+        .contacts.contacts__footer
+            .phone__img.phone__img-indent
+                a(href="tel:+78001201204")
+                    svg(class="icons-tel")
+                        use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#phone")
+            .tel
+                a.numbers(href="tel:+78001201204") + 7 800 120-12-04
+                p.time  Ежедневно с 10 до 20 ч.
+        .address.address__footer-indent.address__footer
+            .adress__img.adress__img-indent
+                a(href='#')
+                    svg(class="address__icons2")
+                        use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#location")
+            .addres.addres__left
+                p.adress__text.adress__text-bold пр. Ленина, д.45, оф. 15
+                p.adress__text Москва, м. Московская
+        a.btns.btn__footer-placement(href="#openModal") Обратный звонок
+    .menu__box-footer
+        ul.menu__list-footer
+            li: a.menu__item(href="#about") Обо мне
+            li: a.menu__item(href="#") Услуги
+            li: a.menu__item(href="#") Цены
+            li: a.menu__item(href="#") Отзывы
+            li: a.menu__item(href="#") Блог
+            li: a.menu__item(href="#") Контакты
+    .social
+        .icon_soc.icon_soc-position
+            a(href='#')
+                svg(class="youtube")
+                    use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#youtube")
+        .icon_soc
+            a(href='#')
+                svg(class="insta")
+                    use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#instagram") 
+        .icon_soc
+            a(href='#')
+                svg(class="vk")
+                    use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#vk") 
+    .policy__footer
+        p
+            a.txt.txt-indent.txt__blog(href="") Политика конфиденциальности сайта
+        p
+            a.txt.txt-indent.txt__blog(href="") Разработка сайта
+.modal__thanks
+    #openModalThanks.modalThanks
+        .modal.modal__challenge-height
+            a.close.closeOne(href="#close" title="Закрыть")
+                span
+            form.form__thanks.form
+                .form__blocks
+                    h2.mainText.text-main Спасибо за заявку!
+                    p.secondText Мы свяжемся с вами в ближайшее время, в рабочии часы, указанные на сайте
+            
+

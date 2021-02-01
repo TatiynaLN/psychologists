@@ -1,0 +1,40 @@
+.sectionThree {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.bg {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/whyMin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    height: auto;
+    padding: 5rem 2rem 2rem 2rem;
+}
+.txt-width {
+    margin: 0 auto;
+    // width: 80%;
+}
+@media screen and (min-width: 768px) {
+    .bg {
+        background-image: url("/wp-content/themes/twentytwenty-child/img/why.png");
+        padding: 5rem 2.2rem 6rem 2.2rem;
+        margin-top: 7rem;
+    }
+    .txt-width {
+        width: 80%;
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width: 1120px) {
+    .txt-width {
+        width: 40%;
+        margin-top: 2rem;
+    }
+    .bg {
+        background-image: url("/wp-content/themes/twentytwenty-child/img/why.png");
+        padding: 5rem 2.2rem 6rem 2.2rem;
+        margin-top: 7rem;
+    }
+}

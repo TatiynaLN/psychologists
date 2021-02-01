@@ -1,0 +1,70 @@
+/*********** HEADER TOP ***************/
+.header {
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+}
+.header__top {
+    width: 70%;
+    display: flex;
+    padding-top: 1rem;
+}
+a {
+    text-decoration: none;
+}
+
+#example_1 {
+    border: 1px solid black;
+    display: none;
+}
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav__menu {
+    display: none;
+}
+
+@media screen and (min-width: 1120px) {
+    .header__top {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+
+        padding-top: 1rem;
+    }
+}
+@media screen and (min-width: 1320px) {
+    .header__top {
+        margin: 0 auto;
+        width: 98%;
+    }
+    .header__top .contacts__indent:nth-child(1) {
+        flex: 0.6;
+        order: 2;
+    }
+    .header__top .logo:nth-child(2) {
+        flex: 0.6;
+        order: 1;
+    }
+    .header__top .adress__none:nth-child(3) {
+        flex: 1;
+        order: 0;
+    }
+    .header__top .btn:nth-child(4) {
+        flex: 0.6;
+        order: 3;
+    }
+}
+@media screen and (min-width: 1420px) {
+    .header__top {
+        margin: 0 auto;
+        width: 80%;
+    }
+}

@@ -1,0 +1,40 @@
+.about__text-width {
+    width: 9.9rem;
+    padding: 1rem 0;
+}
+.width {
+    margin: 0 auto;
+    width: 82%;
+}
+.about-indent {
+    padding: 4rem 0;
+}
+.about {
+    overflow: hidden;
+}
+.section__one {
+    margin-top: 15rem;
+}
+@media screen and (min-width: 768px) {
+    .about__content-width {
+        width: 62rem;
+    }
+}
+
+@media screen and (min-width: 1560px) {
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .about__content {
+        order: 1;
+    }
+    .about__text-width {
+        margin: 0;
+    }
+    .section__one {
+        margin-top: 30rem;
+    }
+}

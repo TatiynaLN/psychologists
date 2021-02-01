@@ -1,0 +1,63 @@
+section.sectionFour
+    .situations.width.situations-height.block__flex
+        .box__left
+            p.min-text__text.min-text__color.situations__text-width Повод обратиться
+            h2.titles.titles-indent.titles__width В каких случаях нужна консультация психолога?
+            p.txt.txt-indent.situations-width Консультация психолога - это инструмент, который помогает людям понять и разрешить эмоциональные сложности, улучшить качество жизни, принимать более правильные решения. 
+            p.txt.txt-indent.txt-indents.situations-width Современная психотерапия - это личный процесс, в котором человек учится осознавать свои эмоциональные состояния, управлять эмоциями, находить источник спокойствия, силы и радости внутри себя.
+            a.btn.btn_left(href="#openModalThree") Запись на консультацию
+            #openModalThree.modalDialog
+                .modal.modal__recording-height
+                    a.close.closeTwo(href="#close" title="Закрыть")
+                        span
+                    form.form
+                        h2.mainText.mainText__recording-indent Запись на приём
+                        p.secondText Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей
+                        .formInput
+                            span
+                            input.form__input-style(type="text" name='name' placeholder="Ваше имя" required="required")
+                            input.form__input-style(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
+                        a.btn__width(href="#recordingTwo") Записаться на приём
+                        .form__policy
+                            input.form__checkbox#form__checkboxThree(type="checkbox" checked="")
+                            label.form__pol(for="form__checkboxThree") 
+                                span.form__policy-links Вы соглашаетесь с 
+                                    a.form__policy-link(href="#!") условиями обработки персональных данных
+        .box__right
+            include ../../blocks/accordion/accordion.pug
+            .accordion
+                input#info__body_2.info__switch(type="checkbox")
+                label.info__headline(for="info__body_2")
+                        a.info__links Кризис в отношениях
+                p.info__body Если вы чувствуете, что живете не своей жизнью, а соответствуете ожиданиям другим. Не можете изменить, то что не устраивает, сказать нет. Сомневаетесь в своих решениях. Постоянно критикуете свою внешность, поступки, мысли.
+            .accordion
+                input#info__body_3.info__switch(type="checkbox")
+                label.info__headline(for="info__body_3")
+                        a.info__links Ощущение неудовлетворённости, пустоты, тупика
+                p.info__body Если вы чувствуете, что живете не своей жизнью, а соответствуете ожиданиям другим. Не можете изменить, то что не устраивает, сказать нет. Сомневаетесь в своих решениях. Постоянно критикуете свою внешность, поступки, мысли.
+            .accordion
+                input#info__body_4.info__switch(type="checkbox")
+                label.info__headline(for="info__body_4")
+                        a.info__links Развод, расставание с партнером
+                p.info__body Если вы чувствуете, что живете не своей жизнью, а соответствуете ожиданиям другим. Не можете изменить, то что не устраивает, сказать нет. Сомневаетесь в своих решениях. Постоянно критикуете свою внешность, поступки, мысли.
+
+            .accordion
+                input#info__body_5.info__switch(type="checkbox")
+                label.info__headline(for="info__body_5")
+                        a.info__links Тревогу, постоянное беспокойство, панические состояния, страхи
+                p.info__body Если вы чувствуете, что живете не своей жизнью, а соответствуете ожиданиям другим. Не можете изменить, то что не устраивает, сказать нет. Сомневаетесь в своих решениях. Постоянно критикуете свою внешность, поступки, мысли.
+            .accordion
+                input#info__body_6.info__switch(type="checkbox")
+                label.info__headline(for="info__body_6")
+                        a.info__links Трудности в воспитании детей и подростков
+                p.info__body Если вы чувствуете, что живете не своей жизнью, а соответствуете ожиданиям другим. Не можете изменить, то что не устраивает, сказать нет. Сомневаетесь в своих решениях. Постоянно критикуете свою внешность, поступки, мысли.
+            .accordion
+                input#info__body_7.info__switch(type="checkbox")
+                label.info__headline(for="info__body_7")
+                        a.info__links Депрессию
+                p.info__body Если вы чувствуете, что живете не своей жизнью, а соответствуете ожиданиям другим. Не можете изменить, то что не устраивает, сказать нет. Сомневаетесь в своих решениях. Постоянно критикуете свою внешность, поступки, мысли.
+            .accordion
+                input#info__body_8.info__switch(type="checkbox")
+                label.info__headline(for="info__body_8")
+                        a.info__links Сложности в общении, одиночество
+                p.info__body Если вы чувствуете, что живете не своей жизнью, а соответствуете ожиданиям другим. Не можете изменить, то что не устраивает, сказать нет. Сомневаетесь в своих решениях. Постоянно критикуете свою внешность, поступки, мысли.

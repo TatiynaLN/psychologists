@@ -1,0 +1,59 @@
+.tel {
+    display: block;
+    width: 20rem;
+    align-self: center;
+}
+.time {
+    position: relative;
+    text-align: center;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 50%;
+        background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
+        top: 0.7rem;
+        left: -0.2rem;
+    }
+}
+.numbers {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+
+    text-transform: uppercase;
+    font-feature-settings: "pnum" on, "lnum" on;
+    text-decoration: none;
+    color: #646c79;
+    &:hover {
+        text-transform: uppercase;
+        background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #4dc8c0;
+    }
+}
+.tel-none {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .tel-none {
+        display: block;
+        margin-left: 1rem;
+    }
+    .numbers {
+        font-size: 1.4rem;
+    }
+    .time {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1120px) {
+    .tel {
+        margin-left: 2rem;
+    }
+}
