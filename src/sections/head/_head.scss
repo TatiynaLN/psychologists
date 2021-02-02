@@ -13,9 +13,6 @@
     margin: 0 auto;
     height: 35rem;
 }
-// .form__displiy-indent {
-//     padding: 0 2rem;
-// }
 .head {
     width: 100%;
     height: auto;
@@ -23,7 +20,29 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    padding-top: 18rem;
+    padding: 18rem 0 0 0;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        background: radial-gradient(86.37% 86.37% at 49.74% 13.63%, #f5f5f5 0%, rgba(225, 225, 225, 0) 100%);
+        z-index: 1;
+    }
+}
+.title,
+.text,
+.min-text,
+.head__form {
+    z-index: 2;
+}
+.head__form {
+    position: relative;
 }
 .content {
     display: flex;
@@ -42,9 +61,9 @@
     width: 354px;
     height: 390px;
     background: #ffffff;
-    box-shadow: 0px 100px 80px rgba(128, 128, 128, 0.07), 0px 41.7776px 33.4221px rgba(128, 128, 128, 0.0503198),
-        0px 22.3363px 17.869px rgba(128, 128, 128, 0.0417275), 0px 12.5216px 10.0172px rgba(128, 128, 128, 0.035),
-        0px 6.6501px 5.32008px rgba(128, 128, 128, 0.0282725), 0px 2.76726px 2.21381px rgba(128, 128, 128, 0.0196802);
+    box-shadow: 0rem 10rem 8rem rgba(128, 128, 128, 0.07), 0rem 4.17rem 3.34rem rgba(128, 128, 128, 0.0503198),
+        0rem 2.23rem 0.17rem rgba(128, 128, 128, 0.0417275), 0rem 1.25rem 1rem rgba(128, 128, 128, 0.035),
+        0rem 0.66rem 0.53rem rgba(128, 128, 128, 0.0282725), 0rem 0.27rem 0.22rem rgba(128, 128, 128, 0.0196802);
     border-radius: 10px;
 }
 .text-center {
@@ -61,16 +80,9 @@
     color: #646c79;
 }
 @media screen and (min-width: 1320px) {
-    .content {
-        padding-top: 0rem;
-    }
 }
 @media screen and (min-width: 1520px) {
     .head {
-        height: 100vh;
-        padding-top: 10rem;
-    }
-    .width__form {
-        margin-top: -11rem;
+        min-height: 100vh;
     }
 }

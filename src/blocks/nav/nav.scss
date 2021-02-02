@@ -1,3 +1,8 @@
+body.oh {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
 /************ MENU *****************/
 .hamburger-menu {
     width: 100%;
@@ -54,6 +59,7 @@
     animation: menu 0.5s ease-in-out forwards;
     // animation-delay: 0.3s;
 }
+
 //
 @-webkit-keyframes menu {
     0% {
@@ -61,10 +67,11 @@
         height: 0;
         left: 100%;
     }
+
     100% {
         opacity: 1;
         left: 0%;
-        height: 100h;
+        height: 100vh;
     }
 }
 
@@ -74,10 +81,11 @@
         height: 0;
         transform: translate3d(50%, 0, 0);
     }
+
     100% {
         opacity: 1;
         height: 100vh;
-        transform: translate3d(0, 0, 0);
+        transform: translate3d(0%, 0, 0);
     }
 }
 
@@ -88,6 +96,7 @@
     -webkit-transform-origin: top center;
     transform-origin: top center;
 }
+
 //
 .menu__btn {
     display: flex;
@@ -147,12 +156,13 @@
     line-height: 4.7rem;
     text-align: center;
     color: #565b62;
-    transition-duration: 0.01s;
+    transition-duration: 0.3s;
 }
 
 .menu__item:hover {
     font-weight: bold;
     color: #565b62;
+    transition-duration: 0.3s;
 }
 
 .menu__item:active {
@@ -198,7 +208,7 @@
         border-radius: 0.5rem;
         margin-top: 0rem;
         li {
-            width: 16%; /*убираем скачок при hover*/
+            width: 9.5%; /*убираем скачок при hover*/
         }
     }
     .menu__item {

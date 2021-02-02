@@ -2,9 +2,9 @@
     margin-top: 2em;
     padding: 1.1em 0;
     width: 13.75em;
-    display: block;
+    // display: block;
     outline: none;
-    background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 99.97%);
+    background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
     border-radius: 6.25em;
     font-family: "Raleway";
     font-style: normal;
@@ -15,15 +15,22 @@
     font-feature-settings: "pnum" on, "lnum" on;
     color: #ffffff;
     border: none;
+
+    transition: all 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition-delay: 1.5s;
     &:hover {
-        color: #ffffff;
-        background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 99.97%);
-        box-shadow: 0px 100px 80px rgba(66, 66, 66, 0.07), 0px 30.1471px 24.1177px rgba(66, 66, 66, 0.0456112),
-            0px 12.5216px 10.0172px rgba(66, 66, 66, 0.035), 0px 4.5288px 3.62304px rgba(66, 66, 66, 0.0243888);
+        background: transparent;
+        color: #4dc8c0;
+        background: radial-gradient(ellipse, transparent 58%, #56d0c9 90%, #4dc8c0 90%);
+
+        transition: all 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        transition-delay: 1.5s;
     }
-    &:active {
-        background: #44beb6;
-    }
+
+    // &:active {
+    //     background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 99.97%);
+    //     background: linear-gradient(360deg, Transparent, #1abc9c 100%);
+    // }
 }
 .btn__mobail-none {
     display: none;
