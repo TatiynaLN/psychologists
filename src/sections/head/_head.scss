@@ -1,3 +1,11 @@
+.header,
+.container,
+.head,
+.footer {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: normal;
+}
 .width__form {
     width: 90%;
     height: auto;
@@ -78,6 +86,11 @@
     line-height: 2.8rem;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #646c79;
+}
+.head__btn-bottom {
+    &:hover {
+        animation: btn 0.5s ease-in-out forwards;
+    }
 }
 @media screen and (min-width: 1320px) {
 }

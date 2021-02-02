@@ -10,7 +10,7 @@
     display: block;
     margin-left: 2rem;
     width: 30rem;
-    margin-top: -1.5rem;
+    margin-top: -1.9rem;
     line-height: 2.5rem;
 }
 input.form__checkbox {
@@ -24,8 +24,8 @@ input.form__checkbox {
     position: relative;
     display: inline-block;
     width: 1.4rem;
-    height: 1.5rem;
-    background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
+    height: 1.4rem;
+    border: solid 0.1rem #4dc8c0;
     border-radius: 0.2rem;
     background-size: 8rem 0.2rem;
     cursor: pointer;
@@ -35,8 +35,8 @@ input.form__checkbox {
     position: relative;
     display: block;
     width: 1.4rem;
-    height: 1.5rem;
-    background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
+    height: 1.4rem;
+    border: solid 0.1rem #4dc8c0;
     border-radius: 0.2rem;
     background-size: 8rem 0.2rem;
     cursor: pointer;
@@ -48,15 +48,17 @@ input.form__checkbox {
 [for="form__checkboxThree"]::before,
 [for="modal__checkbox"]:before {
     content: "";
-    position: absolute;
-    left: 0.17rem;
-    top: 0.25rem;
+
+    left: 0rem;
+    top: 0rem;
     display: block;
-    width: 1rem;
-    height: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: #4dc8c0;
     background-image: url("/wp-content/themes/twentytwenty-child/img/chechet.png");
+
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80%;
     background-position: center;
     position: relative;
     opacity: 1;
@@ -130,9 +132,7 @@ input.form__checkbox {
     border: none;
     &:hover {
         color: #ffffff;
-        background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 99.97%);
-        box-shadow: 0px 100px 80px rgba(66, 66, 66, 0.07), 0px 30.1471px 24.1177px rgba(66, 66, 66, 0.0456112),
-            0px 12.5216px 10.0172px rgba(66, 66, 66, 0.035), 0px 4.5288px 3.62304px rgba(66, 66, 66, 0.0243888);
+        animation: btn 0.5s ease-in-out forwards;
     }
     &:active {
         background: #44beb6;
