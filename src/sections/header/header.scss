@@ -26,8 +26,12 @@ a {
 .nav__menu {
     display: none;
 }
-
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 768px) {
+    .contacts__img-left {
+        margin-left: 5rem;
+    }
+}
+@media screen and (min-width: 1200px) {
     .header__top {
         display: flex;
         justify-content: center;
@@ -39,12 +43,22 @@ a {
 
         padding-top: 1rem;
     }
-}
-@media screen and (min-width: 1320px) {
-    .header__top {
-        margin: 0 auto;
-        width: 98%;
+    .header__top .contacts__indent:nth-child(1) {
+        order: 2;
     }
+    .header__top .logo:nth-child(2) {
+        flex: 1.8;
+        order: 1;
+    }
+    .header__top .adress__none:nth-child(3) {
+        order: 0;
+    }
+    .contacts__img-left {
+        margin-left: 0;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1324px) {
     .header__top .contacts__indent:nth-child(1) {
         flex: 0.6;
         order: 2;
@@ -61,8 +75,6 @@ a {
         flex: 0.6;
         order: 3;
     }
-}
-@media screen and (min-width: 1420px) {
     .header__top {
         margin: 0 auto;
         width: 80%;

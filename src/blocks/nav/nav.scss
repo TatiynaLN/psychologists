@@ -191,7 +191,12 @@
         margin-right: 3rem;
     }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1200px) {
+    .menu__btn {
+        margin-top: -2rem;
+    }
+}
+@media screen and (min-width: 1424px) {
     label.menu__btn {
         display: none;
     }

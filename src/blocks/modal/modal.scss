@@ -129,17 +129,17 @@
         padding-left: 37em;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     // .modal {
     //     width: 41.75em;
     // }
     // .modal__challenge-height {
     //     height: 19.43em;
     // }
-    // .closeOne {
-    //     margin-top: -21rem;
-    //     padding-left: 38em;
-    // }
+    .closeOne {
+        margin-top: -38rem;
+        padding-left: 48em;
+    }
     // .close {
     //     width: 22.12em;
     // }
@@ -173,7 +173,7 @@
     }
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1024px) {
     .modal {
         width: 56.25em;
     }
@@ -188,12 +188,28 @@
         width: 28.12em;
     }
     .closeOne {
-        margin-top: -49rem;
+        margin-top: -51rem;
         padding-left: 49em;
     }
     .close > span,
     .close > span::before {
         width: 1.7em;
         height: 0.125em;
+    }
+    .modal__thanks > div,
+    .modalDialog > div {
+        margin: 0% auto;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .closeOne {
+        margin-top: -50rem;
+        padding-left: 43.5em;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .closeOne {
+        margin-top: -50rem;
+        padding-left: 47.5em;
     }
 }
