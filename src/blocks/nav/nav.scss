@@ -18,13 +18,11 @@
     height: 0;
     margin: 0;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    z-index: 99;
+    z-index: 2;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
@@ -53,7 +51,7 @@
     height: 100vh;
     position: fixed;
     background: #f8f8f8;
-    z-index: 8;
+    z-index: -1;
     margin: 0 auto;
     transition-duration: 0.3s;
     animation: menu 0.3s ease-in-out forwards;
@@ -100,7 +98,12 @@
     transition: all 0.5s ease;
     animation-delay: 0.5s;
 }
-
+// .menu__item:last-child {
+//     margin-bottom: 0; убираем padding у последнего элемента
+// }
+.hamburger__menu-box {
+    padding: 13.4rem 0 5.7rem 0;
+}
 /********* Кнопка обратный звонок в гамбургере **************/
 .hamburger__btn-center {
     margin: 0 auto;
@@ -110,14 +113,15 @@
 .menu__btn {
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
+    position: absolute;
+    top: -5rem;
+    right: 0;
     width: 3.9rem;
     height: 2rem;
     cursor: pointer;
-    z-index: 9;
-    margin-top: 2rem;
+    z-index: 1;
+
+    padding-right: 6rem;
 }
 
 .menu__btn > span,
@@ -172,8 +176,10 @@
     color: #4dc8c0;
 }
 .menu__list {
-    margin-top: 8.4rem;
     transition-duration: 0.09s;
+}
+.hamburger__menu-list {
+    margin-bottom: 11.1rem;
 }
 // Не влазило на экраны 540px
 @media screen and (min-width: 540px) {

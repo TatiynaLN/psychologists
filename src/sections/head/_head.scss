@@ -6,20 +6,72 @@
     font-style: normal;
     font-weight: normal;
 }
+.head {
+    &__title {
+        margin-bottom: 2rem;
+    }
+    &__text {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+    }
+    &__form-policy {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 3rem;
+    }
+    // &__btn-bottom {
+    // }
+}
 .width__form {
     width: 90%;
     height: auto;
     margin-top: 3rem;
 }
-.form__bg {
+.form__displiy {
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    padding: 3rem 0;
     box-shadow: 0rem 8rem 2rem rgba(128, 128, 128, 0.07), 0rem 2.1rem 2.3rem rgba(128, 128, 128, 0.0503198),
         0rem 2.2rem 1.7rem rgba(128, 128, 128, 0.0417275), 0rem 1.2rem 10rem rgba(128, 128, 128, 0.035),
         0rem 6rem 5rem rgba(128, 128, 128, 0.0282725), 0rem 2rem 2rem rgba(128, 128, 128, 0.0196802);
     border-radius: 1.62em;
 }
+.formInput-flex {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.form__input-block {
+    justify-self: center;
+    align-self: center;
+}
 .form-section {
     margin: 0 auto;
     height: 35rem;
+}
+[for="form__checkboxs"]::before {
+    content: "";
+    position: absolute;
+    left: 0rem;
+    top: 0.01rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #4dc8c0;
+    background-image: url("/wp-content/themes/twentytwenty-child/img/chechet.png");
+
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    position: relative;
+    opacity: 1;
+    transition: 0.2s;
+    opacity: 0;
 }
 .head {
     width: 100%;
@@ -78,21 +130,43 @@
     text-align: center;
 }
 .mainTexts {
-    padding-top: 3rem;
-    font-family: "Raleway";
-    font-style: normal;
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 2.8rem;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #646c79;
+    margin-bottom: 1rem;
+}
+.secondTexts {
+    font-size: 1.4rem;
+    line-height: 2.24rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #565b62;
+    margin-bottom: 2rem;
+}
+.form__input-block {
+    display: block;
+    width: 26rem;
+    height: 4.8rem;
+    margin-bottom: 1.5rem;
 }
 .head__btn-bottom {
     &:hover {
         animation: btn 0.5s ease-in-out forwards;
     }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 540px) {
+    .form__policy-links {
+        width: 35rem;
+        text-align: left;
+        margin-left: 2rem;
+    }
+    .head__form-policy {
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+    }
 }
 @media screen and (min-width: 1520px) {
     .head {
