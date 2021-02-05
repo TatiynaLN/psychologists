@@ -63,7 +63,7 @@
     left: 0rem;
     top: -0.01rem;
     display: block;
-    width: 100%;
+    width: 101%;
     height: 100%;
     background-color: #4dc8c0;
     background-image: url("/wp-content/themes/twentytwenty-child/img/chechet.png");
@@ -93,15 +93,7 @@
     z-index: 5;
     background: #ffffff;
     border-radius: 1.62em;
-    // padding: 9rem 2rem 10rem 2rem;
     padding: 4rem 2rem 3rem 2rem;
-    // &__header-modal {
-    // }
-    // &__header-text {
-    // }
-
-    // &__header-btn {
-    // }
 }
 
 .mainText {
@@ -157,7 +149,6 @@
 }
 .form__policy {
     text-align: left;
-    // margin-left: 2rem;
     margin-top: 2rem;
     text-rendering: optimizelegibility;
     box-sizing: border-box;
@@ -196,11 +187,9 @@ input {
 @media screen and (min-width: 540px) {
     .modal__policy-link {
         display: block;
-        // margin-left: 2rem;
         width: 35.5rem;
         margin-top: -1.9rem;
         line-height: 2.5rem;
-        // width: 90%;
     }
     .form {
         width: 49rem;

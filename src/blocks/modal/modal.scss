@@ -54,8 +54,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    // bottom: 5rem;
-    // width: 22.12rem;
     width: 100%;
     height: 100%;
     transition: 0.3s ease-in-out;
@@ -66,10 +64,6 @@
         margin-bottom: 3rem;
     }
 }
-// .modal__challenge-height {
-//     height: 100%;
-//     width: auto;
-// }
 
 /* modal magic */
 .close {
@@ -133,19 +127,10 @@
     }
 }
 @media screen and (min-width: 1024px) {
-    // .modal {
-    //     width: 41.75em;
-    // }
-    // .modal__challenge-height {
-    //     height: 19.43em;
-    // }
     .closeOne {
         margin-top: -38rem;
         padding-left: 48em;
     }
-    // .close {
-    //     width: 22.12em;
-    // }
 }
 @media screen and (min-width: 900px) {
     .modal {

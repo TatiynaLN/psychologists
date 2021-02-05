@@ -102,3 +102,59 @@
 })();
 "use strict";
 ;
+"use strict";
+;
+(function () {
+    new Swiper('.blog-slider', {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        //колличество пролистываемых слайдов
+        slidesPerGroup: 1,
+        //активный слайд по центру
+        // centerredSlides: true,
+        //стартовый слайд отсчет с 0
+        initialSlide: 0,
+        spaceBetween: 23,
+        // centeredSlides: true,
+        autoHeight: true,
+        loop: true,
+        on: {
+            init() {
+                this.el.addEventListener('mouseenter', () => {
+                    this.autoplay.stop();
+                });
+
+                this.el.addEventListener('mouseleave', () => {
+                    this.autoplay.start();
+                });
+            }
+        },
+        breakpoints: {
+            320: {
+                //колличество слайдов для показа
+                slidesPerView: 1,
+            },
+            411: {
+                //колличество слайдов для показа
+                slidesPerView: 1.2,
+            },
+            768: {
+                //колличество слайдов для показа
+                slidesPerView: 1.6,
+                centeredSlides: true,
+            },
+            1700: {
+                //колличество слайдов для показа
+                slidesPerView: 3,
+                centeredSlides: false,
+                spaceBetween: 19,
+            }
+
+        },
+    });
+
+})();
+"use strict";
+;
