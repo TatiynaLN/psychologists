@@ -1,5 +1,6 @@
 .modalDialogTwo,
 .modal__thanks,
+.modalfooter,
 .modalDialog {
     position: fixed;
     top: 0;
@@ -26,7 +27,6 @@
     align-content: center;
 }
 .form__thanks {
-    margin-left: 3rem;
     background: #ffffff;
     box-shadow: 0rem 8rem 2rem rgba(128, 128, 128, 0.07), 0rem 2.1rem 2.3rem rgba(128, 128, 128, 0.0503198),
         0rem 2.2rem 1.7rem rgba(128, 128, 128, 0.0417275), 0rem 1.2rem 10rem rgba(128, 128, 128, 0.035),
@@ -34,6 +34,7 @@
     border-radius: 1.62em;
 }
 /**************/
+.modalfooter:target,
 .modalDialogTwo:target,
 .modal__thanks:target,
 .modalDialog:target {
@@ -41,6 +42,7 @@
     pointer-events: auto;
     position: fixed;
 }
+.modalfooter > div,
 .modalDialogTwo > div,
 .modal__thanks > div,
 .modalDialog > div {
@@ -72,6 +74,10 @@
     width: 22.12rem;
 
     z-index: 6;
+}
+.closeThank {
+    margin-top: -10.5em;
+    padding-left: 14.5em;
 }
 .closeOne {
     margin-top: -21.5em;
@@ -105,12 +111,21 @@
     .closeOne {
         padding-left: 16em;
     }
+    .closeThank {
+        margin-top: -10em;
+        padding-left: 16.5em;
+    }
 }
 @media screen and (min-width: 540px) {
     .closeOne {
         margin-top: -20em;
         padding-left: 26em;
     }
+    .closeThank {
+        margin-top: -9em;
+        padding-left: 27em;
+    }
+    .modalfooter > div,
     .modalDialogTwo > div,
     .modal__thanks > div,
     .modalDialog > div {
@@ -125,11 +140,22 @@
         margin-top: -18em;
         padding-left: 37em;
     }
+    .closeThank {
+        margin-top: -7em;
+        padding-left: 37em;
+    }
 }
 @media screen and (min-width: 1024px) {
     .closeOne {
         margin-top: -38rem;
         padding-left: 48em;
+    }
+    .modal__thank {
+        left: 6%;
+    }
+    .closeThank {
+        margin-top: -23em;
+        padding-left: 49em;
     }
 }
 @media screen and (min-width: 900px) {
@@ -139,7 +165,9 @@
     .modal__challenge-height {
         height: 29.06em;
     }
-    .modalDialogTwo > div .modal__thanks > div,
+    .modalfooter > div,
+    .modalDialogTwo > div,
+    .modal__thanks > div,
     .modalDialog > div {
         margin: 10% auto;
     }
@@ -180,9 +208,15 @@
         width: 1.7em;
         height: 0.125em;
     }
+    .modalfooter > div,
     .modal__thanks > div,
     .modalDialog > div {
         margin: 0% auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .modal__thank {
+        right: 5%;
     }
 }
 @media screen and (min-width: 1900px) {

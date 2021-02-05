@@ -16,10 +16,8 @@
     margin-bottom: 1.9rem;
 }
 .prices__txt {
+    display: inline-block;
     margin-bottom: 3rem;
-}
-.prices__txt:last-child {
-    margin-bottom: 0;
 }
 .prices__picture {
     margin-bottom: 2rem;
@@ -31,6 +29,7 @@
     width: 100%;
     text-align: left;
 }
+
 .picture-female {
     width: 100%;
 }
@@ -81,5 +80,8 @@
     }
     .prices__txt {
         margin-bottom: 0rem;
+    }
+    .prices__txt:last-child {
+        margin-bottom: 0;
     }
 }

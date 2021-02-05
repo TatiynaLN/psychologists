@@ -11,3 +11,16 @@
 })();
 "use strict";
 ;
+(function () {
+
+    const body = document.getElementsByTagName('body')[0];
+    const html = body.parentNode;
+    const testModal = document.querySelectorAll('.btn');
+    testModal.forEach(btn => {
+        btn.addEventListener('click', () => {
+
+        });
+    });
+})();
+"use strict";
+;
