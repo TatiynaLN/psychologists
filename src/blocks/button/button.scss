@@ -11,13 +11,16 @@
     font-feature-settings: "pnum" on, "lnum" on;
     color: #ffffff;
     border: none;
+    // transition: all 0.8s ease;
+    // transition-delay: 0.8s;
+    // transition: 0.8s;
     transition: all 0.8s ease;
-    transition-delay: 0.8s;
-    transition: 0.8s;
+    transform-origin: left right;
     &:hover {
         // background: transparent;
-        // color: #4dc8c0;
+        background: #e89160;
         animation: btn 0.8s ease-in-out forwards;
+        transition: all 0.8s ease;
     }
 
     // &:active {
@@ -25,51 +28,53 @@
     //     background: linear-gradient(360deg, Transparent, #1abc9c 100%);
     // }
 }
-@-webkit-keyframes btn {
-    0% {
-        background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
-        // background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
-    }
-    // 40% {
-    //     background: radial-gradient(ellipse, transparent 19%, #56d0c9 90%, #4dc8c0 90%);
-    // }
-    // 55% {
-    //     background: radial-gradient(ellipse, transparent 29%, #56d0c9 90%, #4dc8c0 90%);
-    // }
-    // 70% {
-    //     background: radial-gradient(ellipse, transparent 39%, #56d0c9 90%, #4dc8c0 90%);
-    // }
-    // 85% {
-    //     background: radial-gradient(ellipse, transparent 49%, #56d0c9 90%, #4dc8c0 90%);
-    // }
-    100% {
-        background: #e89160;
-        // background: radial-gradient(ellipse, transparent 58%, #56d0c9 90%, #4dc8c0 90%);
-    }
-}
+// @-webkit-keyframes btn {
+//     // 0% {
+//     //     background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
+//     //     transform-origin: left right;
+//     //     // background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
+//     // }
+//     // 40% {
+//     //     background: radial-gradient(ellipse, transparent 19%, #56d0c9 90%, #4dc8c0 90%);
+//     // }
+//     // 55% {
+//     //     background: radial-gradient(ellipse, transparent 29%, #56d0c9 90%, #4dc8c0 90%);
+//     // }
+//     // 70% {
+//     //     background: radial-gradient(ellipse, transparent 39%, #56d0c9 90%, #4dc8c0 90%);
+//     // }
+//     // 85% {
+//     //     background: radial-gradient(ellipse, transparent 49%, #56d0c9 90%, #4dc8c0 90%);
+//     // }
+//     // 100% {
+//     //     background: #e89160;
+//     //     transform-origin: left right;
+//     //     // background: radial-gradient(ellipse, transparent 58%, #56d0c9 90%, #4dc8c0 90%);
+//     // }
+// }
 
-@keyframes btn {
-    0% {
-        background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
-        // background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
-    }
-    // 40% {
-    //     background: radial-gradient(ellipse, transparent 19%, #56d0c9 90%, #4dc8c0 90%);
-    // }
-    // 55% {
-    //     background: radial-gradient(ellipse, transparent 29%, #56d0c9 90%, #4dc8c0 90%);
-    // }
-    // 70% {
-    //     background: radial-gradient(ellipse, transparent 39%, #56d0c9 90%, #4dc8c0 90%);
-    // }
-    // 85% {
-    //     background: radial-gradient(ellipse, transparent 49%, #56d0c9 90%, #4dc8c0 90%);
-    // }
-    100% {
-        background: #e89160;
-        // background: radial-gradient(ellipse, transparent 58%, #56d0c9 90%, #4dc8c0 90%);
-    }
-}
+// @keyframes btn {
+//     0% {
+//         background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
+//         // background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
+//     }
+//     // 40% {
+//     //     background: radial-gradient(ellipse, transparent 19%, #56d0c9 90%, #4dc8c0 90%);
+//     // }
+//     // 55% {
+//     //     background: radial-gradient(ellipse, transparent 29%, #56d0c9 90%, #4dc8c0 90%);
+//     // }
+//     // 70% {
+//     //     background: radial-gradient(ellipse, transparent 39%, #56d0c9 90%, #4dc8c0 90%);
+//     // }
+//     // 85% {
+//     //     background: radial-gradient(ellipse, transparent 49%, #56d0c9 90%, #4dc8c0 90%);
+//     // }
+//     100% {
+//         background: #e89160;
+//         // background: radial-gradient(ellipse, transparent 58%, #56d0c9 90%, #4dc8c0 90%);
+//     }
+// }
 
 .btn__mobail-none {
     display: none;

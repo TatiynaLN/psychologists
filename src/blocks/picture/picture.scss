@@ -18,6 +18,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        border-radius: 1rem;
         background: transparent;
         background: linear-gradient(180deg, rgba(236, 234, 232, 0) 57.92%, #eceaea 100%);
     }
@@ -36,5 +37,8 @@
     }
     .picture {
         order: 0;
+        align-self: baseline;
+        justify-content: center;
+        align-self: center;
     }
 }

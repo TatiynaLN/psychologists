@@ -103,6 +103,7 @@
 }
 .head__form {
     position: relative;
+    margin-top: 3.3rem;
 }
 .content {
     display: flex;
@@ -184,6 +185,9 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .head__form {
+        margin-top: 5.5rem;
+    }
 }
 @media screen and (min-width: 1024px) {
     .formInput-flex {
@@ -205,6 +209,9 @@
     .head {
         min-height: 100vh;
         // max-height: 100vh;
+    }
+    .head__form {
+        margin-top: 7.3rem;
     }
 }
 @media screen and (min-width: 1700px) {

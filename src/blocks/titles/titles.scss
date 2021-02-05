@@ -1,6 +1,4 @@
 .titles {
-    font-family: "Raleway";
-    font-style: normal;
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 3.3rem;
@@ -8,7 +6,7 @@
     color: #565b62;
 }
 .titles_width {
-    width: 28.6rem;
+    max-width: 28.6rem;
 }
 .titles-indent {
     margin-top: 1rem;
@@ -21,6 +19,6 @@
 }
 @media screen and (min-width: 1560px) {
     .titles_width {
-        width: 43.6rem;
+        max-width: 43.6rem;
     }
 }

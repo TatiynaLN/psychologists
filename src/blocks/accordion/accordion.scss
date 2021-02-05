@@ -1,14 +1,80 @@
-.info__switch {
-    display: none;
-}
-.accordion {
-    position: relative;
+.hide {
+    clip: rect(0 0 0 0);
+    height: 0.1rem;
+    margin: -0.1rem;
     padding: 0;
+    position: absolute;
+    width: 0.1rem;
 }
-.info__body {
-    max-height: 0;
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-item {
+    position: relative;
+    width: 100%;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+.accordion-label {
+    padding: 2rem 3.7rem 2rem 2rem;
+    width: 100%;
+    display: block;
+    background: #565b62;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.96rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+.accordion-label-top {
+    margin-top: 0;
+}
+.accordion-label:hover {
+    cursor: pointer;
+}
+
+.accordion-label:before {
+    content: "";
+    position: absolute;
+    top: 2.2rem;
+    left: 87%;
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-image: url("/wp-content/themes/twentytwenty-child/img/chevron.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+input[type="checkbox"]:checked ~ .accordion-label {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+input[type="checkbox"]:checked ~ .accordion-label:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(180deg);
+}
+
+.accordion-child {
+    margin: 0;
     overflow: hidden;
-    transition: 0.4s;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 0;
+    height: 0;
+    -webkit-transform-origin: top bottom;
+    transform-origin: top bottom;
+}
+
+input[type="checkbox"]:checked ~ .accordion-child {
+    margin: 0;
     background: #ffffff;
     border-radius: 0rem 0rem 0.5rem 0.5rem;
     font-family: "Raleway";
@@ -18,175 +84,63 @@
     line-height: 2.24rem;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #828282;
-}
-/**/
-
-//
-@-webkit-keyframes accord {
-    0% {
-        max-height: 0;
-        transform: translateY(0%, 0, 0);
-    }
-
-    100% {
-        max-height: 100%;
-        transform: translateY(-50%, 0, 0);
-        padding: 2rem;
-        box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
-            0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
-    }
-}
-
-@keyframes accord {
-    0% {
-        opacity: 0;
-        max-height: 0;
-        transform: translateY(-50%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        max-height: 100%;
-        transform: translateY(0%, 0, 0);
-        padding: 2rem;
-        box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
-            0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
-    }
-}
-
-/**/
-.info__switch:checked ~ .info__body {
-    max-height: 100%;
-    transition-duration: 0.4s;
-    animation: accord 0.4s ease-in-out forwards;
-}
-#info__body_1 + label.info__headline,
-#info__body_2 + label.info__headline,
-#info__body_3 + label.info__headline,
-#info__body_4 + label.info__headline,
-#info__body_5 + label.info__headline,
-#info__body_6 + label.info__headline,
-#info__body_7 + label.info__headline,
-#info__body_8 + label.info__headline {
-    position: relative;
-    z-index: 2;
-}
-
-[for="info__body_8"]:before,
-[for="info__body_7"]:before,
-[for="info__body_6"]:before,
-[for="info__body_5"]:before,
-[for="info__body_4"]:before,
-[for="info__body_3"]:before,
-[for="info__body_2"]:before {
-    content: "";
-    position: absolute;
-    left: 90%;
-    top: 0;
-
-    display: block;
-    width: 2.6rem;
-    height: 2.6rem;
-    background-image: url("/wp-content/themes/twentytwenty-child/img/chevron.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    padding: 2rem;
+    box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
+        0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
+    height: 100%;
     opacity: 1;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.4rem;
-    line-height: 1.96rem;
-    font-feature-settings: "pnum" on, "lnum" on;
-    color: #ffffff;
-    transition: 0.3s;
 }
-
-[for="info__body_1"]:before {
-    content: "";
-    position: absolute;
-    left: 90%;
-    top: 0;
-    display: block;
-    width: 2.6rem;
-    height: 2.6rem;
-    background-image: url("/wp-content/themes/twentytwenty-child/img/chevron.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    transition: 0.001ms;
-    opacity: 1;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.4rem;
-    line-height: 1.96rem;
-    font-feature-settings: "pnum" on, "lnum" on;
-    color: #ffffff;
-    transition-duration: 0.3s;
-}
-
-#info__body_8:checked ~ [for="info__body_8"]:before,
-#info__body_7:checked ~ [for="info__body_7"]:before,
-#info__body_6:checked ~ [for="info__body_6"]:before,
-#info__body_5:checked ~ [for="info__body_5"]:before,
-#info__body_4:checked ~ [for="info__body_4"]:before,
-#info__body_3:checked ~ [for="info__body_3"]:before,
-#info__body_2:checked ~ [for="info__body_2"]:before,
-#info__body_1:checked ~ [for="info__body_1"]:before {
-    transform: rotate(180deg);
-    transition-duration: 0.3s;
-}
-/*****************/
-.info__headline {
-    display: block;
-    position: relative;
-    height: auto;
-    margin-top: 1rem;
-    padding: 1.9rem 0;
-    user-select: none;
-    font-weight: normal;
-    cursor: pointer;
-    background: #565b62;
-    border-radius: 0.5rem 0.5rem 0rem 0rem;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.4rem;
-    line-height: 1.96rem;
-    font-feature-settings: "pnum" on, "lnum" on;
-}
-a.info__links {
-    display: block;
-    margin-left: 1.5rem;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.4rem;
-    line-height: 1.96rem;
-    font-feature-settings: "pnum" on, "lnum" on;
-    color: #ffffff;
-    width: 85.5%;
-    margin-top: -2rem;
-}
-@media screen and (min-width: 540px) {
-    .info__arrow-top {
-        top: 4.5rem;
+@media screen and (min-width: 411px) {
+    .accordion-label:before {
+        content: "";
+        position: absolute;
+        top: 2.2rem;
+        left: 90%;
+        display: inline-block;
+        width: 2.6rem;
+        height: 2.6rem;
+        background-image: url("/wp-content/themes/twentytwenty-child/img/chevron.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
-@media screen and (min-width: 640px) {
-    .info__arrow-top {
-        top: 3.5rem;
+@media screen and (min-width: 768px) {
+    .accordion-label:before {
+        content: "";
+        position: absolute;
+        top: 2.2rem;
+        left: 93%;
+        display: inline-block;
+        width: 2.6rem;
+        height: 2.6rem;
+        background-image: url("/wp-content/themes/twentytwenty-child/img/chevron.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
-@media screen and (min-width: 1020px) {
-    .info__body {
+@media screen and (min-width: 1200px) {
+    .accordion-label {
+        padding: 2.4rem 20.7rem 2.4rem 2.4rem;
+        font-size: 1.8rem;
+        line-height: 2.52rem;
+    }
+    input[type="checkbox"]:checked ~ .accordion-child {
+        margin: 0;
+        background: #ffffff;
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: normal;
         font-size: 1.8rem;
         line-height: 2.88rem;
-    }
-    .info__arrow-top {
-        top: 4.2rem;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #828282;
+        padding: 2.4rem 4rem 4.4rem 4rem;
+        box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
+            0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
+        height: 100%;
+        opacity: 1;
     }
 }

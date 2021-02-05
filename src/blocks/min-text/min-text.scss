@@ -24,10 +24,11 @@
     order: 0;
     flex-grow: 0;
     border-radius: 0.5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
 }
 .min-text__margins {
     margin: 1rem 0;
-    padding: 1rem 2rem;
 }
 @media screen and (min-width: 768px) {
     .min-text {
