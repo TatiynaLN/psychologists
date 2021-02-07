@@ -1,9 +1,10 @@
 .address {
     margin: 0 auto;
-    width: 28.9rem;
+    width: 25.9rem;
     display: flex;
     justify-content: space-evenly;
     align-content: flex-start;
+    align-self: baseline;
 }
 .hamburger__addres {
     margin-bottom: 2.8rem;

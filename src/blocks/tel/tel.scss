@@ -10,18 +10,6 @@
     justify-content: space-between;
     align-content: center;
     position: relative;
-    padding: 0 0 0 1.5rem;
-    &::before {
-        content: "";
-        position: absolute;
-        width: 1.1rem;
-        height: 1.1rem;
-        border-radius: 50%;
-        left: 0;
-        top: 0%;
-        transform: translateY(25%);
-        background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
-    }
 }
 .numbers {
     font-family: "Raleway";
@@ -58,9 +46,4 @@
     .time {
         font-size: 1.2rem;
     }
-}
-@media screen and (min-width: 1120px) {
-    // .tel {
-    //     margin-left: 2rem;
-    // }
 }

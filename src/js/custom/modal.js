@@ -4,11 +4,13 @@
 
     const body = document.getElementsByTagName('body')[0]; // Получаем боди
     const html = body.parentNode; // Получаем html
-
+    const modalFirst = document.querySelector('.modalDialog');
+    const modalSecond = document.querySelector('.modalDialogTwo');
     document.addEventListener('click', (e) => {
+        console.log(body);
         if (e.target.classList.contains == 'modal-first') {
             modalFirst.classList.add('modal-first--open'); // Добавляем по клику класс, по которому модалка, которых две, откроется (его надо прописать в css)
-            body.classList.add('no-scroll'); // Запрет прокрутки боди
+            body.classList.add('oh'); // Запрет прокрутки боди
             html.classList.add('html-overflow'); // Предотвращение дергания экрана при открытии модалки
         } else if (e.target.classList.contains == 'modal-second') {
             modalSecond.classList.add('modal-second--open'); // Добавляем по клику класс, по которому модалка, которая одна по середине, откроется (его надо прописать в css)

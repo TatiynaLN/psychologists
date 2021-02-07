@@ -1,16 +1,12 @@
 footer.footer(style='background-image: url("/wp-content/themes/twentytwenty-child/img/footerBg.png");')
-    .footer__block-logo
-        include ../../blocks/logo/logo.pug
     .footer__top
         .footer__top-content
-            .address__footer-indent.address__footer
-                .adress__img.adress__img-indent
-                    a(href='#')
-                        svg(class="address__icons2")
-                            use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#location")
-                .addres__left.addres__footer
-                    p.adress__text.adress__text-bold пр. Ленина, д.45, оф. 15
-                    p.adress__text Москва, м. Московская
+            .footer__menu-top
+                ul.footer__menu-list
+                    li.white-space: a.footer__menu-item(href="#") Семейная консультация
+                    li.white-space: a.footer__menu-item(href="#") Онлайн-консультация
+                    li.white-space: a.footer__menu-item(href="#") Индивидуальные консультации
+                    li.white-space.det: a.footer__menu-item(href="#") Детский психолог
             .contacts__footer
                 .phone__img.phone__img-indent
                     a(href="tel:+78001201204")
@@ -37,12 +33,12 @@ footer.footer(style='background-image: url("/wp-content/themes/twentytwenty-chil
                                 a.form__policy-link(href="#!" target="_blank") условиями обработки персональных данных
     .menu__box-footer
         ul.menu__list-footer
-            li.white-space: a.menu__item(href="#about") Обо мне
-            li: a.menu__item(href="#") Услуги
-            li: a.menu__item(href="#") Цены
-            li: a.menu__item(href="#") Отзывы
-            li: a.menu__item(href="#") Блог
-            li: a.menu__item(href="#") Контакты
+            li.white-space: a.footer__menu-items(href="#about") Обо мне
+            li: a.footer__menu-items(href="#") Услуги
+            li: a.footer__menu-items(href="#") Цены
+            li: a.footer__menu-items(href="#") Отзывы
+            li: a.footer__menu-items(href="#") Блог
+            li: a.footer__menu-items(href="#") Контакты
     .social
         .icon_soc
             a(href='#')
