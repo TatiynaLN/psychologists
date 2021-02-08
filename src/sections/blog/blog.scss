@@ -1,0 +1,32 @@
+.blog {
+    &__title {
+        margin-bottom: 1.7rem;
+    }
+    &__text {
+        margin: 0 auto;
+        max-width: 63.3rem;
+        margin-bottom: 6.3rem;
+    }
+    &__txt {
+        margin-bottom: 2rem;
+    }
+}
+.container__blog {
+    padding: 0 1rem;
+    margin-bottom: 6.3rem;
+}
+.block__content-blog {
+    margin-bottom: 8rem;
+}
+@media screen and (min-width: 1200px) {
+    .container__blog {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .container__blog {
+        margin: 0 auto;
+        width: 82%;
+    }
+}

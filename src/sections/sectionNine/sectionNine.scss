@@ -12,6 +12,7 @@
     border-radius: 1rem;
     margin-bottom: 2rem;
 }
+
 .blog__titl {
     margin-bottom: 2rem;
 }
@@ -25,7 +26,11 @@
 .sectionNine .swiper-slide-active {
     align-self: stretch;
 }
-.block__content-flex {
+.block__contents {
+    padding: 1rem;
+    text-align: left;
+}
+.block__content-flexs {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -33,7 +38,7 @@
     align-self: stretch;
     height: 100%;
     min-width: 30rem;
-    padding: 0 1.5rem;
+    // padding: 0 1.5rem;
 }
 .swiper-slide.swiper__blog {
     align-self: stretch;
@@ -59,7 +64,10 @@
     .blog {
         padding: 7rem 0;
     }
-    .block__content-flex {
+    .block__content-flexs {
+        padding: 0;
+    }
+    .block__contents {
         padding: 0;
     }
 }

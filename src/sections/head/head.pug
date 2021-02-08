@@ -4,17 +4,18 @@
         include ../../blocks/text/text.pug
         include ../../blocks/min-text/min-text.pug
     
-    .width__form.form-section.head__form
-            form.form__displiy
-                h2.mainTexts Запись на приём
-                p.secondTexts Заполните форму и я перезвоню вам для уточнения удобного для вас времени
+    .width__form.form-section
+            form.form__displiy.form__displiy-indent.form__bg
+                h2.mainTexts.mainText__head-indent Запись на приём
+                p.secondText Заполните форму и я перезвоню вам для уточнения удобного для вас времени
                 .formInput.formInput-flex
                     span
-                    input.form__input-style.form__input-block(type="text" name='name' placeholder="Ваше имя" required="required")
-                    input.form__input-style.form__input-block(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
-                    a.btn.btn__width.form__btn-bottom(href="#open") Запись на консультацию
-                .head__form-policy
-                    input.form__checkbox#form__checkboxs(type="checkbox" checked="")
-                    label.form__pol(for="form__checkboxs") 
-                        span.form__policy-links Вы соглашаетесь с 
-                            a.form__policy-link(href="#!") условиями обработки персональных данных
+                    input.form__input-style.form__input-block.formInput-indent(type="text" name='name' placeholder="Ваше имя" required="required")
+                    input.form__input-style.form__input-block.formInput-indent(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
+                    a.btn__width.formInput-indent(href="#open") Запись на консультацию
+                .form__policy-center
+                    .form__policy
+                        input.form__checkbox#form__checkboxs(type="checkbox" checked="")
+                        label.form__pol(for="form__checkboxs") 
+                            span.form__policy-links Вы соглашаетесь с 
+                                a.form__policy-link(href="#!") условиями обработки персональных данных

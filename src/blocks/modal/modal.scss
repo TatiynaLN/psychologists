@@ -42,12 +42,16 @@
     pointer-events: auto;
     position: fixed;
 }
+// .modal--open {
+//     opacity: 1 !important;
+// }
 .modalfooter > div,
 .modalDialogTwo > div,
 .modal__thanks > div,
 .modalDialog > div {
     position: relative;
     margin: auto;
+    z-index: 9;
 }
 .modal {
     display: flex;

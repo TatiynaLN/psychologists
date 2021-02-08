@@ -1,0 +1,16 @@
+doctype html
+html(lang="ru")
+    head
+        include ../sections/head.pug
+    body.bo
+        include ../sections/header/header.pug
+        section.blog__section
+            .content.container__blog
+                h1.title.text-center.blog__title Полезные статьи
+                p.text.blog__text Помогаю справляться с негативными 
+                                    |эмоциями, находить источник спокойствия
+                                    |и силы в себе
+            include ../sections/blog/blog.pug
+        include ../sections/footer/footer.pug
+        include ../sections/footer.pug
+        
