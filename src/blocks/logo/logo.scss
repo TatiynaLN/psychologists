@@ -6,6 +6,9 @@
     text-align: center;
     display: block;
     z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .logo__img {
     width: 4.3rem;
@@ -50,9 +53,9 @@
     font-feature-settings: "pnum" on, "lnum" on;
     text-decoration: none;
 }
-@media screen and (min-width: 1120px) {
-    .logo {
-        width: 13.9rem;
-        position: relative;
-    }
-}
+// @media screen and (min-width: 1120px) {
+//     .logo {
+//         width: 13.9rem;
+//         position: relative;
+//     }
+// }

@@ -1,4 +1,5 @@
-.address {
+.address,
+.addr {
     margin: 0 auto;
     width: 25.9rem;
     display: flex;
@@ -21,8 +22,9 @@
 }
 @media screen and (min-width: 1200px) {
 }
-@media screen and (min-width: 1424px) {
-    .address {
+@media screen and (min-width: 1420px) {
+    .address,
+    .addr {
         width: 28.9rem;
         display: flex;
     }
@@ -31,14 +33,12 @@
     }
     .adress__none {
         display: block;
-        margin: 2.8rem;
+        display: flex;
+        justify-self: flex-start;
+        align-self: center;
+        margin-left: 0;
     }
     .adress__none-desctop {
         display: none;
-    }
-    .adress__none {
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 0;
     }
 }

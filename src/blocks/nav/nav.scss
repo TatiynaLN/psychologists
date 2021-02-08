@@ -85,6 +85,7 @@
 /********* Кнопка обратный звонок в гамбургере **************/
 .hamburger__btn-center {
     margin: 0 auto;
+    margin-bottom: 5rem;
 }
 /***************/
 /******* hamburger ********/
@@ -92,7 +93,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: -5rem;
+    top: -8.5rem;
     right: 0;
     width: 3.9rem;
     height: 2rem;
@@ -166,9 +167,14 @@
         margin-right: 3rem;
     }
 }
+@media screen and (min-width: 768px) {
+    .menu__btn {
+        top: -10rem;
+    }
+}
 @media screen and (min-width: 1200px) {
     .menu__btn {
-        margin-top: -2rem;
+        margin-top: 1%;
     }
 }
 @media screen and (min-width: 1424px) {

@@ -1,6 +1,7 @@
 header.header
+    include ../../blocks/logo/logo.pug
     .header__top
-        .contacts.contacts__indent.contacts__img-left
+        .cont.contacts__indent.contacts__img-left
             .phone__img.phone__img-indent
                 a(href="tel:+78001201204")
                     svg(class="icons-tel")
@@ -8,8 +9,8 @@ header.header
             .tel.tel-none
                 a.numbers(href="tel:+78001201204") + 7 800 120-12-04
                 p.time  Ежедневно с 10 до 20 ч.
-        include ../../blocks/logo/logo.pug
-        .address.address__indent.adress__none
+        
+        .addr.adress__none
             .adress__img.adress__img-indent
                 a(href='#')
                     svg(class="address__icons2")
