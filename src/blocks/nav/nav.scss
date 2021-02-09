@@ -55,7 +55,7 @@
     margin: 0;
     list-style: none;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-    transition-duration: 1.25s;
+    transition-duration: 1s;
     border-radius: 0 70% 50% 0;
 }
 /* элементы меню */
@@ -64,7 +64,7 @@
     visibility: visible;
     overflow: auto;
     left: 0;
-    transition-duration: 1.25s;
+    transition-duration: 1s;
     background: #f8f8f8;
     z-index: -1;
     border-radius: 0;
@@ -72,7 +72,7 @@
 
 .hamburger__menu-box {
     padding: 13.4rem 0 5.7rem 0;
-    transition-duration: 2.25s;
+    transition-duration: 1s;
 }
 
 .menu__box {

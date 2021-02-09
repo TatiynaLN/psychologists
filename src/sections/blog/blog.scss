@@ -1,11 +1,12 @@
 .blog {
     &__title {
+        margin-top: 0;
         margin-bottom: 1.7rem;
     }
     &__text {
         margin: 0 auto;
         max-width: 63.3rem;
-        margin-bottom: 6.3rem;
+        margin-bottom: 5rem;
     }
     &__txt {
         margin-bottom: 2rem;
@@ -13,7 +14,10 @@
 }
 .container__blog {
     padding: 0 1rem;
-    margin-bottom: 6.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 .block__content-blog {
     margin-bottom: 8rem;
@@ -24,9 +28,22 @@
         width: 90%;
     }
 }
+@media screen and (min-width: 1424px) {
+    .blog {
+        &__title {
+            margin-top: 5rem;
+            margin-bottom: 1.7rem;
+        }
+    }
+}
 @media screen and (min-width: 1700px) {
     .container__blog {
         margin: 0 auto;
         width: 82%;
+    }
+    .blog {
+        &__text {
+            margin-bottom: 6.3rem;
+        }
     }
 }

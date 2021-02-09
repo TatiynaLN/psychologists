@@ -1,24 +1,23 @@
-header.header
-    include ../../blocks/logo/logo.pug
-    .header__top
-        .cont.contacts__indent.contacts__img-left
-            .phone__img.phone__img-indent
-                a(href="tel:+78001201204")
-                    svg(class="icons-tel")
-                        use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#phone")
-            .tel.tel-none
-                a.numbers(href="tel:+78001201204") + 7 800 120-12-04
-                p.time  Ежедневно с 10 до 20 ч.
+include ../../blocks/logo/logo.pug
+.header__top
+    .cont.contacts__indent.contacts__img-left
+        .phone__img.phone__img-indent
+            a(href="tel:+78001201204")
+                svg(class="icons-tel")
+                    use(xlink:href="wp-content/themes/twentytwenty-child/img/icons/sprite.svg#phone")
+        .tel.tel-none
+            a.numbers(href="tel:+78001201204") + 7 800 120-12-04
+            p.time  Ежедневно с 10 до 20 ч.
         
-        .addr.adress__none
-            .adress__img.adress__img-indent
-                a(href='#')
-                    svg(class="address__icons2")
-                        use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#location")
-            .addres.addres__left
-                p.adress__text.adress__text-bold пр. Ленина, д.45, оф. 15
-                p.adress__text Москва, м. Московская
-        a.btn.btn__mobail-none.modal-first(href="#openModal") Обратный звонок
-    include ../../blocks/nav/nav.pug
+    .addr.adress__none
+        .adress__img.adress__img-indent
+            a(href='#')
+                svg(class="address__icons2")
+                    use(xlink:href="wp-content/themes/twentytwenty-child/img/icons/sprite.svg#location")
+        .addres.addres__left
+            p.adress__text.adress__text-bold пр. Ленина, д.45, оф. 15
+            p.adress__text Москва, м. Московская
+    a.btn.btn__mobail-none.modal-first(href="#openModal") Обратный звонок
+include ../../blocks/nav/nav.pug
     
 

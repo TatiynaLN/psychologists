@@ -145,6 +145,16 @@
                 slidesPerView: 1.6,
                 centeredSlides: true,
             },
+            1024: {
+                //колличество слайдов для показа
+                slidesPerView: 2,
+                centeredSlides: true,
+            },
+            1200: {
+                //колличество слайдов для показа
+                slidesPerView: 2.5,
+                centeredSlides: true,
+            },
             1700: {
                 //колличество слайдов для показа
                 slidesPerView: 3,
