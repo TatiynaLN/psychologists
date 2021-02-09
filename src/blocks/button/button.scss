@@ -6,7 +6,7 @@
     background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
     border-radius: 6.25em;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.37em;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #ffffff;
@@ -97,5 +97,9 @@
         padding: 1.2em 0;
         text-align: center;
         align-self: baseline;
+        font-size: 1.8rem;
+    }
+    .btn__width {
+        font-size: 1.8rem;
     }
 }

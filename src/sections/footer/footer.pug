@@ -16,21 +16,22 @@ footer.footer(style='background-image: url("wp-content/themes/twentytwenty-child
                     a.numbers(href="tel:+78001201204") + 7 800 120-12-04
                     p.time  Ежедневно с 10 до 20 ч.
         a.btn.btns.btn__footer-placement(href="#modalfooter") Обратный звонок
-        #modalfooter.modalfooter
-            .modal
-                a.close.closeOne(href="#close" title="Закрыть")
-                    span
-                form.form.form__modal
-                    h2.mainText.mainText-modal Перезвонить вам?
-                    p.secondText.form__header-text Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время
-                    .formInput
-                        input.form__input-style.modal__phone(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
-                    a.btn__width.form__header-btn(href="#open") Перезвонить мне
-                    .form__policy.form__header-policy
-                        input.form__checkbox#modal__checkbox-footer(type="checkbox" checked="")
-                        label.form__pol(for="modal__checkbox-footer") 
-                            span.modal__policy-link Вы соглашаетесь с 
-                                a.form__policy-link(href="#!" target="_blank") условиями обработки персональных данных
+        #modalfooter.modal
+                .modal-dialog
+                    .content-modal
+                        .modal-header
+                            a(href="#close" title="Close").close x
+                        form.form.form__modal
+                            h2.mainText.mainText-modal Перезвонить вам?
+                            p.secondText.form__header-text Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время
+                            .formInput
+                                input.form__input-style.modal__phone(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
+                            a.btn__width.form__header-btn(href="#open") Перезвонить мне
+                            .form__policy.form__header-policy
+                                input.form__checkbox#modal__checkbox-footer(type="checkbox" checked="")
+                                label.form__pol(for="modal__checkbox-footer") 
+                                    span.modal__policy-link Вы соглашаетесь с 
+                                        a.form__policy-link(href="#!" target="_blank") условиями обработки персональных данных
     .menu__box-footer
         ul.menu__list-footer
             li.white-space: a.footer__menu-items(href="#about") Обо мне
@@ -58,13 +59,14 @@ footer.footer(style='background-image: url("wp-content/themes/twentytwenty-child
         p
             a.txt.txt-indent.txt__blog(href="" target="_blank") Разработка сайта
 .modal__thanks
-    #openModalThanks.modalThanks
-        .modal.modal__challenge-height.modal__thank
-            a.close.closeThank(href="#close" title="Закрыть")
-                span
-            form.form__thanks.form
-                .form__blocks
-                    h2.mainText.text-main Спасибо за заявку!
-                    p.secondText Мы свяжемся с вами в ближайшее время, в рабочии часы, указанные на сайте
+    #openModalThanks.modal
+                .modal-dialog
+                    .content-modal
+                        .modal-header
+                            a(href="#close" title="Close").close x
+                        form.form__thanks.form
+                            .form__blocks
+                                h2.mainText.text-main Спасибо за заявку!
+                                p.secondText Мы свяжемся с вами в ближайшее время, в рабочии часы, указанные на сайте
             
 

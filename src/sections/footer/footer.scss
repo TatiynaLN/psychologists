@@ -237,6 +237,7 @@
     .contacts__footer {
         margin: 0;
         align-self: center;
+        align-self: baseline;
     }
     .address__footer {
         width: 25.9rem;
@@ -252,5 +253,17 @@
     }
     .menu__list-footer {
         width: 60%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .footer__top-content {
+        width: 83%;
+        justify-self: flex-start;
+    }
+}
+@media screen and (min-width: 2500px) {
+    .footer__top-content {
+        width: 87%;
+        justify-self: flex-start;
     }
 }

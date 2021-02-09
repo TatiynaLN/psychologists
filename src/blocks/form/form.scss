@@ -82,13 +82,13 @@
 
 /**********************************/
 .form {
-    width: 29rem;
+    width: 100%;
     height: auto;
     text-align: center;
     z-index: 5;
     background: #ffffff;
     border-radius: 1.62em;
-    padding: 4rem 2rem 3rem 2rem;
+    padding: 0rem 2rem 3rem 2rem;
 }
 
 .mainText {
@@ -119,6 +119,12 @@
     font-feature-settings: "pnum" on, "lnum" on;
     color: #646c79;
 }
+.modal__phone {
+    // padding: 1.1rem 3rem;
+    width: 25.4rem;
+    height: 6.1rem;
+    margin-bottom: 2rem;
+}
 .btn__width {
     margin: 0 auto;
     padding: 1.1em 0;
@@ -128,7 +134,7 @@
     background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 99.97%);
     border-radius: 6.25em;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.37em;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #ffffff;
@@ -174,11 +180,11 @@ a.form__policy-link {
 input {
     outline: none;
 }
-@media screen and (min-width: 411px) {
-    .form {
-        width: 33rem;
-    }
-}
+// @media screen and (min-width: 411px) {
+//     .form {
+//         width: 33rem;
+//     }
+// }
 @media screen and (min-width: 540px) {
     .modal__policy-link {
         display: block;
@@ -186,9 +192,9 @@ input {
         margin-top: -1.9rem;
         line-height: 2.5rem;
     }
-    .form {
-        width: 49rem;
-    }
+    // .form {
+    //     width: 49rem;
+    // }
 }
 @media screen and (min-width: 768px) {
     .modal__policy-link {
@@ -198,6 +204,11 @@ input {
         width: 50rem;
         margin: 0 auto;
         margin-bottom: 3.1rem;
+    }
+    .form__header-text {
+        margin: 0 auto;
+        max-width: 57.4rem;
+        margin-bottom: 3rem;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -219,10 +230,10 @@ input {
         width: 13.87em;
         font-size: 1.8rem;
     }
-    .form {
-        width: 90rem;
-        padding: 9rem 7rem 15rem;
-    }
+    // .form {
+    //     width: 90rem;
+    //     padding: 9rem 7rem 15rem;
+    // }
     .mainText {
         font-size: 6.4rem;
         line-height: 7.68rem;

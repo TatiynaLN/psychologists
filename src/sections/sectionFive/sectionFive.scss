@@ -128,15 +128,15 @@ button.btn {
         width: 41rem;
     }
     .adventige__text {
-        align-self: center;
+        align-self: flex-start;
     }
 }
 @media screen and (min-width: 1800px) {
     .adventige__width {
-        width: 46.7rem;
+        width: 49%;
     }
     .adventige__text {
-        width: 65%;
+        width: 49%;
     }
     .adventige__flex {
         display: flex;

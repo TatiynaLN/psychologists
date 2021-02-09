@@ -1,237 +1,110 @@
-.modalDialogTwo,
-.modal__thanks,
-.modalfooter,
-.modalDialog {
+/* свойства модального окна по умолчанию */
+.modal {
     position: fixed;
+    /* фиксированное положение */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 8;
+    background: rgba(0, 0, 0, 0.5);
+    /* цвет фона */
+    z-index: 1050;
+    opacity: 0;
+    /* по умолчанию модальное окно прозрачно */
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
-    opacity: 0;
+    /* анимация перехода */
     pointer-events: none;
+    /* элемент невидим для событий мыши */
 }
-/****form спасибо***/
-.form__blocks {
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+.content-modal {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
 }
-.form__thanks {
-    background: #ffffff;
-    box-shadow: 0rem 8rem 2rem rgba(128, 128, 128, 0.07), 0rem 2.1rem 2.3rem rgba(128, 128, 128, 0.0503198),
-        0rem 2.2rem 1.7rem rgba(128, 128, 128, 0.0417275), 0rem 1.2rem 10rem rgba(128, 128, 128, 0.035),
-        0rem 6rem 5rem rgba(128, 128, 128, 0.0282725), 0rem 2rem 2rem rgba(128, 128, 128, 0.0196802);
-    border-radius: 1.62em;
-}
-/**************/
-.modalfooter:target,
-.modalDialogTwo:target,
-.modal__thanks:target,
-.modalDialog:target {
+/* при отображении модального окно */
+.modal:target {
     opacity: 1;
     pointer-events: auto;
-    position: fixed;
+    overflow-y: auto;
 }
-// .modal--open {
-//     opacity: 1 !important;
-// }
-.modalfooter > div,
-.modalDialogTwo > div,
-.modal__thanks > div,
-.modalDialog > div {
+
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
     position: relative;
-    margin: auto;
-    z-index: 9;
-}
-.modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
+    width: 29rem;
+    margin: 1rem auto;
     left: 0;
+    right: 0;
+    transform: translateY(13%);
+}
+/* свойства для блока, содержащего контент модального окна */
+.content-modal {
     width: 100%;
-    height: 100%;
-    transition: 0.3s ease-in-out;
-    z-index: 2;
-    &__phone {
-        width: 25.4rem;
-        height: 6.1rem;
-        margin-bottom: 3rem;
-    }
-}
-
-/* modal magic */
-.close {
-    display: block;
-    position: absolute;
-    width: 22.12rem;
-
-    z-index: 6;
-}
-.closeThank {
-    margin-top: -10.5em;
-    padding-left: 14.5em;
-}
-.closeOne {
-    margin-top: -21.5em;
-    padding-left: 14.5em;
-}
-.close > span,
-.close > span::before {
-    display: block;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 1em;
-    height: 0.125em;
-    background: #565b62;
-    transition-duration: 0.3s;
-    border-radius: 1rem;
-    margin-top: -3rem;
-}
-.close > span {
-    top: 0;
-    transform: rotate(45deg);
-}
-
-.close > span::before {
-    content: "";
-    transform: rotate(90deg);
-}
-
-/**********ADAPTIV MODAL*************/
-@media screen and (min-width: 411px) {
-    .closeOne {
-        padding-left: 16em;
-    }
-    .closeThank {
-        margin-top: -10em;
-        padding-left: 16.5em;
-    }
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 1.62em;
+    background-clip: padding-box;
+    outline: 0;
 }
 @media screen and (min-width: 540px) {
-    .closeOne {
-        margin-top: -20em;
-        padding-left: 26em;
-    }
-    .closeThank {
-        margin-top: -9em;
-        padding-left: 27em;
-    }
-    .modalfooter > div,
-    .modalDialogTwo > div,
-    .modal__thanks > div,
-    .modalDialog > div {
-        margin: 20% auto;
+    .modal-dialog {
+        width: 49rem;
     }
 }
-@media screen and (min-width: 768px) {
-    .form {
-        width: 66.8rem;
+@media (min-width: 576px) {
+    .modal-dialog {
+        width: 50rem;
     }
-    .closeOne {
-        margin-top: -18em;
-        padding-left: 37em;
-    }
-    .closeThank {
-        margin-top: -7em;
-        padding-left: 37em;
+}
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 60rem;
+        transform: translateY(25%);
     }
 }
 @media screen and (min-width: 1024px) {
-    .closeOne {
-        margin-top: -38rem;
-        padding-left: 48em;
-    }
-    .modal__thank {
-        left: 6%;
-    }
-    .closeThank {
-        margin-top: -23em;
-        padding-left: 49em;
-    }
-}
-@media screen and (min-width: 900px) {
-    .modal {
-        width: 49.25em;
-    }
-    .modal__challenge-height {
-        height: 29.06em;
-    }
-    .modalfooter > div,
-    .modalDialogTwo > div,
-    .modal__thanks > div,
-    .modalDialog > div {
-        margin: 10% auto;
-    }
-
-    .closeOne {
-        margin-top: -35rem;
-        padding-left: 43.5em;
-    }
-    .close > span,
-    .close > span::before {
-        width: 1.7em;
-        height: 0.125em;
-    }
-    .form__blocks {
-        margin-top: 6rem;
-    }
-    .text-main {
-        line-height: 7.6rem;
+    .modal-dialog {
+        width: 90rem;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .modal {
-        width: 56.25em;
-    }
-    .modal__challenge-height {
-        height: 39.06em;
-    }
-    .close {
-        width: 28.12em;
-    }
-    .closeOne {
-        margin-top: -51rem;
-        padding-left: 49em;
-    }
-    .close > span,
-    .close > span::before {
-        width: 1.7em;
-        height: 0.125em;
-    }
-    .modalfooter > div,
-    .modal__thanks > div,
-    .modalDialog > div {
-        margin: 0% auto;
-    }
+/* свойства для заголовка модального окна */
+.modal-header {
+    width: 98%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-@media screen and (min-width: 1200px) {
-    .modal__thank {
-        right: 5%;
-    }
+
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: "Raleway";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    text-decoration: none;
 }
-@media screen and (min-width: 1900px) {
-    .closeOne {
-        margin-top: -50rem;
-        padding-left: 43.5em;
-    }
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus,
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.75;
 }
-@media screen and (min-width: 1920px) {
-    .closeOne {
-        margin-top: -50rem;
-        padding-left: 47.5em;
-    }
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
 }
