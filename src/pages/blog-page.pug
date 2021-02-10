@@ -4,7 +4,7 @@ html(lang="ru")
         meta(charset="UTF-8")
 
         //- Titles
-        title Блог
+        title Страница блога
         meta(name="description" content="")
         meta(name="keywords" content="")
 
@@ -22,16 +22,20 @@ html(lang="ru")
         link(rel="apple-touch-icon" href="#!")
 
     body.bo
-        header.header
+        header.header.header__blogPage
             include ../sections/header/header.pug
 
-        section.section__blog
-            .container__blog
-                h1.title.text-center.blog__title Полезные статьи
-                p.text.blog__text Помогаю справляться с негативными 
-                                    |эмоциями, находить источник спокойствия
-                                    |и силы в себе
-            include ../sections/blog/blog.pug
+        section.section__blogPage
+            .container__blogPage(style='background-image: url("wp-content/themes/twentytwenty-child/img/blogPage1.png");')
+                p.min-text__text.min-text__color Психотерапия
+                h1.title.text-center.blogPage__title Как проходят консультации психолога?
+                p.text.blogPage__text Психолог создает опоры,
+                                    |чтобы человек мог пройти путь
+                                    |от знакомого и известного - переживания проблемы,
+                                    |к новому - знаниям о решении проблемы.
+        section.blogPage
+            include ../../blocks/article/article.pug
+        include ../sections/blog/blog.pug
         include ../sections/footer/footer.pug
         include ../sections/footer.pug
         
