@@ -80,12 +80,12 @@
 @media screen and (min-width: 1024px) {
     .blogPage {
         &__box {
-            width: 78%;
+            width: 60%;
             order: 0;
         }
         &__container {
-            width: 73%;
+            width: 60%;
         }
-        gap: 3rem;
+        gap: 5rem;
     }
 }
