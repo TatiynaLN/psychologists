@@ -1,6 +1,9 @@
 .header__blogPage {
     margin-bottom: 4.3rem;
 }
+.section__blogPage {
+    margin-bottom: 10.3rem;
+}
 .container__blogPage {
     margin: 0 auto;
     width: 81.5%;
@@ -18,4 +21,71 @@
 }
 .blogPage__text {
     max-width: 62.8rem;
+}
+.blogPage {
+    margin: 0 auto;
+    width: 81.5%;
+    &__containers {
+        display: flex;
+        flex-direction: column;
+    }
+    &__box {
+        order: 1;
+    }
+    &__titles {
+        margin-bottom: 3rem;
+    }
+    &__txt {
+        margin-bottom: 2rem;
+    }
+    &__txts {
+        margin-bottom: 12.1rem;
+    }
+    &__picture {
+        margin-bottom: 3.2rem;
+    }
+}
+@media screen and (min-width: 670px) {
+    .blogPage {
+        margin: 0 auto;
+        width: 81.5%;
+        &__containers {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        &__box {
+            width: 52%;
+            order: 0;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .blogPage {
+        &__containers {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__box {
+            width: 78%;
+            order: 0;
+        }
+        &__container {
+            width: 55%;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .blogPage {
+        &__box {
+            width: 78%;
+            order: 0;
+        }
+        &__container {
+            width: 73%;
+        }
+        gap: 3rem;
+    }
 }

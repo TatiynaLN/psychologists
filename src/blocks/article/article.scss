@@ -1,0 +1,62 @@
+.article {
+    margin: 0 auto;
+    max-width: 100%;
+    background: #f2f2f2;
+    border-radius: 0.5rem;
+    height: auto;
+    align-self: baseline;
+    &__text {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.96rem;
+        text-align: center;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #565b62;
+        margin-bottom: 1.5rem;
+    }
+    &__txt {
+        font-weight: bold;
+    }
+    &__picture {
+        margin-bottom: 2.4rem;
+    }
+    &__btn {
+        margin: 0 auto;
+    }
+}
+.blogPage__article {
+    padding: 3rem 2rem 3.9rem 2rem;
+    text-align: center;
+    order: 0;
+    margin-bottom: 3rem;
+}
+@media screen and (min-width: 670px) {
+    .article {
+        margin: 0 auto;
+        max-width: 45%;
+    }
+    .blogPage__article {
+        order: 1;
+    }
+}
+@media screen and (min-width: 768px) {
+    .article {
+        max-width: 44%;
+    }
+    .blogPage__article {
+        align-self: baseline;
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .article {
+        max-width: 27%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .article {
+        max-width: 24%;
+    }
+}
