@@ -86,6 +86,9 @@
     .cont {
         display: flex;
         width: 26.3rem;
+        &:hover .numbers {
+            color: #4dc8c0;
+        }
     }
     .header__top {
         width: 26.3rem;

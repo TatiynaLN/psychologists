@@ -6,6 +6,9 @@
     align-content: center;
     align-self: baseline;
     z-index: 1;
+    &:hover .numbers {
+        color: #4dc8c0;
+    }
 }
 .hamburger__contacts {
     margin-bottom: 2.8rem;

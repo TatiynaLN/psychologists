@@ -7,6 +7,10 @@
     align-content: flex-start;
     align-self: baseline;
     z-index: 1;
+
+    &:hover .adress__text-bold {
+        color: #4dc8c0;
+    }
 }
 .hamburger__addres {
     margin-bottom: 2.8rem;

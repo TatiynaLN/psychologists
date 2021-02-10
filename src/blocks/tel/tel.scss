@@ -24,13 +24,6 @@
     color: #646c79;
     transition-property: "linear-gradient";
     transition-duration: 0.4s;
-    &:hover {
-        text-transform: uppercase;
-        background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: #4dc8c0;
-    }
 }
 .tel-none {
     display: none;

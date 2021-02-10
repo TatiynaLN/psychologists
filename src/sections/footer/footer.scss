@@ -58,6 +58,9 @@
     align-self: baseline;
     margin: 0 auto;
     margin-bottom: 2rem;
+    &:hover .numbers {
+        color: #4dc8c0;
+    }
 }
 
 .menu__box-footer {

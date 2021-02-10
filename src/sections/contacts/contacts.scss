@@ -4,4 +4,123 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 6.2rem;
+}
+.contact {
+    &__container {
+        margin: 0 auto;
+        width: 81%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__container-top {
+        margin-bottom: 8.6rem;
+    }
+    &__phone {
+        &:hover .numbers {
+            color: #4dc8c0;
+        }
+    }
+    &__addr {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        width: 26.5rem;
+        align-self: baseline;
+        &:hover a {
+            color: #4dc8c0;
+        }
+    }
+    &__addres {
+        width: auto;
+        align-self: center;
+    }
+    &__phone {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        width: 21rem;
+        align-self: baseline;
+    }
+    &__titles {
+        margin-bottom: 2rem;
+    }
+    &__txt {
+        margin-bottom: 1rem;
+    }
+    &__txt-bottom {
+        margin-bottom: 2.4rem;
+    }
+    &__contact {
+        margin-bottom: 1rem;
+    }
+    &__contacts {
+        margin-bottom: 2rem;
+    }
+    &__titl {
+        margin-bottom: 2.8rem;
+    }
+    &__txts {
+        margin-bottom: 2rem;
+    }
+    &__form {
+        margin-bottom: 15.4rem;
+    }
+}
+.info {
+    margin-bottom: 11.1rem;
+    &__titl {
+        margin: 0 auto;
+        max-width: 80%;
+        margin-bottom: 2.8rem;
+        text-align: center;
+    }
+}
+.txts {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #4f4f4f;
+}
+.tel__contact {
+    align-self: center;
+}
+@media screen and (min-width: 768px) {
+    .contact {
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 5rem;
+        }
+        &__phone {
+            width: 19rem;
+        }
+        &__contacts {
+            width: 50%;
+        }
+        &__titles {
+            width: 80%;
+        }
+        &__map {
+            width: 50%;
+        }
+    }
+}
+@media screen and (min-width: 1360px) {
+    .txts {
+        font-size: 1.8rem;
+        line-height: 2.9rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .contact {
+        &__container {
+            gap: 9rem;
+        }
+    }
 }
