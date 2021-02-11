@@ -6,7 +6,7 @@
     align-content: center;
     justify-self: center;
     align-self: center;
-    margin-top: 5rem;
+    margin-bottom: 3.3rem;
 }
 .min-text__color {
     background: #e89160;
@@ -33,6 +33,7 @@
 @media screen and (min-width: 768px) {
     .min-text {
         width: 52.7rem;
+        margin-bottom: 5.5rem;
     }
     .min-text__margins {
         margin: 1rem 1rem;
@@ -41,6 +42,7 @@
 @media screen and (min-width: 900px) {
     .min-text {
         width: 55.7rem;
+        margin-bottom: 7.3rem;
     }
     .min-text__text {
         font-size: 1.8rem;

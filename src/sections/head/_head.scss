@@ -33,8 +33,13 @@
     margin-top: 3rem;
 }
 .form__policy-links {
-    color: #727272;
     margin-left: 1.4rem;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+
+    color: #727272;
 }
 .form__displiy {
     width: 100%;
@@ -44,7 +49,7 @@
     box-shadow: 0rem 8rem 2rem rgba(128, 128, 128, 0.07), 0rem 2.1rem 2.3rem rgba(128, 128, 128, 0.0503198),
         0rem 2.2rem 1.7rem rgba(128, 128, 128, 0.0417275), 0rem 1.2rem 10rem rgba(128, 128, 128, 0.035),
         0rem 6rem 5rem rgba(128, 128, 128, 0.0282725), 0rem 2rem 2rem rgba(128, 128, 128, 0.0196802);
-    border-radius: 1.62em;
+    border-radius: 5px;
 }
 .formInput-flex {
     margin: 0 auto;
@@ -52,10 +57,15 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    gap: 1.9rem;
+    margin-bottom: 2rem;
 }
 .form__input-block {
     justify-self: center;
     align-self: center;
+    display: block;
+    width: 26rem;
+    height: 4.8rem;
 }
 .form-section {
     margin: 0 auto;
@@ -161,7 +171,6 @@
     display: block;
     width: 26rem;
     height: 4.8rem;
-    margin-bottom: 1.5rem;
 }
 .head__btn-bottom {
     &:hover {
@@ -199,6 +208,11 @@
         margin-top: 5.5rem;
     }
 }
+@media screen and(min-width:953px) {
+    .formInput-flex {
+        margin-bottom: 3rem;
+    }
+}
 @media screen and (min-width: 1024px) {
     .formInput-flex {
         width: 75%;
@@ -210,8 +224,8 @@
     .form__btn-bottom {
         margin: 0;
         width: 25.4rem;
-        margin-bottom: 2rem;
-        padding: 0.5em 0;
+        align-self: baseline;
+        padding: 0.6em 0;
     }
     .form__input-block {
         width: 25.4rem;

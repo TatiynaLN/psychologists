@@ -14,10 +14,11 @@ section.sectionFour
                         form.form.form__modal.form__header-modal
                             h2.mainText.mainText-modal Запись на приём
                             p.secondText.form__header-text Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей
-                            .formInput__recording
+                            .formInput__recording.formInput.formInput-flex
+                                span
                                 input.form__input-style.form__input-block(type="text" name='name' placeholder="Ваше имя" required="required")
                                 input.form__input-style.form__input-block(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
-                            a.btn__width.form__header-btn(href="#recordingTwo") Записаться на приём
+                                a.btn__width.form__btn-bottom.bt(href="#recordingTwo") Записаться на приём
                             .form__policy.form__header-policy
                                 input.form__checkbox#form__checkboxThree(type="checkbox" checked="")
                                 label.form__pol(for="form__checkboxThree") 
