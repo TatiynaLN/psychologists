@@ -4,7 +4,7 @@ html(lang="ru")
         meta(charset="UTF-8")
 
         //- Titles
-        title Блог
+        title Индивидуальная консультация психолога
         meta(name="description" content="")
         meta(name="keywords" content="")
 
@@ -22,16 +22,8 @@ html(lang="ru")
         link(rel="apple-touch-icon" href="#!")
 
     body.bo
-        header.header
+        header.header.header__blogPage
             include ../sections/header/header.pug
 
-        section.section__blog
-            .container__blog
-                h1.title.text-center.blog__title Полезные статьи
-                p.blog__text Помогаю справляться с негативными 
-                                    |эмоциями, находить источник спокойствия
-                                    |и силы в себе
-            include ../sections/blog/blog.pug
         include ../sections/footer/footer.pug
         include ../sections/footer.pug
-        

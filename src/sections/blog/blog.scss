@@ -6,6 +6,12 @@
     &__text {
         margin: 0 auto;
         max-width: 63.3rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #828282;
+        text-align: center;
         margin-bottom: 5rem;
     }
     &__txt {
@@ -22,6 +28,7 @@
 .block__content-blog {
     margin-bottom: 8rem;
 }
+
 @media screen and (min-width: 1200px) {
     .container__blog {
         margin: 0 auto;

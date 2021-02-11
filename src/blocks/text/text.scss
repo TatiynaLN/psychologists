@@ -1,4 +1,5 @@
-.text {
+.text,
+.texts {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -12,7 +13,8 @@
     align-self: center;
 }
 @media screen and (min-width: 620px) {
-    .text {
+    .text,
+    .texts {
         font-size: 2rem;
         line-height: 3rem;
     }
@@ -23,6 +25,10 @@
 @media screen and (min-width: 768px) {
     .text {
         margin: 2rem 0 3rem 0;
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+    }
+    .texts {
         font-size: 2.4rem;
         line-height: 3.3rem;
     }
