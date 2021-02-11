@@ -9,7 +9,9 @@
 .education {
     min-width: 0;
 }
-
+.education__boxs {
+    margin-bottom: 7rem;
+}
 @media screen and (min-width: 1020px) {
     .sectionTwo-indent {
         margin-top: 10rem;
@@ -23,5 +25,8 @@
     }
     .education__box {
         width: 49%;
+    }
+    .education__boxs {
+        margin-bottom: 0;
     }
 }

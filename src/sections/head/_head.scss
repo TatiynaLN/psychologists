@@ -32,6 +32,10 @@
     height: auto;
     margin-top: 3rem;
 }
+.form__policy-links {
+    color: #727272;
+    margin-left: 1.4rem;
+}
 .form__displiy {
     width: 100%;
     background: #ffffff;
@@ -66,7 +70,7 @@
     width: 100%;
     height: 100%;
     background-color: #4dc8c0;
-    background-image: url("/wp-content/themes/twentytwenty-child/img/chechet.png");
+    background-image: url("../img/chechet.png");
 
     background-repeat: no-repeat;
     background-size: 80%;
@@ -221,10 +225,10 @@
     }
 }
 @media screen and (min-width: 1700px) {
-    .head {
-        // height: 100vh;
-        // max-height: 100vh;
-    }
+    // .head {
+    //     // height: 100vh;
+    //     // max-height: 100vh;
+    // }
     .head__form {
         position: absolute;
         bottom: 0;
