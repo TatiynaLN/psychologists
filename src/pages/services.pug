@@ -4,7 +4,7 @@ html(lang="ru")
         meta(charset="UTF-8")
 
         //- Titles
-        title Цены
+        title Услуги
         meta(name="description" content="")
         meta(name="keywords" content="")
 
@@ -18,16 +18,13 @@ html(lang="ru")
         link(rel="stylesheet" href="./wp-content/themes/twentytwenty-child/css/swiper-bundle.min.css")
         //- Favicons
         link(rel="icon" href="#!" type="image/x-icon") 
-        link(rel="shortcut icon" href="#!"  type="image/x-icon")
+        link(rel="shortcut icon" href="wp-content/themes/twentytwenty-child/img/favicon.ico" type="image/x-icon")
         link(rel="apple-touch-icon" href="#!")
 
     body.bo
         header.header.header__services
             include ../sections/header/header.pug
-        section.section__pricel.services
-            .wraper.container__services
-                h1.text-center.title.price__title Услуги психолога
         include ../sections/services/services.pug
-        include ../sections/sectionFive/sectionFive.pug
+        include ../sections/sectionEight/sectionEight.pug
         include ../sections/footer/footer.pug
         include ../sections/footer.pug

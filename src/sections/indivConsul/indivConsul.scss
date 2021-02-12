@@ -1,3 +1,6 @@
+.header__indivConsul {
+    margin-bottom: 4rem;
+}
 .container__indivConsul {
     width: 100%;
     height: auto;
@@ -6,20 +9,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    // z-index: 2;
     padding: 11.1rem 1rem 7.2rem 1rem;
-    // &::after {
-    //     content: "";
-    //     display: block;
-    //     width: 100%;
-    //     height: 100%;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     background: linear-gradient(0deg, rgba(252, 251, 251, 0.87), rgba(252, 251, 251, 0.87));
-    //     border-radius: 5px;
-    //     z-index: -1;
-    // }
 }
 
 .indivConsul {
@@ -36,6 +26,16 @@
     }
     &__text {
         margin-bottom: 4.5rem;
+    }
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-content: center;
+    }
+    &__content {
+        margin: 0;
     }
 }
 @media screen and(min-width:411px) {
@@ -63,7 +63,24 @@
 }
 @media screen and(min-width:1020px) {
     .indivConsul__title {
+        margin: 0 auto;
+        max-width: 75rem;
         font-size: 7.2rem;
         line-height: 8.6rem;
+        margin-bottom: 2rem;
+    }
+    .indivConsul__text {
+        margin: 0 auto;
+        max-width: 75rem;
+        margin-bottom: 4.5rem;
     }
 }
+@media screen and(min-width:1083px) {
+    .indivConsul__block {
+        gap: 4rem;
+    }
+}
+// ::before {
+//     content: '\25ba'; /* Добавляем маркер в шестнадцатеричном формате*/
+//     padding-right: 5px; /* Расстояние от маркеров до текста */
+//     color: red; /* Маркеры красного цвета */
