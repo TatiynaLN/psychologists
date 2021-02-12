@@ -9,12 +9,14 @@
 
     overflow: hidden;
 }
+.glav__header {
+}
 .header__top {
     width: 10%;
     // display: flex;
     // padding-top: 1rem;
     padding: 1.43rem 0 0 0;
-    z-index: 1;
+    z-index: 0;
     margin-bottom: 5rem;
     position: relative;
 }

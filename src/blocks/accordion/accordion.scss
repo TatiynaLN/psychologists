@@ -33,6 +33,7 @@
     font-feature-settings: "pnum" on, "lnum" on;
     color: #ffffff;
     margin-top: 2rem;
+    transition: all 0.5s ease;
 }
 .accordion-label-top {
     margin-top: 0;
@@ -56,6 +57,7 @@
 }
 input[type="checkbox"]:checked ~ .accordion-label {
     border-radius: 0.5rem 0.5rem 0 0;
+    transition: all 0.5s ease;
 }
 input[type="checkbox"]:checked ~ .accordion-label:before {
     -webkit-transform: rotate(90deg);
@@ -64,13 +66,25 @@ input[type="checkbox"]:checked ~ .accordion-label:before {
 
 .accordion-child {
     margin: 0;
+    visibility: hidden;
     overflow: hidden;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    position: relative;
+    height: 0;
     opacity: 0;
     height: 0;
-    -webkit-transform-origin: top bottom;
-    transform-origin: top bottom;
+    transition-duration: 1s;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -ms-overflow-scrolling: touch;
+    -o-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 0.3rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: #56d0c9;
+    }
 }
 
 input[type="checkbox"]:checked ~ .accordion-child {
@@ -87,8 +101,11 @@ input[type="checkbox"]:checked ~ .accordion-child {
     padding: 2rem;
     box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
         0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
-    height: 100%;
+    height: 19.3rem;
     opacity: 1;
+    transition-duration: 1s;
+    visibility: visible;
+    overflow: auto;
 }
 @media screen and (min-width: 411px) {
     .accordion-label:before {
@@ -125,6 +142,7 @@ input[type="checkbox"]:checked ~ .accordion-child {
         padding: 2.4rem 20.7rem 2.4rem 2.4rem;
         font-size: 1.8rem;
         line-height: 2.52rem;
+        transition: all 0.5s ease;
     }
     input[type="checkbox"]:checked ~ .accordion-child {
         margin: 0;
@@ -140,7 +158,10 @@ input[type="checkbox"]:checked ~ .accordion-child {
         padding: 2.4rem 4rem 4.4rem 4rem;
         box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
             0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
-        height: 100%;
+        height: 19.3rem;
         opacity: 1;
+        transition-duration: 1s;
+        visibility: visible;
+        overflow: auto;
     }
 }

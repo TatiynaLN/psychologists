@@ -1,0 +1,70 @@
+.container__indivConsul {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    padding: 11.1rem 1rem 7.2rem 1rem;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        background: linear-gradient(0deg, rgba(252, 251, 251, 0.87), rgba(252, 251, 251, 0.87));
+        border-radius: 5px;
+        z-index: -1;
+    }
+}
+
+.indivConsul {
+    &__title {
+        font-size: 2.8rem;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: bold;
+        line-height: 4.3rem;
+        text-align: center;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #565b62;
+        margin-bottom: 2rem;
+    }
+    &__text {
+        margin-bottom: 4.5rem;
+    }
+}
+@media screen and(min-width:411px) {
+    .indivConsul__title {
+        font-size: 3.6rem;
+    }
+}
+@media screen and(min-width:620px) {
+    .indivConsul__title {
+        font-size: 4.1rem;
+        line-height: 5rem;
+    }
+}
+@media screen and(min-width:768px) {
+    .indivConsul__title {
+        font-size: 4.8rem;
+        line-height: 5.8rem;
+    }
+}
+@media screen and(min-width:900px) {
+    .indivConsul__title {
+        font-size: 5.8rem;
+        line-height: 6.8rem;
+    }
+}
+@media screen and(min-width:1020px) {
+    .indivConsul__title {
+        font-size: 7.2rem;
+        line-height: 8.6rem;
+    }
+}

@@ -148,11 +148,32 @@
     font-feature-settings: "pnum" on, "lnum" on;
     color: #ffffff;
     border: none;
-    &:hover {
+    position: relative;
+
+    overflow: hidden;
+    transition: 0.5s;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
         color: #ffffff;
-        animation: btn 0.5s ease-in-out forwards;
+        opacity: 0;
+        transition: 0.5s;
+        bottom: 0;
+        border-radius: 6.25em;
     }
-    &:active {
+    &:hover:before {
+        height: 100%;
+        color: #ffffff;
+        background: #e89160;
+        opacity: 1;
+    }
+    span {
+        position: relative;
+    }
+    &:active:before {
         background: #44beb6;
     }
 }

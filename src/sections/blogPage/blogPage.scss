@@ -4,16 +4,18 @@
 .section__blogPage {
     margin-bottom: 10.3rem;
 }
-.container__blogPage {
+.wraper {
     margin: 0 auto;
     width: 81.5%;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 4.1rem 1rem;
     overflow: hidden;
     text-align: center;
+}
+.container__blogPage {
+    padding: 4.1rem 1rem;
 }
 .blogPage__title,
 .blogPage__text {
@@ -43,6 +45,10 @@
     }
     &__picture {
         margin-bottom: 3.2rem;
+    }
+    &__min-text,
+    &__title {
+        margin-bottom: 2rem;
     }
 }
 @media screen and (min-width: 670px) {

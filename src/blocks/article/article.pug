@@ -4,7 +4,8 @@ article.article.blogPage__article
     p.txt.article__txt Елена Иванова
     p.article__text Психолог, нарративный консультант,
                     |специалист по эмоциональному благополучию
-    a.btn.article__btn(href="#openModalThree") Связаться с психологом
+    a.btn.article__btn(href="#openModalThree") 
+        span Связаться с психологом
     #openModalThree.modal
                 .modal-dialog
                     .content-modal
@@ -16,7 +17,8 @@ article.article.blogPage__article
                             .formInput__recording
                                 input.form__input-style.form__input-block(type="text" name='name' placeholder="Ваше имя" required="required")
                                 input.form__input-style.form__input-block(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
-                            a.btn__width.form__header-btn(href="#recordingTwo") Записаться на приём
+                                a.btn__width.form__header-btn(href="#recordingTwo") 
+                                    span Записаться на приём
                             .form__policy.form__header-policy
                                 input.form__checkbox#form__checkboxThree(type="checkbox" checked="")
                                 label.form__pol(for="form__checkboxThree") 
