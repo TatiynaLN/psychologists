@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+    .familyPsych-block {
+        display: flex;
+        gap: 2rem;
+    }
+    .picture__familyPsych {
+        width: 45%;
+        align-self: baseline;
+    }
+    .familyPsych__content-width {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .familyPsych-block {
+        display: flex;
+        gap: 5.5rem;
+    }
+    .picture__familyPsych {
+        width: 30%;
+        align-self: baseline;
+    }
+    .familyPsych__content-width {
+        width: 65%;
+    }
+}
