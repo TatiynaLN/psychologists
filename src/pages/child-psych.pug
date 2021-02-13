@@ -4,7 +4,7 @@ html(lang="ru")
         meta(charset="UTF-8")
 
         //- Titles
-        title Консультация психолога онлайн
+        title Детский психолог в Москве
         meta(name="description" content="")
         meta(name="keywords" content="")
 
@@ -25,11 +25,12 @@ html(lang="ru")
         header.header.header__indivConsul
             include ../sections/header/header.pug
         section.section__indivConsul.indivConsul
-            .wraper.container__indivConsul(style='background-image: url("wp-content/themes/twentytwenty-child/img/onlain1@x1.png");')
-                h1.text-center.indivConsul__title Консультация психолога онлайн
-                p.indivConsul__text.texts Помогаю справляться с негативными эмоциями, находить источник спокойствия
-                            |и силы в себе, развивать предпочитаемые направления жизни, поддерживать
-                            |эмоциональную устойчивость.
+            .wraper.container__indivConsul(style='background-image: url("wp-content/themes/twentytwenty-child/img/child1@1x.png");')
+                h1.text-center.indivConsul__title Детский психолог в Москве
+                p.indivConsul__text.texts Помогаем преодолеть эмоциональные проблемы
+                                            |детей, справиться с трудностями в поведении и обучении.
+                                            | Наладить отношения с ребенком, найти эффективные способы
+                                            | решения конфликтов
                 a.btn.article__btn(href="#openModalThree") 
                     span Записаться на приём
                 #openModalThree.modal
@@ -50,31 +51,9 @@ html(lang="ru")
                                     label.form__pol(for="form__checkboxThree") 
                                         span.modal__policy-link Вы соглашаетесь с 
                                             a.form__policy-link(href="#!") условиями обработки персональных данных
-        include ../sections/onlineConsul/onlineConsul.pug
+        include ../sections/childPsych/childPsych.pug
         include ../sections/sectionSix/sectionSix.pug
-        section.sectionSeven__indivConsul
-            .prices.prices__indent
-                p.min-text__text.min-text__color.prices__min-text Стоимость
-                h2.titles.prices__titles Цены на услуги
-                .indivConsul__block
-                    .indivConsul__content.prices__block
-                        .picture.prices__picture.prices__width
-                            picture
-                                source(type='image/webp', srcset='wp-content/themes/twentytwenty-child/img/imgFive@1x.webp 1x, wp-content/themes/twentytwenty-child/img/imgFive@2x.webp 2x')
-                                img.picture-female(src='wp-content/themes/twentytwenty-child/img/imgFive@1x.png', srcset='wp-content/themes/twentytwenty-child/img/imgFive@2x.png 2x', alt='', width='547', height='695')
-                        p.min-text__text.min-text__color.prices__min-text 60 минут
-                        h3.titl.prices__titl Индивидуальная консультация
-                        p.txt Консультация одного человека, личный приём в кабинете психолога.
-                        span.txt.prices__txt.txt-bold Стоимость сеанса:  4 000 руб.
-                    .indivConsul__content.prices__block
-                        .picture.prices__picture.prices__width
-                            picture
-                                source(type='image/webp', srcset='wp-content/themes/twentytwenty-child/img/dubl@1x.webp 1x, wp-content/themes/twentytwenty-child/img/dubl@2x.webp 2x')
-                                img.picture-female(src='wp-content/themes/twentytwenty-child/img/dubl@1x.png', srcset='wp-content/themes/twentytwenty-child/img/dubl@2x.png 2x', alt='', width='547', height='695')
-                        p.min-text__text.min-text__color.prices__min-text 60 минут
-                        h3.titl.prices__titl Онлайн консультация
-                        p.txt Личная консультация по скайпу. 
-                        span.txt.txt-bold Стоимость сеанса:  3 500 руб.
+        include ../sections/sectionSeven/sectionSeven.pug
 
         include ../sections/footer/footer.pug
         include ../sections/footer.pug
