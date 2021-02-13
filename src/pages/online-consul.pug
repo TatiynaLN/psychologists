@@ -1,0 +1,80 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+
+        //- Titles
+        title Индивидуальная консультация психолога
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+
+        //- Adaptive
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        //- Styles
+        link(rel="stylesheet", href="./wp-content/themes/twentytwenty-child/css/main.min.css")
+        link(rel="stylesheet", href="./wp-content/themes/twentytwenty-child/fonts/fonts.css")
+        link(rel="stylesheet" href="./wp-content/themes/twentytwenty-child/css/swiper-bundle.min.css")
+        //- Favicons
+        link(rel="icon" href="#!" type="image/x-icon") 
+        link(rel="shortcut icon" href="wp-content/themes/twentytwenty-child/img/favicon.ico"  type="image/x-icon")
+        link(rel="apple-touch-icon" href="#!")
+
+    body.bo
+        header.header.header__indivConsul
+            include ../sections/header/header.pug
+        section.section__indivConsul.indivConsul
+            .wraper.container__indivConsul(style='background-image: url("wp-content/themes/twentytwenty-child/img/individ1.jpg");')
+                h1.text-center.indivConsul__title Индивидуальная консультация психолога
+                p.indivConsul__text.texts Помогаю справляться с негативными эмоциями, находить источник спокойствия
+                            |и силы в себе, развивать предпочитаемые направления жизни, поддерживать
+                            |эмоциональную устойчивость.
+                a.btn.article__btn(href="#openModalThree") 
+                    span Записаться на приём
+                #openModalThree.modal
+                    .modal-dialog
+                        .content-modal
+                            .modal-header
+                                a(href="#close" title="Close").close x
+                            form.form.form__modal.form__header-modal
+                                h2.mainText.mainText-modal Записаться на приём
+                                p.secondText.form__header-text Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей
+                                .formInput__recording
+                                    input.form__input-style.form__input-block(type="text" name='name' placeholder="Ваше имя" required="required")
+                                    input.form__input-style.form__input-block(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
+                                    a.btn__width.form__header-btn(href="#recordingTwo") 
+                                        span Записаться на приём
+                                .form__policy.form__header-policy
+                                    input.form__checkbox#form__checkboxThree(type="checkbox" checked="")
+                                    label.form__pol(for="form__checkboxThree") 
+                                        span.modal__policy-link Вы соглашаетесь с 
+                                            a.form__policy-link(href="#!") условиями обработки персональных данных
+        include ../sections/indivConsul/indivConsul.pug
+        include ../sections/sectionSix/sectionSix.pug
+        section.sectionSeven__indivConsul
+            .prices.prices__indent
+                p.min-text__text.min-text__color.prices__min-text Стоимость
+                h2.titles.prices__titles Цены на услуги
+                .indivConsul__block
+                    .indivConsul__content.prices__block
+                        .picture.prices__picture.prices__width
+                            picture
+                                source(type='image/webp', srcset='wp-content/themes/twentytwenty-child/img/imgFive@1x.webp 1x, wp-content/themes/twentytwenty-child/img/imgFive@2x.webp 2x')
+                                img.picture-female(src='wp-content/themes/twentytwenty-child/img/imgFive@1x.png', srcset='wp-content/themes/twentytwenty-child/img/imgFive@2x.png 2x', alt='', width='547', height='695')
+                        p.min-text__text.min-text__color.prices__min-text 60 минут
+                        h3.titl.prices__titl Индивидуальная консультация
+                        p.txt Консультация одного человека, личный приём в кабинете психолога.
+                        span.txt.prices__txt.txt-bold Стоимость сеанса:  4 000 руб.
+                    .indivConsul__content.prices__block
+                        .picture.prices__picture.prices__width
+                            picture
+                                source(type='image/webp', srcset='wp-content/themes/twentytwenty-child/img/dubl@1x.webp 1x, wp-content/themes/twentytwenty-child/img/dubl@2x.webp 2x')
+                                img.picture-female(src='wp-content/themes/twentytwenty-child/img/dubl@1x.png', srcset='wp-content/themes/twentytwenty-child/img/dubl@2x.png 2x', alt='', width='547', height='695')
+                        p.min-text__text.min-text__color.prices__min-text 60 минут
+                        h3.titl.prices__titl Онлайн консультация
+                        p.txt Личная консультация по скайпу. 
+                        span.txt.txt-bold Стоимость сеанса:  3 500 руб.
+
+        include ../sections/footer/footer.pug
+        include ../sections/footer.pug
