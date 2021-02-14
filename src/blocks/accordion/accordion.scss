@@ -32,8 +32,9 @@
     line-height: 1.96rem;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #ffffff;
-    margin-top: 2rem;
+    margin-top: 1rem;
     transition: all 0.5s ease;
+    position: relative;
 }
 .accordion-label-top {
     margin-top: 0;
@@ -45,7 +46,8 @@
 .accordion-label:before {
     content: "";
     position: absolute;
-    top: 2.2rem;
+    // top: 2.2rem;
+    top: 35%;
     left: 87%;
     display: inline-block;
     width: 2.6rem;
@@ -72,7 +74,8 @@ input[type="checkbox"]:checked ~ .accordion-label:before {
     height: 0;
     opacity: 0;
     height: 0;
-    transition-duration: 1s;
+    padding: 1rem 2rem 2rem 2rem;
+    transition-duration: 0.7s;
     -webkit-overflow-scrolling: touch;
     -moz-overflow-scrolling: touch;
     -ms-overflow-scrolling: touch;
@@ -86,6 +89,17 @@ input[type="checkbox"]:checked ~ .accordion-label:before {
         background-color: #56d0c9;
     }
 }
+.accordion-text {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.88rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #828282;
+    margin-top: 1rem;
+    transition-duration: 0.7s;
+}
 
 input[type="checkbox"]:checked ~ .accordion-child {
     margin: 0;
@@ -98,12 +112,11 @@ input[type="checkbox"]:checked ~ .accordion-child {
     line-height: 2.24rem;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #828282;
-    padding: 2rem;
     box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
         0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
     height: 19.3rem;
     opacity: 1;
-    transition-duration: 1s;
+    transition-duration: 0.7s;
     visibility: visible;
     overflow: auto;
 }
@@ -111,7 +124,8 @@ input[type="checkbox"]:checked ~ .accordion-child {
     .accordion-label:before {
         content: "";
         position: absolute;
-        top: 2.2rem;
+        // top: 2.2rem;
+        top: 35%;
         left: 90%;
         display: inline-block;
         width: 2.6rem;
@@ -126,7 +140,8 @@ input[type="checkbox"]:checked ~ .accordion-child {
     .accordion-label:before {
         content: "";
         position: absolute;
-        top: 2.2rem;
+        // top: 2.2rem;
+        top: 35%;
         left: 93%;
         display: inline-block;
         width: 2.6rem;
@@ -155,12 +170,12 @@ input[type="checkbox"]:checked ~ .accordion-child {
         line-height: 2.88rem;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #828282;
-        padding: 2.4rem 4rem 4.4rem 4rem;
+        // padding: 2.4rem 4rem 4.4rem 4rem;
         box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
             0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
         height: 19.3rem;
         opacity: 1;
-        transition-duration: 1s;
+        transition-duration: 0.7s;
         visibility: visible;
         overflow: auto;
     }
