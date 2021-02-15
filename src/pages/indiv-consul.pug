@@ -24,6 +24,7 @@ html(lang="ru")
     body.bo
         header.header.header__indivConsul
             include ../sections/header/header.pug
+        // Individual consultation
         section.section__indivConsul.indivConsul
             //- .wraper.container__indivConsul(style='background-image: url("wp-content/themes/twentytwenty-child/img/individ1@1x.jpg");')
             .wraper.container__indivConsul(style='background: url("wp-content/themes/twentytwenty-child/img/individ1@1x.jpg"),url("wp-content/themes/twentytwenty-child/img/individ1@2x.png"),url("wp-content/themes/twentytwenty-child/img/individ1@2x.webp"), url("wp-content/themes/twentytwenty-child/img/individ1@1x.webp");')
@@ -51,8 +52,12 @@ html(lang="ru")
                                     label.form__pol(for="form__checkboxThree") 
                                         span.modal__policy-link Вы соглашаетесь с 
                                             a.form__policy-link(href="#!") условиями обработки персональных данных
+        // END Individual consultation
         include ../sections/indivConsul/indivConsul.pug
+        // SLIDER Reviews about me
         include ../sections/sectionSix/sectionSix.pug
+        // END SLIDER Reviews about me
+        // Prices for services
         section.sectionSeven__indivConsul
             .prices.prices__indent
                 p.min-text__text.min-text__color.prices__min-text Стоимость
@@ -76,6 +81,7 @@ html(lang="ru")
                         h3.titl.prices__titl Онлайн консультация
                         p.txt Личная консультация по скайпу. 
                         span.txt.txt-bold Стоимость сеанса:  3 500 руб.
-
+        // END Prices for services
+        // FOOTER
         include ../sections/footer/footer.pug
         include ../sections/footer.pug

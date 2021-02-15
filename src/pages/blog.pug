@@ -24,14 +24,16 @@ html(lang="ru")
     body.bo
         header.header
             include ../sections/header/header.pug
-
+        // Useful articles
         section.section__blog
             .container__blog
                 h1.title.text-center.blog__title Полезные статьи
                 p.blog__text Помогаю справляться с негативными 
                                     |эмоциями, находить источник спокойствия
                                     |и силы в себе
-            include ../sections/blog/blog.pug
+        // END Useful articles
+        include ../sections/blog/blog.pug
+        // FOOTER
         include ../sections/footer/footer.pug
         include ../sections/footer.pug
         

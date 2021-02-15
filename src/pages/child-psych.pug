@@ -24,6 +24,7 @@ html(lang="ru")
     body.bo
         header.header.header__indivConsul
             include ../sections/header/header.pug
+        // Child psychologist
         section.section__indivConsul.indivConsul
             .wraper.container__indivConsul(style='background-image: url("wp-content/themes/twentytwenty-child/img/child1@1x.png");')
                 h1.text-center.indivConsul__title Детский психолог в Москве
@@ -51,9 +52,14 @@ html(lang="ru")
                                     label.form__pol(for="form__checkboxThree") 
                                         span.modal__policy-link Вы соглашаетесь с 
                                             a.form__policy-link(href="#!") условиями обработки персональных данных
+        // END Child psychologist
         include ../sections/childPsych/childPsych.pug
+        // SLIDER Reviews about me
         include ../sections/sectionSix/sectionSix.pug
+        // END SLIDER Reviews about me
+        // Prices for services
         include ../sections/sectionSeven/sectionSeven.pug
-
+        // END Prices for services
+        // FOOTER
         include ../sections/footer/footer.pug
         include ../sections/footer.pug

@@ -24,9 +24,16 @@ html(lang="ru")
     body.bo
         header.header.header__blogPage
             include ../sections/header/header.pug
+        // ABOUT ME
         include ../sections/aboutMe/aboutMe.pug
+        // END ABOUT ME
+        // SLIDERS Education, Work experience
         include ../sections/sectionTwo/sectionTwo.pug
+        // END SLIDERS Education, Work experience
+        // Diplomas and certificates
         include ../sections/carousel/carousel.pug
+        // END Diplomas and certificates
+        // Types of consultations
         section.sectionFive(style='background-image: url("wp-content/themes/twentytwenty-child/img/advantage.png");')
             .width.advantage.advantage__indent
                 h2.titles.advantage__titl.text-center Виды консультаций
@@ -70,6 +77,7 @@ html(lang="ru")
                         p.txt.advantage__txt Если вам нужна квалифицированная помощь психолога онлайн
                         a(href='online-consul.html').btn.advantage__btn 
                             span Подробнее
-
+        // END Types of consultations
+        // FOOTER
         include ../sections/footer/footer.pug
         include ../sections/footer.pug

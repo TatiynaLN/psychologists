@@ -24,7 +24,7 @@ html(lang="ru")
     body.bo
         header.header.header__blogPage
             include ../sections/header/header.pug
-
+        // Psychotherapy
         section.section__blogPage
             .wraper.container__blogPage(style='background-image: url("wp-content/themes/twentytwenty-child/img/blogPage1.png");')
                 p.min-text__text.min-text__color.blogPage__min-text Психотерапия
@@ -33,11 +33,15 @@ html(lang="ru")
                                     |чтобы человек мог пройти путь
                                     |от знакомого и известного - переживания проблемы,
                                     |к новому - знаниям о решении проблемы.
+        //END  Psychotherapy
         include ../sections/blogPage/blogPage.pug
+        // FORM 
         include ../sections/sectionEight/sectionEight.pug
+        // END FORM 
+        // Psychologist's blog
         include ../sections/sectionNine/sectionNine.pug
-            
-        
+        // END Psychologist's blog
+        // FOOTER
         include ../sections/footer/footer.pug
         include ../sections/footer.pug
         

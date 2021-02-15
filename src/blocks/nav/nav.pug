@@ -1,8 +1,10 @@
+// hamburger HEADER
 nav.hamburger-menu.hamburger
         input#menu__toggle(type='checkbox')
         label.menu__btn(for="menu__toggle")
             span
         .menu__box.header__menu.hamburger__menu-box
+            // HEADER MENU LIST
             ul.menu__list.hamburger__menu-list
                 li: a.menu__item(href="about-me.html") Обо мне
                 li: a.menu__item(href="services.html") Услуги
@@ -10,8 +12,13 @@ nav.hamburger-menu.hamburger
                 li: a.menu__item(href="#") Отзывы
                 li: a.menu__item(href="blog.html") Блог
                 li: a.menu__item(href="contacts.html") Контакты
+                //
+            // ADDRESS hamburger
             include ../../blocks/address/address.pug
+            // CONTACTS hamburger
             include ../../blocks/contacts/contacts.pug
+            // Button to open the modal window in the hamburger menu
             a.btn.btn__none-desctop.header__btn.hamburger__btn-center(href="#openModal") 
                 span Обратный звонок
+            // MODAL hamburger
             include ../../blocks/modal/modal.pug

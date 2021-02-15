@@ -1,6 +1,9 @@
+// Contact information
 section.section__contacts
     .container__contacts
         h1.title.text-center.contacts__title Контактная информация
+// END Contact information
+// Make an appointment
 section.contact
     .contact__container.contact__container-top
         .contact__contacts
@@ -26,7 +29,9 @@ section.contact
             
         .contact__map#map
             iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad328cbebbde31c747558d73ec5e7924f643c9be7c7aa7a7dd458e80b645a419d&amp;source=constructor" width="100%" height="506" frameborder="0")
-    section.info
+// END Make an appointment
+// Important information
+section.info
         h2.titles.info__titl Важная информация
         .contact__container.contact__container-bottom
             .contact__contacts
@@ -35,7 +40,9 @@ section.contact
             .contact__contacts
                 p.txt.contact__txt Если вы опаздываете к назначенному времени, наша встреча укорачивается на длину вашего опоздания. Если у меня есть возможность, я стараюсь скомпенсировать вам время вашего опоздания на 5-7 минут. Но, в любом случае, с наступлением следующего часа мы заканчиваем.
                 p.txt.contact__txt Если мы договорились о долгосрочной работе, для вас стоимость консультаций становится фиксированной и не может быть повышена ранее, чем через 2 года, а также больше, чем на процент инфляции — за 2 года это 20%.
-    section.contact__form 
+// END Important information
+// FORM
+section.contact__form 
         .form__width
             form.form__displiy
                 h2.mainTexts Запись на приём
@@ -51,3 +58,4 @@ section.contact
                     label.form__pol(for="form__checkboxFour") 
                         span.form__policy-links Вы соглашаетесь с 
                             a.form__policy-link(href="#!") условиями обработки персональных данных
+// END FORM
