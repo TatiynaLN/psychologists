@@ -10,16 +10,16 @@
 ;
 (function () {
 
-    let map_container = document.getElementById('map_container');
+    let map = document.getElementById('map');
     let options_map = {
         once: true,
         passive: true,
         capture: true
     };
-    map_container.addEventListener('click', start_lazy_map, options_map);
-    map_container.addEventListener('mouseover', start_lazy_map, options_map);
-    map_container.addEventListener('touchstart', start_lazy_map, options_map);
-    map_container.addEventListener('touchmove', start_lazy_map, options_map);
+    map.addEventListener('click', start_lazy_map, options_map);
+    map.addEventListener('mouseover', start_lazy_map, options_map);
+    map.addEventListener('touchstart', start_lazy_map, options_map);
+    map.addEventListener('touchmove', start_lazy_map, options_map);
 
     let map_loaded = false;
     function start_lazy_map() {
