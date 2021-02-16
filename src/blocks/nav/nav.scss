@@ -1,9 +1,3 @@
-.oh {
-    overflow: hidden;
-    height: 100%;
-    margin: 0;
-    padding: 0 1.5rem 0 0;
-}
 /************ MENU *****************/
 .hamburger-menu {
     width: 100%;
@@ -80,9 +74,6 @@
     margin: 0 auto;
     padding: 4rem 0 0;
 }
-// .menu__item:last-child {
-//     margin-bottom: 0; убираем padding у последнего элемента
-// }
 /********* Кнопка обратный звонок в гамбургере **************/
 .hamburger__btn-center {
     margin: 0 auto;
@@ -146,16 +137,12 @@
         transition-duration: 0.3s;
     }
     &:active {
-        // text-transform: uppercase;
         background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #4dc8c0;
     }
 }
-// .menu__list {
-//     transition-duration: 0.09s;
-// }
 .hamburger__menu-list {
     margin-bottom: 11.1rem;
 }

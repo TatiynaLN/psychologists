@@ -6,6 +6,7 @@
     font-style: normal;
     font-weight: normal;
 }
+// section head
 .head {
     &__title {
         margin-bottom: 2rem;
@@ -21,8 +22,6 @@
         display: flex;
         margin-bottom: 3rem;
     }
-    // &__btn-bottom {
-    // }
 }
 .content {
     padding: 0 1rem;
@@ -38,7 +37,6 @@
     font-weight: 250;
     font-size: 1.2rem;
     line-height: 1.9rem;
-
     color: #727272;
 }
 .form__displiy {
@@ -81,7 +79,6 @@
     height: 100%;
     background-color: #4dc8c0;
     background-image: url("../img/chechet.png");
-
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
@@ -91,16 +88,14 @@
     opacity: 0;
 }
 .head {
+    background: url("../img/psychologist-s.jpg");
     width: 100%;
     height: auto;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     padding-bottom: 3rem;
-    // padding: 18rem 0 0 0;
-
     &::after {
         content: "";
         display: block;
@@ -192,6 +187,13 @@
     }
 }
 @media screen and (min-width: 768px) {
+    .head {
+        background: url("../img/psychologist-m.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
     .form__policy-links {
         width: 48rem;
     }
@@ -214,6 +216,13 @@
     }
 }
 @media screen and (min-width: 1024px) {
+    .head {
+        background: url("../img/psychologist-l.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
     .formInput-flex {
         width: 75%;
         display: flex;
@@ -230,19 +239,11 @@
     .form__input-block {
         width: 25.4rem;
     }
-    // .head {
-    //     min-height: 100vh;
-    //     // max-height: 100vh;
-    // }
     .head__form {
         margin-top: 3rem;
     }
 }
 @media screen and (min-width: 1700px) {
-    // .head {
-    //     // height: 100vh;
-    //     // max-height: 100vh;
-    // }
     .head__form {
         position: absolute;
         bottom: 0;
@@ -255,3 +256,4 @@
         padding-bottom: 13rem;
     }
 }
+//

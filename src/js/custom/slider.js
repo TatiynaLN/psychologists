@@ -11,9 +11,7 @@
 
         //колличество пролистываемых слайдов
         slidesPerGroup: 1,
-        //активный слайд по центру
-        // centerredSlides: true,
-        //стартовый слайд отсчет с 0
+        // активный слайд отсчет с 0
         initialSlide: 0,
         autoHeight: true,
         loop: true,
@@ -33,8 +31,8 @@
 })();
 "use strict";
 ;
-// "use strict";
-// ;
+"use strict";
+;
 
 (function () {
     new Swiper('.education-sliders', {
@@ -78,9 +76,6 @@
 
         //колличество пролистываемых слайдов
         slidesPerGroup: 1,
-        //активный слайд по центру
-        // centerredSlides: true,
-        //стартовый слайд отсчет с 0
         initialSlide: 1,
         spaceBetween: 60,
         centeredSlides: true,
@@ -110,14 +105,10 @@
             delay: 3000,
             disableOnInteraction: false,
         },
-        //колличество пролистываемых слайдов
+
         slidesPerGroup: 1,
-        //активный слайд по центру
-        // centerredSlides: true,
-        //стартовый слайд отсчет с 0
         initialSlide: 0,
         spaceBetween: 23,
-        // centeredSlides: true,
         autoHeight: true,
         loop: true,
         on: {

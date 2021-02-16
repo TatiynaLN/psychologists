@@ -1,7 +1,8 @@
+// individ consul
 .header__indivConsul {
     margin-bottom: 4rem;
 }
-.container__indivConsul {
+.cnt-consul {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -10,6 +11,9 @@
     background-position: center;
     position: relative;
     padding: 11.1rem 1rem 7.2rem 1rem;
+}
+.container__indivConsul {
+    background: url("../img/individ1@1x.jpg");
 }
 .section__indivConsul {
     margin-bottom: 7rem;
@@ -82,13 +86,6 @@
         font-size: 3.6rem;
     }
 }
-// @media screen and(min-width:580px) {
-//     .block {
-//         &__txt-txt {
-//             width: 48%;
-//         }
-//     }
-// }
 @media screen and(min-width:620px) {
     .indivConsul__title {
         font-size: 4.1rem;
@@ -146,3 +143,4 @@
         }
     }
 }
+//

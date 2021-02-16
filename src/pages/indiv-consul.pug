@@ -26,8 +26,7 @@ html(lang="ru")
             include ../sections/header/header.pug
         // Individual consultation
         section.section__indivConsul.indivConsul
-            //- .wraper.container__indivConsul(style='background-image: url("wp-content/themes/twentytwenty-child/img/individ1@1x.jpg");')
-            .wraper.container__indivConsul(style='background: url("wp-content/themes/twentytwenty-child/img/individ1@1x.jpg"),url("wp-content/themes/twentytwenty-child/img/individ1@2x.png"),url("wp-content/themes/twentytwenty-child/img/individ1@2x.webp"), url("wp-content/themes/twentytwenty-child/img/individ1@1x.webp");')
+            .wraper.container__indivConsul.cnt-consul
                 h1.text-center.indivConsul__title Индивидуальная консультация психолога
                 p.indivConsul__text.texts Помогаю справляться с негативными эмоциями, находить источник спокойствия
                             |и силы в себе, развивать предпочитаемые направления жизни, поддерживать
@@ -65,18 +64,14 @@ html(lang="ru")
                 .indivConsul__block
                     .indivConsul__content.prices__block
                         .picture.prices__picture.prices__width
-                            picture
-                                source(type='image/webp', srcset='wp-content/themes/twentytwenty-child/img/imgFive@1x.webp 1x, wp-content/themes/twentytwenty-child/img/imgFive@2x.webp 2x')
-                                img.picture-female(src='wp-content/themes/twentytwenty-child/img/imgFive@1x.png', srcset='wp-content/themes/twentytwenty-child/img/imgFive@2x.png 2x', alt='', width='547', height='695')
+                            img.picture-female(src='wp-content/themes/twentytwenty-child/img/imgFive.jpg', alt='Мужчина')
                         p.min-text__text.min-text__color.prices__min-text 60 минут
                         h3.titl.prices__titl Индивидуальная консультация
                         p.txt Консультация одного человека, личный приём в кабинете психолога.
                         span.txt.prices__txt.txt-bold Стоимость сеанса:  4 000 руб.
                     .indivConsul__content.prices__block
                         .picture.prices__picture.prices__width
-                            picture
-                                source(type='image/webp', srcset='wp-content/themes/twentytwenty-child/img/dubl@1x.webp 1x, wp-content/themes/twentytwenty-child/img/dubl@2x.webp 2x')
-                                img.picture-female(src='wp-content/themes/twentytwenty-child/img/dubl@1x.png', srcset='wp-content/themes/twentytwenty-child/img/dubl@2x.png 2x', alt='', width='547', height='695')
+                            img.picture-female(src='wp-content/themes/twentytwenty-child/img/adventigeTwo.jpg', alt='Девушка')
                         p.min-text__text.min-text__color.prices__min-text 60 минут
                         h3.titl.prices__titl Онлайн консультация
                         p.txt Личная консультация по скайпу. 

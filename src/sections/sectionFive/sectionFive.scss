@@ -1,6 +1,8 @@
+// section виды консультаций
 .sectionFive {
     width: 100%;
     height: auto;
+    background: url("../img/advantage-s.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -22,7 +24,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        // background: transparent;
         border-radius: 1rem;
         background: linear-gradient(180deg, rgba(236, 234, 232, 0) 57.92%, #eceaea 100%);
     }
@@ -77,6 +78,12 @@ button.btn {
     color: #565b62;
 }
 @media screen and (min-width: 768px) {
+    .sectionFive {
+        background: url("../img/advantage-m.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
     .adventige__text {
         width: 45%;
     }
@@ -101,9 +108,12 @@ button.btn {
     }
 }
 @media screen and (min-width: 1024px) {
-    // .adventige__text {
-    //     width: 64%;
-    // }
+    .sectionFive {
+        background: url("../img/advantage-l.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
     .advantage__indent {
         padding: 7.3rem 0;
     }
@@ -125,7 +135,6 @@ button.btn {
 }
 @media screen and (min-width: 1200px) {
     .adventige__width {
-        // width: 41rem;
         width: 30%;
     }
     .adventige__text {
@@ -142,3 +151,4 @@ button.btn {
         align-content: center;
     }
 }
+//

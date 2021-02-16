@@ -1,3 +1,4 @@
+//Страница BLOG-PAGE
 .header__blogPage {
     margin-bottom: 4.3rem;
 }
@@ -15,6 +16,7 @@
     text-align: center;
 }
 .container__blogPage {
+    background: url("../img/blogPage1.jpg");
     padding: 4.1rem 1rem;
 }
 .blogPage__title,
@@ -95,3 +97,4 @@
         gap: 5rem;
     }
 }
+//

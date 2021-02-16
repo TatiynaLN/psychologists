@@ -1,3 +1,4 @@
+// SECTION Блог психолога
 .blog {
     padding: 4rem 0;
 }
@@ -37,11 +38,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    // align-items: stretch;
     align-self: stretch;
     height: 100%;
     min-width: 30rem;
-    // padding: 0 1.5rem;
 }
 .swiper-slide.swiper__blog {
     align-self: stretch;
@@ -89,3 +88,4 @@
         overflow: hidden;
     }
 }
+//

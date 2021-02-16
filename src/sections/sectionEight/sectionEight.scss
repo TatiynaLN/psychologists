@@ -1,6 +1,8 @@
+// секция с формой у footer
 .sectionEight {
     width: 100%;
     height: auto;
+    background: url("../img/bg4-s.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,11 +16,20 @@
 }
 @media screen and (min-width: 768px) {
     .sectionEight {
+        background: url("../img/bg4-m.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         padding: 3.7rem 0 4.8rem 0;
     }
 }
 @media screen and (min-width: 1024px) {
     .sectionEight {
+        background: url("../img/bg4-l.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         padding: 6.72rem 0 8.9rem 0;
     }
 }
+//

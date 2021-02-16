@@ -27,8 +27,8 @@ section.contact
                     a.numbers(href="tel:+78001201204") + 7 800 120-12-04
             include ../../blocks/email/email.pug
             
-        .contact__map.map.container-fluid#map
-            script#ymap_lazy(type="text/javascript" charset="utf-8" async data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad956b6cd9e6758097f9d9e1c492a14ce98dd6a22c4efdd6433b15a7c18adf3b6&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true")
+        .contact__map.map#map
+            script(type="text/javascript" charset="utf-8" defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac0d3951eeb33b1c6d7de4ccaaa2e590ad74b4a9f818436051fda3d506a54424a&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true?speed=0")
 // END Make an appointment
 // Important information
 section.info
