@@ -1,6 +1,6 @@
 // СТРАНИЦА ОНЛАЙН КОНСУЛЬТАЦИЯ
 .container__online {
-    background: url("../img/onlain1@x1.jpg");
+    background: url("../img/onlain1@x1-s.jpg");
 }
 .onlineConsul-titles {
     width: 80%;
@@ -22,7 +22,11 @@
     font-feature-settings: "pnum" on, "lnum" on;
     color: #565b62;
 }
-
+@media screen and(min-width:768px) {
+    .container__online {
+        background: url("../img/onlain1@x1-m.jpg");
+    }
+}
 @media screen and(min-width:1024px) {
     .block__txt-txts {
         width: 48%;
@@ -31,6 +35,9 @@
     .consul-title {
         font-size: 2.4rem;
         line-height: 3.84rem;
+    }
+    .container__online {
+        background: url("../img/onlain1@x1.jpg");
     }
 }
 //
