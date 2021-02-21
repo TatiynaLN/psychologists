@@ -74,7 +74,7 @@ input[type="checkbox"]:checked ~ .accordion-label:before {
     opacity: 0;
     height: 0;
     padding: 1rem 2rem 2rem 2rem;
-    transition-duration: 0.7s;
+    transition-duration: 0.4s;
     -webkit-overflow-scrolling: touch;
     -moz-overflow-scrolling: touch;
     -ms-overflow-scrolling: touch;
@@ -97,7 +97,7 @@ input[type="checkbox"]:checked ~ .accordion-label:before {
     font-feature-settings: "pnum" on, "lnum" on;
     color: #828282;
     margin-top: 1rem;
-    transition-duration: 0.7s;
+    transition-duration: 0.4s;
 }
 
 input[type="checkbox"]:checked ~ .accordion-child {
@@ -115,7 +115,7 @@ input[type="checkbox"]:checked ~ .accordion-child {
         0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
     height: 19.3rem;
     opacity: 1;
-    transition-duration: 0.7s;
+    transition-duration: 0.4s;
     visibility: visible;
     overflow: auto;
 }
@@ -171,7 +171,7 @@ input[type="checkbox"]:checked ~ .accordion-child {
             0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
         height: 19.3rem;
         opacity: 1;
-        transition-duration: 0.7s;
+        transition-duration: 0.4s;
         visibility: visible;
         overflow: auto;
     }
