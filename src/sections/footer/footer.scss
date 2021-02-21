@@ -69,7 +69,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: center;
     text-align: center;
     margin-bottom: 3.9rem;
@@ -113,7 +113,8 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        gap: 0 9vw;
         align-content: center;
         li {
             width: 26%;
@@ -160,17 +161,16 @@
     .menu__list-footer {
         margin: 0 auto;
         width: 90%;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 0 0vw;
         align-content: center;
+        margin-bottom: 4.6rem;
         li {
             width: 16%;
         }
     }
     .policy__footer {
         width: 35rem;
-    }
-    .menu__list-footer {
-        margin-bottom: 4.6rem;
     }
     .social {
         margin-bottom: 4.6rem;
