@@ -143,6 +143,7 @@
         color: #4dc8c0;
     }
 }
+
 .hamburger__menu-list {
     margin-bottom: 11.1rem;
 }
@@ -186,7 +187,8 @@
         width: 90%;
         padding: 0 11rem;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        gap: 0 7vw;
         align-content: center;
         background: #879ab9;
         border-radius: 0.5rem;
@@ -210,4 +212,8 @@
         margin: 0 auto;
         width: 82%;
     }
+}
+.menu__item--active {
+    color: #4dc8c0;
+    pointer-events: none;
 }
