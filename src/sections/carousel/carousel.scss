@@ -11,7 +11,6 @@
 }
 .eye {
     svg {
-        fill: #4dc8c0; /* заливкa */
         top: 1.5rem;
         left: 1.2rem;
         z-index: 1;
@@ -26,6 +25,10 @@
         height: 10rem;
     }
 }
+.eyes {
+    width: 30% !important;
+    text-align: center;
+}
 .galery-list {
     width: 100%;
     display: flex;
@@ -37,6 +40,7 @@
     position: relative;
     margin: 0 auto;
     width: 100%;
+    height: 50%;
     margin-bottom: 1rem;
     overflow: hidden;
 }
@@ -49,6 +53,7 @@
 .galery__item:hover .eye svg,
 .galery__item:hover .img__overlay {
     opacity: 1;
+    transition: all 0.3s linear;
 }
 .item__img img {
     width: 100%;
@@ -64,6 +69,10 @@
     bottom: 0;
     border-radius: 0.5rem;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f0f0f0 100%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.3s linear;
 }
 .eye svg {
     position: absolute;
