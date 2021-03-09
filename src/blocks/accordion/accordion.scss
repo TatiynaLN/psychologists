@@ -81,11 +81,6 @@ input[type="checkbox"]:checked ~ .accordion-label:before {
     -o-overflow-scrolling: touch;
     &::-webkit-scrollbar {
         -webkit-appearance: none;
-        width: 0.3rem;
-    }
-    &::-webkit-scrollbar-thumb {
-        border-radius: 2px;
-        background-color: #56d0c9;
     }
 }
 .accordion-text {

@@ -123,16 +123,15 @@
     line-height: 1.96rem;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #646c79;
+    padding: 1.3rem 1rem;
 }
 .modal__phone {
     width: 25.4rem;
-    height: 6.1rem;
     margin-bottom: 2rem;
 }
 
 .btn__width {
     margin: 0 auto;
-    padding: 1.1em 0;
     width: 19em;
     display: block;
     outline: none;
@@ -204,9 +203,9 @@ a.form__policy-link {
 input {
     outline: none;
 }
-.form__header-btn {
-    margin-bottom: 2rem;
-}
+// .form__header-btn {
+//     margin-bottom: 2rem;
+// }
 @media screen and (min-width: 540px) {
     .modal__policy-link {
         display: block;
@@ -223,6 +222,7 @@ input {
         width: 50rem;
         margin: 0 auto;
         margin-bottom: 3.1rem;
+        margin-top: 3.1rem;
     }
     .form__header-text {
         margin: 0 auto;

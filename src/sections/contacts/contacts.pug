@@ -14,15 +14,13 @@ section.contact
             .contact__addr.contact__contact
                 .adress__img
                     a(href='#map')
-                        svg(class="address__icons2")
-                            use(xlink:href="wp-content/themes/twentytwenty-child/img/icons/sprite.svg#location")
+                        img.address__icons2(src="wp-content/themes/twentytwenty-child/img/icons/location.svg", alt="location")
                 .contact__addres
                     a(href='#map').adress__text.adress__text-bold пр. Ленина, д.45, оф. 15
             .contact__phone.contact__contact
                 .phone__img
                     a(href="tel:+78001201204")
-                        svg(class="icons-tel")
-                            use(xlink:href="wp-content/themes/twentytwenty-child/img/icons/sprite.svg#phone")
+                        img.icons-tel(src="wp-content/themes/twentytwenty-child/img/icons/phone.svg", alt="phone")
                 .tel__contact
                     a.numbers(href="tel:+78001201204") + 7 800 120-12-04
             include ../../blocks/email/email.pug
@@ -51,7 +49,7 @@ section.contact__form
                     span
                     input.form__input-style.form__input-block(type="text" name='name' placeholder="Ваше имя" required="required")
                     input.form__input-style.form__input-block(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
-                    a.btn.btn__width.form__btn-bottom(href="#open") 
+                    a.btn__width.form__btn-bottom(href="#open") 
                         span Запись на консультацию
                 .head__form-policy
                     input.form__checkbox#form__checkboxFour(type="checkbox" checked="")

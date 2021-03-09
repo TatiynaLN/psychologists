@@ -10,8 +10,7 @@ footer.footer
             .contacts__footer
                 .phone__img.phone__img-indent
                     a(href="tel:+78001201204")
-                        svg(class="icons-tel")
-                            use(xlink:href="wp-content/themes/twentytwenty-child/img/icons/sprite.svg#phone")
+                        img.icons-tel(src="wp-content/themes/twentytwenty-child/img/icons/phone.svg", alt="phone")
                 .tel__footer
                     a.numbers(href="tel:+78001201204") + 7 800 120-12-04
                     p.time  Ежедневно с 10 до 20 ч.
@@ -39,22 +38,19 @@ footer.footer
             li: a.footer__menu-items(href="about-me.html") Обо мне
             li: a.footer__menu-items(href="services.html") Услуги
             li: a.footer__menu-items(href="price.html") Цены
-            li: a.footer__menu-items(href="#") Отзывы
+            li: a.footer__menu-items(href="reviews.html") Отзывы
             li: a.footer__menu-items(href="blog.html") Блог
             li: a.footer__menu-items(href="contacts.html") Контакты
     .social
         .icon_soc
             a(href='#')
-                svg(class="youtube")
-                    use(xlink:href="wp-content/themes/twentytwenty-child/img/icons/sprite.svg#youtube")
+                img.youtube#youtube(src="wp-content/themes/twentytwenty-child/img/icons/youtube.svg" alt="youtube")
         .icon_soc
             a(href='#')
-                svg(class="insta")
-                    use(xlink:href="wp-content/themes/twentytwenty-child/img/icons/sprite.svg#instagram") 
+                img.insta#instagram(src="wp-content/themes/twentytwenty-child/img/icons/instagram.svg" alt="instagram") 
         .icon_soc
             a(href='#')
-                svg(class="vk")
-                    use(xlink:href="wp-content/themes/twentytwenty-child/img/icons/sprite.svg#vk") 
+                img.vk#vk(src="wp-content/themes/twentytwenty-child/img/icons/vk.svg" alt="vk") 
     .policy__footer
         p.politics
             a.txt.txt-indent.txt__blog(href="" target="_blank") Политика конфиденциальности сайта

@@ -45,6 +45,9 @@
 .btn-center {
     margin: 0 auto;
 }
+.btn__width {
+    padding: 0.8em 0;
+}
 @media screen and (min-width: 1424px) {
     .btn__none-desctop {
         display: none;
@@ -52,12 +55,11 @@
     .btn__mobail-none {
         display: block;
         margin: 0;
-        margin-top: 2rem;
     }
 
     .btn {
         width: 13.75em;
-        padding: 1.2em 0;
+        padding: 1em 0;
         text-align: center;
         align-self: baseline;
         font-size: 1.8rem;
