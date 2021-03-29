@@ -1,16 +1,15 @@
 section.sectionEight
-    .form__width
-            form.form__displiy
-                h2.mainTexts Запись на приём
-                p.secondTexts Заполните форму и я перезвоню вам для уточнения удобного для вас времени
-                .formInput.formInput-flex
-                    span
-                    input.form__input-style.form__input-block(type="text" name='name' placeholder="Ваше имя" required="required")
-                    input.form__input-style.form__input-block(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
-                    a.btn__width.form__btn-bottom(href="#open") 
+    .container
+        .form-box
+            form.form
+                h5.form__title Запись на приём
+                p Заполните форму и я перезвоню вам для уточнения удобного для вас времени
+                .box-input
+                    input(type="text" name='name' placeholder="Ваше имя" required="required")
+                    input(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
+                    button
                         span Запись на консультацию
-                .head__form-policy
-                    input.form__checkbox#form__checkboxFour(type="checkbox" checked="")
-                    label.form__pol(for="form__checkboxFour") 
-                        span.form__policy-links Вы соглашаетесь с 
-                            a.form__policy-link(href="#!") условиями обработки персональных данных
+                .form__policy
+                    input#form2(type="checkbox" checked="")
+                    label(for="form2") Вы соглашаетесь с 
+                        a(href="#!" target="_blank") условиями обработки персональных данных

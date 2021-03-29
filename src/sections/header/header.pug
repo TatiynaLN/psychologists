@@ -1,21 +1,11 @@
 include ../../blocks/logo/logo.pug
 .header__top.glav__header
-    .cont.contacts__indent.contacts__img-left
-        .phone__img.phone__img-indent
-            a(href="tel:+78001201204")
-                img.icons-tel(src="wp-content/themes/twentytwenty-child/img/icons/phone.svg", alt="phone")
-        .tel.tel-none
-            a.numbers(href="tel:+78001201204") + 7 800 120-12-04
-            p.time  Ежедневно с 10 до 20 ч.
-    .addr.adress__none
-        .adress__img.adress__img-indent
-            a(href='contacts.html#map')
-                img.address__icons2(src="wp-content/themes/twentytwenty-child/img/icons/location.svg", alt="location")
-        .addres.addres__left
-            a(href='contacts.html#map').adress__text.adress__text-bold пр. Ленина, д.45, оф. 15
-            p.adress__text Москва, м. Московская
-    a.btn.btn__mobail-none.modal-first(href="#openModal") 
-        span Обратный звонок
+    .contacts.contacts-mn
+        include ../../blocks/contacts/contacts.pug
+    .adress__mn.addres
+        include ../../blocks/address/address.pug
+    button.btn.show-modal-1.btn-mn(data-toggle="modal-1") 
+        span Обратный звонок 
 include ../../blocks/nav/nav.pug
     
 

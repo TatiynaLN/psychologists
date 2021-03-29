@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/************ MENU *****************/
+.hamburger-menu {
+  width: 100%;
+}
+
+#menu__toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.hamburger-menu {
+  position: relative;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #646c79;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: #646c79;
+}
+
+/* контейнер меню */
+.hamburger__menu-box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+  -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  border-radius: 0 70% 50% 0;
+}
+
+/* элементы меню */
+#menu__toggle:checked ~ .hamburger__menu-box {
+  visibility: visible;
+  overflow: auto;
+  left: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  background: #f8f8f8;
+  z-index: -1;
+  border-radius: 0;
+}
+
+.hamburger__menu-box {
+  padding: 13.4rem 0 5.7rem 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.menu__box {
+  margin: 0 auto;
+  padding: 4rem 0 0;
+}
+
+/********* Кнопка обратный звонок в гамбургере **************/
+.hamburger__btn-center {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+/***************/
+/******* hamburger ********/
+.menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -8.5rem;
+  right: 0;
+  width: 3.9rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  padding-right: 6rem;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 3.125em !important;
+  height: 0.125em;
+  background: #565b62;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -0.5em;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 0.5em;
+}
+
+.menu__item {
+  display: block;
+  text-decoration: none;
+  font-size: 2.4rem;
+  line-height: 4.7rem;
+  text-align: center;
+  color: #565b62;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.menu__item:hover {
+  font-weight: bold;
+  color: #565b62;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.menu__item:active {
+  background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #4dc8c0;
+}
+
+.hamburger__menu-list {
+  margin-bottom: 11.1rem;
+}
+
+@media screen and (min-width: 540px) {
+  .menu__list {
+    margin-top: 5.4rem;
+  }
+  .menu__btn {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    top: -10rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__btn {
+    margin-top: 1%;
+  }
+}
+
+@media screen and (min-width: 1424px) {
+  label.menu__btn {
+    display: none;
+  }
+  .hamburger__menu-box {
+    opacity: 1;
+    visibility: visible;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    top: auto;
+    left: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: relative;
+  }
+  .menu__list {
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 11rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 0 7vw;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background: #879ab9;
+    border-radius: 0.5rem;
+    margin-top: 0rem;
+  }
+  .menu__list li {
+    width: 9.5%;
+    /*убираем скачок при hover*/
+  }
+  .menu__item {
+    font-size: 1.8rem;
+    -webkit-transition-duration: 0.02s;
+            transition-duration: 0.02s;
+    line-height: 4.7rem;
+    color: #ffffff;
+  }
+  .menu__item:hover {
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .menu__list {
+    margin: 0 auto;
+    width: 82%;
+  }
+}
+
+.menu__item--active {
+  color: #4dc8c0;
+  pointer-events: none;
+}

@@ -1,110 +1,317 @@
-/* свойства модального окна по умолчанию */
-.modal {
+// /* свойства модального окна по умолчанию */
+// .modal {
+//     position: fixed;
+//     /* фиксированное положение */
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background: rgba(0, 0, 0, 0.5);
+//     /* цвет фона */
+//     z-index: 1050;
+//     opacity: 0;
+//     /* по умолчанию модальное окно прозрачно */
+//     -webkit-transition: opacity 400ms ease-in;
+//     -moz-transition: opacity 400ms ease-in;
+//     transition: opacity 400ms ease-in;
+//     /* анимация перехода */
+//     pointer-events: none;
+//     /* элемент невидим для событий мыши */
+//     font-family: "Raleway";
+//     font-style: normal;
+// }
+// /* при отображении модального окно */
+// .modal:target {
+//     opacity: 1;
+//     pointer-events: auto;
+//     overflow-y: auto;
+// }
+
+// /* ширина модального окна и его отступы от экрана */
+// .modal-dialog {
+//     position: relative;
+//     width: 29rem;
+//     margin: 1rem auto;
+//     left: 0;
+//     right: 0;
+//     transform: translateY(13%);
+// }
+// /* свойства для блока, содержащего контент модального окна */
+// .content-modal {
+//     width: 100%;
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     background: #ffffff;
+//     border-radius: 5px;
+//     background-clip: padding-box;
+//     outline: 0;
+//     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+// }
+// @media screen and (min-width: 540px) {
+//     .modal-dialog {
+//         width: 49rem;
+//     }
+// }
+// @media (min-width: 576px) {
+//     .modal-dialog {
+//         width: 50rem;
+//     }
+// }
+// @media (min-width: 768px) {
+//     .modal-dialog {
+//         width: 60rem;
+//         transform: translateY(25%);
+//     }
+// }
+// @media screen and (min-width: 1024px) {
+//     .modal-dialog {
+//         width: 90rem;
+//     }
+// }
+
+// /* свойства для заголовка модального окна */
+// .modal-header {
+//     width: 98%;
+//     height: 4rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+// }
+
+// /* свойства для кнопки "Закрыть" */
+// .close {
+//     float: right;
+//     font-family: "Raleway";
+//     font-size: 2.4rem;
+//     font-weight: 700;
+//     line-height: 1;
+//     color: #000;
+//     text-shadow: 0 1px 0 #fff;
+//     opacity: 0.5;
+//     text-decoration: none;
+// }
+
+// /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+// .close:focus,
+// .close:hover {
+//     color: #000;
+//     text-decoration: none;
+//     cursor: pointer;
+//     opacity: 0.75;
+// }
+
+// /* свойства для блока, содержащего основное содержимое окна */
+// .modal-body {
+//     position: relative;
+//     flex: 1 1 auto;
+//     padding: 15px;
+//     overflow: auto;
+// }
+
+.modal__backdrop {
     position: fixed;
-    /* фиксированное положение */
+    visibility: hidden;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    /* цвет фона */
-    z-index: 1050;
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
-    /* по умолчанию модальное окно прозрачно */
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    /* анимация перехода */
+    z-index: -1;
     pointer-events: none;
-    /* элемент невидим для событий мыши */
-    font-family: "Raleway";
-    font-style: normal;
-}
-/* при отображении модального окно */
-.modal:target {
-    opacity: 1;
-    pointer-events: auto;
-    overflow-y: auto;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
 }
 
-/* ширина модального окна и его отступы от экрана */
-.modal-dialog {
+.modal__body {
     position: relative;
-    width: 29rem;
-    margin: 1rem auto;
-    left: 0;
-    right: 0;
-    transform: translateY(13%);
-}
-/* свойства для блока, содержащего контент модального окна */
-.content-modal {
-    width: 100%;
-    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 90vw;
+    transition: opacity 0.3s ease-in;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
-    border-radius: 5px;
+    background-color: #fff;
     background-clip: padding-box;
-    outline: 0;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
-}
-@media screen and (min-width: 540px) {
-    .modal-dialog {
-        width: 49rem;
-    }
-}
-@media (min-width: 576px) {
-    .modal-dialog {
-        width: 50rem;
-    }
-}
-@media (min-width: 768px) {
-    .modal-dialog {
-        width: 60rem;
-        transform: translateY(25%);
-    }
-}
-@media screen and (min-width: 1024px) {
-    .modal-dialog {
-        width: 90rem;
-    }
-}
-
-/* свойства для заголовка модального окна */
-.modal-header {
-    width: 98%;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-/* свойства для кнопки "Закрыть" */
-.close {
-    float: right;
-    font-family: "Raleway";
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: 0.5;
-    text-decoration: none;
-}
-
-/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
-.close:focus,
-.close:hover {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: 0.75;
-}
-
-/* свойства для блока, содержащего основное содержимое окна */
-.modal-body {
-    position: relative;
-    flex: 1 1 auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(50%);
     padding: 15px;
     overflow: auto;
+    .modal__btn-close {
+        position: absolute;
+        font-size: 3.4rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: 0.5;
+        text-decoration: none;
+        right: 1rem;
+        top: 0rem;
+    }
+    h6,
+    p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    input,
+    button {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100vw;
+        display: block;
+        margin-bottom: 2rem;
+        text-align: center;
+        outline: none;
+        font-size: 1.4rem;
+    }
+    input {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) -9.84%, rgba(240, 240, 240, 0.3) 100%);
+        border: 0.1rem solid rgba(242, 242, 242, 0.6);
+        box-sizing: border-box;
+        border-radius: 10rem;
+        font-family: "Raleway";
+        line-height: 1.96rem;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #646c79;
+        padding: 1.3rem 1rem;
+    }
+
+    .modal__btn-close {
+        color: #000;
+        &:focus,
+        &:hover {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 0.75;
+        }
+    }
+    @media (min-width: 400px) {
+        width: 80%;
+        max-width: 80vw;
+    }
+    @media (min-width: 540px) {
+        width: 70%;
+        max-width: 70vw;
+    }
+}
+.form__policy {
+    width: 100%;
+    max-width: 52rem;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #727272;
+    cursor: pointer;
+    @media (min-width: 760px) {
+        margin: 0 auto;
+    }
+    a {
+        text-decoration: none;
+        text-rendering: optimizelegibility;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: #727272;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+}
+.modal__show {
+    .modal__backdrop,
+    .modal__body {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1050;
+        pointer-events: auto;
+        overflow-y: auto;
+        -webkit-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        font-family: "Raleway";
+    }
+}
+/* СТИЛИЗУЕМ */
+.form__policy {
+    outline: 1px solid red;
+}
+label[for="modal__chec1"],
+label[for="modal__chec2"],
+label[for="modal__chec3"],
+label[for="modal__chec4"],
+label[for="form1"],
+label[for="form2"] {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    max-width: 50.3rem;
+    padding-left: 2.5rem;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        border: solid 0.1rem #4dc8c0;
+        border-radius: 0.2rem;
+        width: 1.45rem;
+        height: 1.45rem;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        border-right: solid 0.2rem transparent;
+        border-bottom: solid 0.2rem transparent;
+        width: 0.5rem;
+        height: 1rem;
+        top: 0.1rem;
+        left: 0.45rem;
+        transform: rotate(42deg);
+        transition: 0.5s;
+    }
+}
+#modal__chec1:checked + label::after,
+#modal__chec2:checked + label::after,
+#modal__chec3:checked + label::after,
+#modal__chec4:checked + label::after,
+#form1:checked + label::after,
+#form2:checked + label::after {
+    border-right: solid 0.2rem #fff;
+    border-bottom: solid 0.2rem #fff;
+    transform: rotate(42deg);
+    transition: 0.5s;
+}
+#modal__chec1:checked + label::before,
+#modal__chec2:checked + label::before,
+#modal__chec3:checked + label::before,
+#modal__chec4:checked + label::before,
+#form1:checked + label::before,
+#form2:checked + label::before {
+    background: #4dc8c0;
+    transition: 0.5s;
+}
+#modal__chec1:not(:checked),
+#modal__chec1:checked,
+#modal__chec2:not(:checked),
+#modal__chec2:checked,
+#modal__chec3:not(:checked),
+#modal__chec3:checked,
+#modal__chec4:not(:checked),
+#modal__chec4:checked,
+#form1:not(:checked),
+#form1:checked,
+#form2:not(:checked),
+#form2:checked {
+    display: none;
 }

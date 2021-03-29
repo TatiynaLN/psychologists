@@ -1,0 +1,46 @@
+.container__family {
+  background: url("../img/family1@1x-s.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .familyPsych-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+  .picture__familyPsych {
+    width: 45%;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+  .familyPsych__content-width {
+    width: 50%;
+  }
+  .container__family {
+    background: url("../img/family1@1x-m.jpg");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .familyPsych-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5.5rem;
+  }
+  .picture__familyPsych {
+    width: 30%;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+  .familyPsych__content-width {
+    width: 65%;
+  }
+  .container__family {
+    background: url("../img/family1@1x.jpg");
+  }
+  .form__consul-btn {
+    margin: 0 !important;
+  }
+}

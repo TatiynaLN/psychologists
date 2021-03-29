@@ -1,0 +1,215 @@
+@charset "UTF-8";
+.modal__backdrop {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+
+.modal__content {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transform: translate(25%, 50%);
+          transform: translate(25%, 50%);
+}
+
+@media (min-width: 576px) {
+  .modal__content {
+    max-width: 500px;
+  }
+}
+
+.modal__show .modal__backdrop,
+.modal__show .modal__content {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1050;
+  pointer-events: auto;
+  overflow-y: auto;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  font-family: "Raleway";
+}
+
+.modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.modal__btn-close {
+  float: right;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.modal__btn-close:focus,
+.modal__btn-close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.modal__body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+}
+
+.modal__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid #e9ecef;
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+/* СТИЛИЗУЕМ */
+label[for="modal__chec1"],
+label[for="modal__chec2"],
+label[for="modal__chec3"],
+label[for="modal__chec4"],
+label[for="form1"],
+label[for="form2"] {
+  cursor: pointer;
+  display: block;
+  width: 36rem;
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+label[for="modal__chec1"]::before,
+label[for="modal__chec2"]::before,
+label[for="modal__chec3"]::before,
+label[for="modal__chec4"]::before,
+label[for="form1"]::before,
+label[for="form2"]::before {
+  content: "";
+  position: absolute;
+  border: solid 0.1rem #d1d1d1;
+  border-radius: 0.2rem;
+  width: 1.45rem;
+  height: 1.45rem;
+  top: 0.2rem;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+label[for="modal__chec1"]::after,
+label[for="modal__chec2"]::after,
+label[for="modal__chec3"]::after,
+label[for="modal__chec4"]::after,
+label[for="form1"]::after,
+label[for="form2"]::after {
+  content: "";
+  position: absolute;
+  border-right: solid 0.2rem transparent;
+  border-bottom: solid 0.2rem transparent;
+  width: 0.5rem;
+  height: 1rem;
+  top: 0.3rem;
+  left: 0.41rem;
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#modal__chec1:checked + label::after,
+#modal__chec2:checked + label::after,
+#modal__chec3:checked + label::after,
+#modal__chec4:checked + label::after,
+#form1:checked + label::after,
+#form2:checked + label::after {
+  border-right: solid 0.2rem #fff;
+  border-bottom: solid 0.2rem #fff;
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#modal__chec1:checked + label::before,
+#modal__chec2:checked + label::before,
+#modal__chec3:checked + label::before,
+#modal__chec4:checked + label::before,
+#form1:checked + label::before,
+#form2:checked + label::before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#modal__chec1:not(:checked),
+#modal__chec1:checked,
+#modal__chec2:not(:checked),
+#modal__chec2:checked,
+#modal__chec3:not(:checked),
+#modal__chec3:checked,
+#modal__chec4:not(:checked),
+#modal__chec4:checked,
+#form1:not(:checked),
+#form1:checked,
+#form2:not(:checked),
+#form2:checked {
+  display: none;
+}

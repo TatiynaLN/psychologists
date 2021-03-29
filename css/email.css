@@ -1,0 +1,42 @@
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 18rem;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.email__img, .email__text {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.email:hover .em {
+  color: #4dc8c0;
+}
+
+.icons-email {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: relative;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.em {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #646c79;
+  -webkit-transition-property: "linear-gradient";
+  transition-property: "linear-gradient";
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}

@@ -3,7 +3,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 body {
   font-size: 1.6rem;
@@ -29,20 +29,25 @@ body {
 }
 
 .container {
-  max-width: 144rem;
+  width: 82%;
+  max-width: 144.3rem;
   height: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
+a,
+p,
+button,
 h1,
 h2,
 h3,
 h4,
-.h1,
-.h2,
-.h3,
-.h4 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+h5,
+h6,
+input,
+label {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
 }
 
 .html-overflow {
@@ -51,6 +56,7 @@ h4,
 .modal-first--open {
   opacity: 1;
 }
+.ns,
 .oh {
   overflow: hidden;
   height: 100%;

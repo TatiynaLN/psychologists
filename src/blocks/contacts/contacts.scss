@@ -1,33 +1,62 @@
+// .contacts.hamburger__contacts.contacts__none-desctop.tel
 .contacts {
-    margin: 0 auto;
-    width: 26.3rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    align-self: baseline;
-    z-index: 1;
-    &:hover .numbers {
-        color: #4dc8c0;
+    width: 26rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #565b62;
+    p {
+        padding-left: 5rem;
+        line-height: 1.68rem;
+        font-size: 1.4rem;
     }
-}
-.hamburger__contacts {
-    margin-bottom: 2.8rem;
-}
-.contacts__img-left {
-    margin-left: 2rem;
-}
-@media screen and (min-width: 1120px) {
-    .contacts__indent {
-        margin-top: 0;
-        justify-content: center;
-        align-content: center;
-    }
-    .contacts__img-left {
+    a {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #646c79;
+        transition-property: "linear-gradient";
+        transition-duration: 0.4s;
         position: relative;
+        padding-left: 5rem;
+        transition-duration: 0.4s;
+        line-height: 25.2px;
+        margin-bottom: 0.4rem;
+        display: inline-block;
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("../img/icons/phone.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 3.8rem;
+            height: 3.8rem;
+            top: 0.5rem;
+            left: 0;
+            visibility: visible;
+        }
+        &:hover {
+            color: #4dc8c0;
+            transition-duration: 0.4s;
+        }
     }
 }
-@media screen and (min-width: 1424px) {
-    .contacts__none-desctop {
-        display: none;
-    }
-}
+// .tel-none {
+//     display: none;
+// }
+// @media screen and (min-width: 760px) {
+//     .tel-none {
+//         display: block;
+//         margin-left: 1rem;
+//     }
+// }
+
+// @media screen and (min-width: 1120px) {
+//     .contacts__indent {
+//         margin-top: 0;
+//         justify-content: center;
+//         align-content: center;
+//     }
+// }
+// @media screen and (min-width: 1424px) {
+//     .contacts__none-desctop {
+//         display: none;
+//     }
+// }

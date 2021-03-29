@@ -1,0 +1,194 @@
+.hide {
+  clip: rect(0 0 0 0);
+  height: 0.1rem;
+  margin: -0.1rem;
+  padding: 0;
+  position: absolute;
+  width: 0.1rem;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  position: relative;
+  width: 100%;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-label {
+  padding: 2rem 3.7rem 2rem 2rem;
+  width: 100%;
+  display: block;
+  background: #879ab9;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.96rem;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  margin-top: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.accordion-label-top {
+  margin-top: 0;
+}
+
+.accordion-label:hover {
+  cursor: pointer;
+}
+
+.accordion-label:before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 87%;
+  display: inline-block;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-image: url("../img/chevron.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+input[type="checkbox"]:checked ~ .accordion-label {
+  border-radius: 0.5rem 0.5rem 0 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+input[type="checkbox"]:checked ~ .accordion-label:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(180deg);
+}
+
+.accordion-child {
+  margin: 0;
+  visibility: hidden;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  opacity: 0;
+  height: 0;
+  padding: 1rem 2rem 2rem 2rem;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+}
+
+.accordion-child::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.accordion-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.88rem;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #828282;
+  margin-top: 1rem;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+input[type="checkbox"]:checked ~ .accordion-child {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.24rem;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #828282;
+  -webkit-box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112), 0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
+          box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112), 0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
+  height: 19.3rem;
+  opacity: 1;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  visibility: visible;
+  overflow: auto;
+}
+
+@media screen and (min-width: 411px) {
+  .accordion-label:before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-image: url("../img/chevron.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-label:before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 93%;
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-image: url("../img/chevron.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .accordion-label {
+    padding: 2.4rem 20.7rem 2.4rem 2.4rem;
+    font-size: 1.8rem;
+    line-height: 2.52rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  input[type="checkbox"]:checked ~ .accordion-child {
+    margin: 0;
+    background: #ffffff;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.88rem;
+    -webkit-font-feature-settings: "pnum" on, "lnum" on;
+            font-feature-settings: "pnum" on, "lnum" on;
+    color: #828282;
+    -webkit-box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112), 0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
+            box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112), 0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
+    height: 19.3rem;
+    opacity: 1;
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    visibility: visible;
+    overflow: auto;
+  }
+}

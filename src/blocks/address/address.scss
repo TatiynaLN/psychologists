@@ -1,23 +1,60 @@
-.address,
-.addr {
-    margin: 0 auto;
-    width: 25.9rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    align-self: baseline;
-    z-index: 1;
-
-    &:hover .adress__text-bold {
-        color: #4dc8c0;
+.addres {
+    width: 26rem;
+    font-size: 1.4rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #565b62;
+    p {
+        padding-left: 5rem;
+        line-height: 1.68rem;
+    }
+    a {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #646c79;
+        transition-property: "linear-gradient";
+        transition-duration: 0.4s;
+        position: relative;
+        padding-left: 5rem;
+        transition-duration: 0.4s;
+        line-height: 25.2px;
+        margin-bottom: 0.6rem;
+        display: block;
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("../img/icons/location.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 3.8rem;
+            height: 3.8rem;
+            top: 0.5rem;
+            left: 0;
+        }
+        &:hover {
+            color: #4dc8c0;
+            transition-duration: 0.4s;
+        }
     }
 }
 .hamburger__addres {
+    margin: 0 auto;
     margin-bottom: 2.8rem;
 }
-.adress__none {
+.adress__mn {
     display: none;
+    @media (min-width: 1420px) {
+        display: block;
+        margin: 0 auto;
+        margin-left: 0;
+        order: 0;
+    }
 }
+@media screen and (min-width: 1120px) {
+    .addres__left {
+        margin-left: 2rem;
+    }
+}
+
 // Не влазило на экраны 540px
 @media screen and (min-width: 540px) {
     .address__indent {
@@ -27,11 +64,6 @@
 @media screen and (min-width: 1200px) {
 }
 @media screen and (min-width: 1420px) {
-    .address,
-    .addr {
-        width: 28.9rem;
-        display: flex;
-    }
     .addres {
         align-self: center;
     }

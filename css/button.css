@@ -1,0 +1,25 @@
+.btn__mobail-none {
+  display: none;
+  z-index: 1;
+}
+
+.btn-center {
+  margin: 0 auto;
+}
+
+.btn__width {
+  padding: 0.8em 0;
+}
+
+@media screen and (min-width: 1424px) {
+  .btn__none-desctop {
+    display: none;
+  }
+  .btn__mobail-none {
+    display: block;
+    margin: 0;
+  }
+  .btn__width {
+    font-size: 1.8rem;
+  }
+}

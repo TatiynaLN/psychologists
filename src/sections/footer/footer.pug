@@ -1,71 +1,47 @@
 footer.footer
-    .footer__top
+    .container
         .footer__top-content
-            .footer__menu-top
-                ul.footer__menu-list
-                    li.white-space: a.footer__menu-item(href="family-psych.html") Семейная консультация
-                    li.white-space: a.footer__menu-item(href="online-consul.html") Онлайн-консультация
-                    li.white-space: a.footer__menu-item(href="indiv-consul.html") Индивидуальные консультации
-                    li.white-space.det: a.footer__menu-item(href="child-psych.html") Детский психолог
-            .contacts__footer
-                .phone__img.phone__img-indent
-                    a(href="tel:+78001201204")
-                        img.icons-tel(src="wp-content/themes/twentytwenty-child/img/icons/phone.svg", alt="phone")
-                .tel__footer
-                    a.numbers(href="tel:+78001201204") + 7 800 120-12-04
-                    p.time  Ежедневно с 10 до 20 ч.
-        a.btn.btns.btn__footer-placement(href="#modalfooter") 
-            span Обратный звонок
-        #modalfooter.modal
-                .modal-dialog
-                    .content-modal
-                        .modal-header
-                            a(href="#close" title="Close").close x
-                        form.form.form__modal
-                            h2.mainText.mainText-modal Перезвонить вам?
-                            p.secondText.form__header-text Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время
-                            .formInput
-                                input.form__input-style.modal__phone(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
-                            a.btn__width.form__header-btn(href="#open") 
-                                span Перезвонить мне
-                            .form__policy.form__header-policy
-                                input.form__checkbox#modal__checkbox-footer(type="checkbox" checked="")
-                                label.form__pol(for="modal__checkbox-footer") 
-                                    span.modal__policy-link Вы соглашаетесь с 
-                                        a.form__policy-link(href="#!" target="_blank") условиями обработки персональных данных
-    .menu__box-footer
+            ul.footer__menu-list
+                li: a(href="family-psych.html") Семейная консультация
+                li: a(href="online-consul.html") Онлайн-консультация
+                li: a(href="indiv-consul.html") Индивидуальные консультации
+                li: a(href="child-psych.html") Детский психолог
+            .contacts
+                include ../../blocks/contacts/contacts.pug
+            button.btn.show-modal-1(data-toggle="modal-1") 
+                span Обратный звонок 
         ul.menu__list-footer
-            li: a.footer__menu-items(href="about-me.html") Обо мне
-            li: a.footer__menu-items(href="services.html") Услуги
-            li: a.footer__menu-items(href="price.html") Цены
-            li: a.footer__menu-items(href="reviews.html") Отзывы
-            li: a.footer__menu-items(href="blog.html") Блог
-            li: a.footer__menu-items(href="contacts.html") Контакты
-    .social
-        .icon_soc
-            a(href='#')
-                img.youtube#youtube(src="wp-content/themes/twentytwenty-child/img/icons/youtube.svg" alt="youtube")
-        .icon_soc
-            a(href='#')
-                img.insta#instagram(src="wp-content/themes/twentytwenty-child/img/icons/instagram.svg" alt="instagram") 
-        .icon_soc
-            a(href='#')
-                img.vk#vk(src="wp-content/themes/twentytwenty-child/img/icons/vk.svg" alt="vk") 
-    .policy__footer
-        p.politics
-            a.txt.txt-indent.txt__blog(href="" target="_blank") Политика конфиденциальности сайта
-        p
-            a.txt.txt-indent.txt__blog(href="" target="_blank") Разработка сайта
+                li: a(href="about-me.html") Обо мне
+                li: a(href="services.html") Услуги
+                li: a(href="price.html") Цены
+                li: a(href="reviews.html") Отзывы
+                li: a(href="blog.html") Блог
+                li: a(href="contacts.html") Контакты
+        ul.social
+            li
+                a(href='#' target="_blank")
+                    img(src="wp-content/themes/twentytwenty-child/img/icons/youtube.svg" alt="youtube")
+            li
+                a(href='#' target="_blank")
+                    img(src="wp-content/themes/twentytwenty-child/img/icons/instagram.svg" alt="instagram") 
+            li
+                a(href='#' target="_blank")
+                    img(src="wp-content/themes/twentytwenty-child/img/icons/vk.svg" alt="vk") 
+        .policy__footer
+            p
+                a(href="" target="_blank") Политика конфиденциальности сайта
+            p
+                a(href="" target="_blank") Разработка сайта
 // END FOOTER
-.modal__thanks
-    #openModalThanks.modal
-                .modal-dialog
-                    .content-modal
-                        .modal-header
-                            a(href="#close" title="Close").close x
-                        form.form__thanks.form
-                            .form__blocks
-                                h2.mainText.text-main Спасибо за заявку!
-                                p.secondText Мы свяжемся с вами в ближайшее время, в рабочии часы, указанные на сайте
+//- .modal__thanks
+//-     #openModalThanks.modal
+//-                 .modal-dialog
+//-                     .content-modal
+//-                         .modal-header
+//-                             a(href="#close" title="Close").close x
+//-                         form.form__thanks.form
+//-                             .form__blocks
+//-                                 h2.mainText.text-main Спасибо за заявку!
+//-                                 p.secondText Мы свяжемся с вами в ближайшее время, в рабочии часы, указанные на сайте
             
 

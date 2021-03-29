@@ -1,0 +1,49 @@
+.sectionThree {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.bg {
+  background: url("../img/why-s.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  height: auto;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.txt-width {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .bg {
+    background: url("../img/why-m.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 2.2rem 6rem 2.2rem;
+    margin-top: 7rem;
+  }
+  .txt-width {
+    width: 80%;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .txt-width {
+    width: 40%;
+    margin-top: 2rem;
+  }
+  .bg {
+    background: url("../img/why-l.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 2.2rem 6rem 2.2rem;
+    margin-top: 7rem;
+  }
+}

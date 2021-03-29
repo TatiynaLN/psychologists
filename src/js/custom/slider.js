@@ -1,5 +1,5 @@
-// "use strict";
-// ;
+"use strict";
+;
 
 (function () {
     new Swiper('.education-slider', {
@@ -103,7 +103,7 @@
     new Swiper('.blog-slider', {
         autoplay: {
             delay: 3000,
-            disableOnInteraction: false,
+            disableOnInteraction: true,
         },
 
         slidesPerGroup: 1,

@@ -1,14 +1,6 @@
-.picture-female {
+.picture {
     width: 100%;
-
-    border-radius: 1rem;
-}
-
-.picture__indent {
-    margin-top: 3rem;
-}
-.picture__width {
-    width: 100%;
+    max-width: 66.8rem;
     position: relative;
     &:after {
         content: "";
@@ -21,24 +13,7 @@
         border-radius: 1rem;
         background: linear-gradient(180deg, rgba(236, 234, 232, 0) 57.92%, #eceaea 100%);
     }
-}
-
-@media screen and (min-width: 768px) {
-    .picture__width {
-        max-width: 66.8rem;
-    }
-}
-@media screen and (min-width: 1560px) {
-    .picture__about {
-        max-width: 49%;
-    }
-    .picture__indent {
-        margin-top: 0;
-    }
-    .picture {
-        order: 0;
-        align-self: baseline;
-        justify-content: center;
-        align-self: center;
+    img {
+        width: 100%;
     }
 }

@@ -1,0 +1,35 @@
+.adress__text {
+  font-size: 1.4rem;
+  line-height: 140%;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #565b62;
+}
+
+.adress__text-bold {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #646c79;
+  -webkit-transition-property: "linear-gradient";
+  transition-property: "linear-gradient";
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.addres {
+  width: 20.9rem;
+}
+
+.adress__none {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media screen and (min-width: 1120px) {
+  .addres__left {
+    margin-left: 2rem;
+  }
+}

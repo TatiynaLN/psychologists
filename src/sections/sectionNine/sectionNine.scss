@@ -1,91 +1,90 @@
 // SECTION Блог психолога
-.blog {
-    padding: 4rem 0;
-}
-.blog__min-text {
-    margin-bottom: 1rem;
-    align-self: baseline;
-}
-.blog__titles {
-    margin-bottom: 4rem;
-}
-.picture__blog {
-    border-radius: 1rem;
-    margin-bottom: 2rem;
-    .picture-female {
-        height: 100%;
-    }
-}
-
-.blog__titl {
-    margin-bottom: 2rem;
-}
-.blog__txt {
-    margin-bottom: 2rem;
-}
-.blog-slider {
-    cursor: pointer;
-    margin-bottom: 4rem;
-}
-.sectionNine .swiper-slide-active {
-    align-self: stretch;
-}
-.block__contents {
-    padding: 1rem;
-    text-align: left;
-}
-.block__content-flexs {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-self: stretch;
-    height: 100%;
-    min-width: 30rem;
-}
-.swiper-slide.swiper__blog {
-    align-self: stretch;
-}
-.btn__center {
-    margin: 0 auto;
-}
-.txt__blog {
-    text-decoration: none;
-    text-decoration-line: underline;
-    font-feature-settings: "pnum" on, "lnum" on;
-}
-
 .sectionNine {
-    width: 100%;
-}
-.blog-width {
-    width: 100%;
-    overflow: hidden;
-}
+    text-align: center;
+    padding-top: 4rem;
+    @media (min-width: 768px) {
+        padding-top: 7rem;
+    }
+    .cont {
+        width: 100%;
+        @media (min-width: 1700px) {
+            width: 82%;
+            max-width: 144.3rem;
+            height: 100%;
+            margin: 0 auto;
+            padding: 7.9rem 0;
+        }
+    }
+    h2 {
+        margin-bottom: 4rem;
+        @media (min-width: 1700px) {
+            margin-bottom: 5rem;
+        }
+    }
+    a {
+        margin-top: 4rem;
+        @media (min-width: 768px) {
+            margin-top: 5rem;
+        }
+    }
+    .blog-slider {
+        padding: 0 1.5rem;
+        text-align: left;
+        @media (min-width: 411px) {
+            padding-left: 3.1rem;
+        }
+        @media (min-width: 768px) {
+            padding-left: 0;
+        }
 
-@media screen and (min-width: 768px) {
-    .blog {
-        padding: 7rem 0;
+        .picture,
+        h3 {
+            margin-bottom: 2rem;
+        }
+        a {
+            margin-top: 2rem;
+            color: #fff;
+            position: relative;
+            transition: all 0.6s ease;
+            // text-decoration-line: underline;
+            span {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 0.1rem;
+                    width: 0%;
+                    bottom: 0;
+                    right: 0;
+                    background-color: #fff;
+                    transition: width 0.4s ease-in-out;
+                }
+            }
+            &:hover span::after {
+                width: 100%;
+                left: 0;
+                opacity: 1;
+                transition: width 0.4s ease-in-out;
+            }
+        }
+        p {
+            height: auto;
+            flex-shrink: 1;
+        }
     }
-    .block__content-flexs {
-        padding: 0;
+    .swiper-slide-active {
+        align-self: stretch;
     }
-    .block__contents {
-        padding: 0;
+    .swiper__blog {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        .text-bgc {
+            p {
+                flex: 0 auto;
+            }
+        }
+        p {
+            flex: 1 0 auto;
+        }
     }
 }
-@media screen and (min-width: 1020px) {
-    .blog {
-        padding: 10rem 0;
-    }
-    .blog__titles {
-        margin-bottom: 5rem;
-    }
-}
-@media screen and (min-width: 1700px) {
-    .blog-width {
-        margin: 0 auto;
-        width: 85%;
-        overflow: hidden;
-    }
-}
-//

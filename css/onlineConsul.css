@@ -1,0 +1,44 @@
+.container__online {
+  background: url("../img/onlain1@x1-s.jpg");
+}
+
+.onlineConsul-titles {
+  width: 80%;
+}
+
+.block__txt-txts {
+  width: 100%;
+  gap: 1.1rem;
+}
+
+.consul-title {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.24rem;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #565b62;
+}
+
+@media screen and (min-width: 768px) {
+  .container__online {
+    background: url("../img/onlain1@x1-m.jpg");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block__txt-txts {
+    width: 48%;
+  }
+  .consul-title {
+    font-size: 2.4rem;
+    line-height: 3.84rem;
+  }
+  .container__online {
+    background: url("../img/onlain1@x1.jpg");
+  }
+}

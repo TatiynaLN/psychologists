@@ -1,0 +1,178 @@
+.container__contacts {
+  margin: 0 auto;
+  width: 81%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 6.2rem;
+}
+
+.contact__container {
+  margin: 0 auto;
+  width: 81%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__container-top {
+  margin-bottom: 8.6rem;
+}
+
+.contact__phone:hover .numbers {
+  color: #4dc8c0;
+}
+
+.contact__addr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 26.5rem;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.contact__addr:hover a {
+  color: #4dc8c0;
+}
+
+.contact__addres {
+  width: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contact__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 21rem;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.contact__titles {
+  margin-bottom: 2rem;
+}
+
+.contact__txt {
+  margin-bottom: 1rem;
+}
+
+.contact__txt-bottom {
+  margin-bottom: 2.4rem;
+}
+
+.contact__contact {
+  margin-bottom: 1rem;
+}
+
+.contact__contacts {
+  margin-bottom: 2rem;
+}
+
+.contact__titl {
+  margin-bottom: 2.8rem;
+}
+
+.contact__txts {
+  margin-bottom: 2rem;
+}
+
+.contact__form {
+  margin-bottom: 15.4rem;
+}
+
+.info {
+  margin-bottom: 11.1rem;
+}
+
+.info__titl {
+  margin: 0 auto;
+  max-width: 80%;
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
+
+.txts {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #4f4f4f;
+}
+
+.tel__contact {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 5rem;
+  }
+  .contact__phone {
+    width: 19rem;
+  }
+  .contact__contacts {
+    width: 50%;
+  }
+  .contact__titles {
+    width: 80%;
+  }
+  .contact__map {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .txts {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .contact__container {
+    gap: 9rem;
+  }
+}

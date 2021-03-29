@@ -1,0 +1,56 @@
+.text,
+.texts {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #828282;
+  text-align: center;
+}
+
+.head__text {
+  max-width: 63.3rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (min-width: 620px) {
+  .text,
+  .texts {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .text_width {
+    width: 46rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    margin: 2rem 0 3rem 0;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+  }
+  .texts {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+  }
+  .text_width {
+    width: 63.3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .head__text {
+    max-width: 63.3rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}

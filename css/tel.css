@@ -1,0 +1,55 @@
+.tel {
+  display: block;
+  width: 20rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 1.68rem;
+}
+
+.time {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+}
+
+.numbers {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.52rem;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  text-decoration: none;
+  color: #646c79;
+  -webkit-transition-property: "linear-gradient";
+  transition-property: "linear-gradient";
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.tel-none {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .tel-none {
+    display: block;
+    margin-left: 1rem;
+  }
+  .numbers {
+    font-size: 1.4rem;
+  }
+  .time {
+    font-size: 1.2rem;
+  }
+}

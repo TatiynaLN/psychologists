@@ -44,9 +44,9 @@ const paths = {
         watch: './src/css-plugins/**/*'
     },
     js: {
-        src: ['./src/js/libraries/**/*.js',  './src/js/custom/**/*.js', 'node_modules/svgxuse/svgxuse.min.js'],
+        src: ['./src/js/libraries/**/*.js', './src/js/custom/**/*.js', 'node_modules/svgxuse/svgxuse.min.js'],
         dest: './build/wp-content/themes/twentytwenty-child/js',
-        watch: ['./src/js/libraries/**/*.js', './src/js/custom/**/*.js', ]
+        watch: ['./src/js/libraries/**/*.js', './src/js/custom/**/*.js',]
     },
     jsPlugins: {
         src: './src/js/plugins/**/*.js',
@@ -111,7 +111,7 @@ gulp.task('styles', () => {
         //.pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer({
-            Browserslist: ['last 3 versions'],
+            overrideBrowserslist: 'last 2 versions',
             cascade: true
         }))
         .pipe(gcmq())
@@ -248,8 +248,8 @@ gulp.task('clean', () => {
 /* BROWSER SYNC */
 
 function reload(done) {
-  browserSync.reload({ stream: true });
-  done();
+    browserSync.reload({ stream: true });
+    done();
 }
 
 gulp.task('server', () => {
