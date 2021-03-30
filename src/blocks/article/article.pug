@@ -1,28 +1,11 @@
 // article
-article.article.blogPage__article
-    .picture.article__picture
+article.article
+    .picture
         img(src='wp-content/themes/twentytwenty-child/img/article.jpg', alt='Елена Иванова')
-    p.article__txt Елена Иванова
-    p.article__text Психолог, нарративный консультант,
+    h4 Елена Иванова
+    p Психолог, нарративный консультант,
                     |специалист по эмоциональному благополучию
-    a.btn.article__btn(href="#openModalThree") 
+    button.btn.show-modal-4(data-toggle="modal-4")
         span Связаться с психологом
-    #openModalThree.modal
-                .modal-dialog
-                    .content-modal
-                        .modal-header
-                            a(href="#close" title="Close").close x
-                        form.form.form__modal.form__header-modal
-                            h2.mainText.mainText-modal Связаться с психологом
-                            p.secondText.form__header-text Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей
-                            .formInput__recording
-                                input.form__input-style.form__input-block(type="text" name='name' placeholder="Ваше имя" required="required")
-                                input.form__input-style.form__input-block(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
-                                a.btn__width.form__header-btn(href="#recordingTwo") 
-                                    span Записаться на приём
-                            .form__policy.form__header-policy
-                                input.form__checkbox#form__checkboxThree(type="checkbox" checked="")
-                                label.form__pol(for="form__checkboxThree") 
-                                    span.modal__policy-link Вы соглашаетесь с 
-                                        a.form__policy-link(href="#!") условиями обработки персональных данных
+    
 // END article

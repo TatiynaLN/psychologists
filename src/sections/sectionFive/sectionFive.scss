@@ -74,7 +74,7 @@
             max-width: 32.4rem;
         }
         @media (min-width: 1200px) {
-            width: 50%;
+            width: 100%;
             max-width: 90.5rem;
         }
         h3,
@@ -115,7 +115,7 @@
             right: 0;
             bottom: 0;
             opacity: 0;
-            transition: all 0.6s ease;
+            transition: all 1s;
             border-radius: 6.25em;
         }
         &:focus:before,

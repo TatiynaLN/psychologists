@@ -5,62 +5,42 @@
     border-radius: 0.5rem;
     height: auto;
     align-self: baseline;
-    &__text {
-        font-family: "Raleway";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.4rem;
-        line-height: 1.96rem;
-        text-align: center;
-        font-feature-settings: "pnum" on, "lnum" on;
-        color: #565b62;
-        margin-bottom: 1.5rem;
-    }
-    &__txt {
-        font-weight: bold;
-    }
-    &__picture {
-        margin-bottom: 2.4rem;
-    }
-    &__btn {
-        margin: 0 auto;
-    }
-}
-.formInput__recording {
-    gap: 2rem;
-}
-.blogPage__article {
     padding: 3rem 2rem 3.9rem 2rem;
     text-align: center;
     order: 0;
     margin-bottom: 3rem;
-}
-@media screen and (min-width: 670px) {
-    .article {
+    @media (min-width: 670px) {
         margin: 0 auto;
-        max-width: 45%;
+        max-width: 40rem;
     }
-    .blogPage__article {
-        order: 1;
-    }
-}
-@media screen and (min-width: 768px) {
-    .article {
-        max-width: 44%;
-    }
-    .blogPage__article {
+    @media (min-width: 768px) {
         align-self: baseline;
         margin-bottom: 0;
+        order: 1;
+        max-width: 30rem;
     }
-}
-@media screen and (min-width: 1024px) {
-    .article {
+    @media (min-width: 1024px) {
         max-width: 27%;
     }
-}
-@media screen and (min-width: 1200px) {
-    .article {
-        max-width: 24%;
+    @media (min-width: 1200px) {
         margin-right: 0;
+    }
+    p {
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.96rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    h4 {
+        font-weight: bold;
+    }
+    .picture {
+        margin-bottom: 2.4rem;
+    }
+    .show-modal-4 {
+        margin: 0 auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }

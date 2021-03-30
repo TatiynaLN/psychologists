@@ -135,7 +135,8 @@
         line-height: 4.7rem;
         text-align: center;
         color: #565b62;
-        transition-duration: 0.3s;
+        transition: all 0.4s;
+        &:focus,
         &:hover {
             font-weight: bold;
             color: #565b62;
@@ -153,6 +154,7 @@
             transition-duration: 0.02s;
             line-height: 4.7rem;
             color: #ffffff;
+            &:focus,
             &:hover {
                 color: #ffffff;
             }

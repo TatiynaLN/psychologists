@@ -29,10 +29,28 @@ body {
 }
 
 .container {
-  width: 82%;
-  max-width: 144.3rem;
-  height: 100%;
+  width: 100%;
+  max-width: 30rem;
+  padding: 0 1.5rem;
   margin: 0 auto;
+  @media (min-width: 411px) {
+    max-width: 38rem;
+  }
+  @media (min-width: 540px) {
+    max-width: 48rem;
+  }
+  @media (min-width: 768px) {
+    max-width: 70rem;
+  }
+  @media (min-width: 900px) {
+    max-width: 84.4rem;
+  }
+  @media (min-width: 1200px) {
+    max-width: 114.3rem;
+  }
+  @media (min-width: 1540px) {
+    max-width: 145.5rem;
+  }
 }
 
 a,
@@ -56,6 +74,7 @@ label {
 .modal-first--open {
   opacity: 1;
 }
+.fslightbox-open,
 .ns,
 .oh {
   overflow: hidden;

@@ -1,117 +1,86 @@
 //Страница BLOG-PAGE
-
-.section__blogPage {
-    margin-bottom: 10.3rem;
-}
-.container__blogPage {
-    padding: 4.1rem 1rem;
-    background: url("../img/blogPage1-s.jpg");
-}
-
-.blogPage__title,
-.blogPage__text {
-    margin: 0 auto;
-}
-.blogPage__text {
-    max-width: 62.8rem;
-}
-.blogPage {
-    margin: 0 auto;
-    width: 81.5%;
-    &__containers {
-        display: flex;
-        flex-direction: column;
-    }
-    &__box {
-        order: 1;
-    }
-    &__titles {
-        margin-bottom: 3rem;
-    }
-    &__txt {
-        margin-bottom: 2rem;
-    }
-    &__txts {
-        margin-bottom: 12.1rem;
-    }
-    &__picture {
-        margin-bottom: 3.2rem;
-    }
-    &__min-text,
-    &__title {
-        margin-bottom: 2rem;
-    }
-}
-@media screen and (min-width: 670px) {
-    .blogPage {
-        margin: 0 auto;
-        width: 81.5%;
-        &__containers {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 2rem;
-        }
-        &__box {
-            width: 52%;
-            order: 0;
-        }
-    }
-}
-@media screen and (min-width: 768px) {
-    .container__blogPage {
-        background: url("../img/blogPage1-m.jpg");
-    }
-    .wraper {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .blogPage {
-        &__containers {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        &__box {
-            width: 78%;
-            order: 0;
-        }
-        &__container {
-            width: 55%;
-        }
-    }
-}
-@media screen and (min-width: 1024px) {
-    .blogPage {
-        &__box {
-            width: 60%;
-            order: 0;
-        }
-        &__container {
-            width: 60%;
-        }
-        gap: 5rem;
-    }
-    .container__blogPage {
-        background: url("../img/blogPage1.jpg");
-    }
-    .wraper {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-}
-//
-
-.wraper {
-    margin: 0 auto;
-    width: 81.5%;
-    height: auto;
+.bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
-    text-align: center;
+    @media (min-width: 768px) {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    @media (min-width: 1024px) {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
+.section__blogPage {
+    margin-bottom: 10.3rem;
+    .bg {
+        background: url("../img/blogPage1-s.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4.1rem 1.5rem;
+        text-align: center;
+        @media (min-width: 768px) {
+            background: url("../img/blogPage1-m.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        @media (min-width: 1024px) {
+            background: url("../img/blogPage1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+.blogPage {
+    &__containers {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__box {
+        width: 100%;
+        order: 1;
+        @media (min-width: 768px) {
+            max-width: 40rem;
+            order: 0;
+            margin-right: 2rem;
+        }
+        @media (min-width: 1024px) {
+            max-width: 95.3rem;
+            order: 0;
+            margin-right: 3rem;
+        }
+    }
+    &__container {
+        @media (min-width: 768px) {
+            max-width: 40rem;
+        }
+        @media (min-width: 1024px) {
+            max-width: 95.3rem;
+        }
+    }
+    .picture {
+        margin-bottom: 3.2rem;
+        @media (min-width: 1024px) {
+            max-width: 95.3rem;
+        }
+    }
+    h2 {
+        margin-bottom: 3rem;
+    }
+    p {
+        margin-bottom: 2rem;
+    }
+}
+
+//
