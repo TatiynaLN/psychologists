@@ -11,32 +11,25 @@
     left: 0;
     right: 0;
     text-align: center;
-}
-.logo-logo {
-    margin: 0 auto;
-    width: 18rem;
-    z-index: 6;
-}
-.logo__img {
-    height: 3.7rem;
-    position: relative;
-    z-index: 2;
-    margin-top: 1.6rem;
-}
-.logo__name {
-    margin: 0 auto;
-    width: 13.9rem;
-    height: 1.4rem;
-    top: 0;
-    left: 1rem;
-    position: relative;
-    display: block;
-    font-family: "Raleway";
-    color: #565b62;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.2rem;
-    line-height: 120%;
-    font-feature-settings: "pnum" on, "lnum" on;
-    text-decoration: none;
+    a {
+        margin: 0 auto;
+        width: 18rem;
+    }
+    img {
+        height: 3.7rem;
+        position: relative;
+        z-index: 2;
+        margin-top: 1.6rem;
+    }
+    p {
+        margin: 0 auto;
+        width: 13.9rem;
+        height: 1.4rem;
+        top: 0;
+        left: 1rem;
+        position: relative;
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 120%;
+    }
 }

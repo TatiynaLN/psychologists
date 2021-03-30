@@ -1,114 +1,3 @@
-// /* свойства модального окна по умолчанию */
-// .modal {
-//     position: fixed;
-//     /* фиксированное положение */
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     background: rgba(0, 0, 0, 0.5);
-//     /* цвет фона */
-//     z-index: 1050;
-//     opacity: 0;
-//     /* по умолчанию модальное окно прозрачно */
-//     -webkit-transition: opacity 400ms ease-in;
-//     -moz-transition: opacity 400ms ease-in;
-//     transition: opacity 400ms ease-in;
-//     /* анимация перехода */
-//     pointer-events: none;
-//     /* элемент невидим для событий мыши */
-//     font-family: "Raleway";
-//     font-style: normal;
-// }
-// /* при отображении модального окно */
-// .modal:target {
-//     opacity: 1;
-//     pointer-events: auto;
-//     overflow-y: auto;
-// }
-
-// /* ширина модального окна и его отступы от экрана */
-// .modal-dialog {
-//     position: relative;
-//     width: 29rem;
-//     margin: 1rem auto;
-//     left: 0;
-//     right: 0;
-//     transform: translateY(13%);
-// }
-// /* свойства для блока, содержащего контент модального окна */
-// .content-modal {
-//     width: 100%;
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-//     background: #ffffff;
-//     border-radius: 5px;
-//     background-clip: padding-box;
-//     outline: 0;
-//     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
-// }
-// @media screen and (min-width: 540px) {
-//     .modal-dialog {
-//         width: 49rem;
-//     }
-// }
-// @media (min-width: 576px) {
-//     .modal-dialog {
-//         width: 50rem;
-//     }
-// }
-// @media (min-width: 768px) {
-//     .modal-dialog {
-//         width: 60rem;
-//         transform: translateY(25%);
-//     }
-// }
-// @media screen and (min-width: 1024px) {
-//     .modal-dialog {
-//         width: 90rem;
-//     }
-// }
-
-// /* свойства для заголовка модального окна */
-// .modal-header {
-//     width: 98%;
-//     height: 4rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-// }
-
-// /* свойства для кнопки "Закрыть" */
-// .close {
-//     float: right;
-//     font-family: "Raleway";
-//     font-size: 2.4rem;
-//     font-weight: 700;
-//     line-height: 1;
-//     color: #000;
-//     text-shadow: 0 1px 0 #fff;
-//     opacity: 0.5;
-//     text-decoration: none;
-// }
-
-// /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
-// .close:focus,
-// .close:hover {
-//     color: #000;
-//     text-decoration: none;
-//     cursor: pointer;
-//     opacity: 0.75;
-// }
-
-// /* свойства для блока, содержащего основное содержимое окна */
-// .modal-body {
-//     position: relative;
-//     flex: 1 1 auto;
-//     padding: 15px;
-//     overflow: auto;
-// }
-
 .modal__backdrop {
     position: fixed;
     visibility: hidden;
@@ -137,8 +26,8 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    transform: translateY(50%);
-    padding: 15px;
+    transform: translateY(40%);
+    padding: 3rem 1.5rem;
     overflow: auto;
     .modal__btn-close {
         position: absolute;
@@ -152,10 +41,21 @@
         right: 1rem;
         top: 0rem;
     }
-    h6,
+    h5,
     p {
         text-align: center;
         margin-bottom: 2rem;
+    }
+    h5 {
+        font-weight: bold;
+        font-size: 3.2rem;
+        line-height: 120%;
+        @media (min-width: 540px) {
+            font-size: 4.8rem;
+        }
+        @media (min-width: 768px) {
+            font-size: 6.4rem;
+        }
     }
     input,
     button {
@@ -167,6 +67,10 @@
         text-align: center;
         outline: none;
         font-size: 1.4rem;
+        padding: 2rem 1rem;
+        @media (min-width: 540px) {
+            max-width: 25.4rem;
+        }
     }
     input {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) -9.84%, rgba(240, 240, 240, 0.3) 100%);
@@ -177,7 +81,6 @@
         line-height: 1.96rem;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #646c79;
-        padding: 1.3rem 1rem;
     }
 
     .modal__btn-close {
@@ -190,6 +93,13 @@
             opacity: 0.75;
         }
     }
+    .input-flex {
+        width: 100%;
+        @media (min-width: 1020px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
     @media (min-width: 400px) {
         width: 80%;
         max-width: 80vw;
@@ -197,6 +107,11 @@
     @media (min-width: 540px) {
         width: 70%;
         max-width: 70vw;
+    }
+    @media (min-width: 768px) {
+        width: 90%;
+        max-width: 90rem;
+        padding: 7rem 16rem 9rem 16rem;
     }
 }
 .form__policy {
@@ -238,12 +153,7 @@
         overflow-y: auto;
         -webkit-transition: opacity 400ms ease-in;
         transition: opacity 400ms ease-in;
-        font-family: "Raleway";
     }
-}
-/* СТИЛИЗУЕМ */
-.form__policy {
-    outline: 1px solid red;
 }
 label[for="modal__chec1"],
 label[for="modal__chec2"],

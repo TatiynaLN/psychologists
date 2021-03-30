@@ -105,11 +105,11 @@ function $modal(options) {
 
         content: '<h5>Перезвонить вам?</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</p>\
         <form>\
-            <input class="form__input-style modal__phone" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
+            <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
         <button> <span>Перезвонить мне</span></button>\
         <div class="form__policy">\
-                    <input class="form__checkbox" id="modal__chec1" type="checkbox" checked="">\
-                    <label class="modal-form__pol" for="modal__chec1"> Вы соглашаетесь с \
+                    <input id="modal__chec1" type="checkbox" checked="">\
+                    <label for="modal__chec1"> Вы соглашаетесь с \
                     <a target="_blank" href="#!">условиями обработки персональных данных</a></label>\
                   </div></form>'
 
@@ -117,13 +117,13 @@ function $modal(options) {
     // создадим модальное окно 2
     var modal2 = $modal({
         content: '<h5>Запись на приём</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
-        <form>\
-                    <input class="form__input-style form__input-block" type="text" name="name" placeholder="Ваше имя" required="required">\
-                    <input class="form__input-style form__input-block" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
-                    <button><span>Записаться на приём</span></button>\
+        <form><div class="input-flex">\
+                    <input type="text" name="name" placeholder="Ваше имя" required="required">\
+                    <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
+                    </div><button><span>Записаться на приём</span></button>\
                   <div class="form__policy">\
-                    <input class="form__checkbox" id="modal__chec2" type="checkbox" checked="">\
-                    <label class="modal-form__pol" for="modal__chec2"> \
+                    <input id="modal__chec2" type="checkbox" checked="">\
+                    <label for="modal__chec2"> \
                             Вы соглашаетесь с \
                     <a target="_blank" href="#!">условиями обработки персональных данных</a>\
                     </label>\
@@ -132,14 +132,14 @@ function $modal(options) {
     // создадим модальное окно 3
     var modal3 = $modal({
         content: '<h5>Запись на приём</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
-        <form>\
-                    <input class="form__input-style form__input-block" type="text" name="name" placeholder="Ваше имя" required="required">\
-                    <input class="form__input-style form__input-block" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
-                    <button><span>Записаться на приём</span></button>\
+        <form><div class="input-flex">\
+                    <input type="text" name="name" placeholder="Ваше имя" required="required">\
+                    <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
+                    </div><button><span>Записаться на приём</span></button>\
                   </form>\
                   <div class="form__policy">\
-                    <input class="form__checkbox" id="modal__chec3" type="checkbox" checked="">\
-                    <label class="modal-form__pol" for="modal__chec3"> \
+                    <input id="modal__chec3" type="checkbox" checked="">\
+                    <label for="modal__chec3"> \
                                         Вы соглашаетесь с \
                     <a target="_blank" href="#!">условиями обработки персональных данных</a>\
                     </label>\
@@ -148,14 +148,14 @@ function $modal(options) {
     // создадим модальное окно 4
     var modal4 = $modal({
         content: '<h5>Связаться с психологом</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
-        <form>\
-                    <input class="form__input-style form__input-block" type="text" name="name" placeholder="Ваше имя" required="required">\
-                    <input class="form__input-style form__input-block" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
-                    <button><span>Записаться на приём</span></button>\
-                  <div class="form__policy">\
-                    <input class="form__checkbox" id="modal__chec4" type="checkbox" checked="">\
-                    <label class="modal-form__pol" for="modal__chec4"> \
-                                                    Вы соглашаетесь с \
+        <form><div class="input-flex">\
+            <input type="text" name="name" placeholder="Ваше имя" required="required">\
+                    <input type ="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
+                    </div><button><span>Записаться на приём</span></button>\
+        <div class="form__policy">\
+                    <input id="modal__chec4" type="checkbox" checked="">\
+                    <label for="modal__chec4"> \
+                Вы соглашаетесь с \
                     <a target="_blank" href="#!">условиями обработки персональных данных</a>\
                     </label>\
                   </div></form>'
