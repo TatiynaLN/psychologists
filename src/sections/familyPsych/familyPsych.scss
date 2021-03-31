@@ -1,40 +1,36 @@
 // Семейный психолог
-.container__family {
+.bg__family {
     background: url("../img/family1@1x-s.jpg");
-}
-@media screen and (min-width: 768px) {
-    .familyPsych-block {
-        display: flex;
-        gap: 2rem;
-    }
-    .picture__familyPsych {
-        width: 45%;
-        align-self: baseline;
-    }
-    .familyPsych__content-width {
-        width: 50%;
-    }
-    .container__family {
+    padding: 11.1rem 0 6.4rem 0;
+    @media (min-width: 768px) {
         background: url("../img/family1@1x-m.jpg");
     }
-}
-@media screen and (min-width: 1024px) {
-    .familyPsych-block {
-        display: flex;
-        gap: 5.5rem;
-    }
-    .picture__familyPsych {
-        width: 30%;
-        align-self: baseline;
-    }
-    .familyPsych__content-width {
-        width: 65%;
-    }
-    .container__family {
+    @media (min-width: 1024px) {
         background: url("../img/family1@1x.jpg");
     }
-    .form__consul-btn {
-        margin: 0 !important;
+}
+.your-psychologist {
+    padding-bottom: 4rem;
+    @media (min-width: 1450px) {
+        padding-bottom: 8rem;
+    }
+}
+.aboutMe-family {
+    padding-top: 0;
+    .about {
+        padding-top: 0;
+    }
+    .aboutMe-about {
+        .about__content {
+            @media (min-width: 1450px) {
+                max-width: 90rem;
+            }
+        }
+        .pictures {
+            @media (min-width: 1450px) {
+                max-width: 46.8rem;
+            }
+        }
     }
 }
 //

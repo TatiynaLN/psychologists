@@ -1,147 +1,19 @@
 // individ consul
-.sect {
-    padding-top: 4.4rem;
-}
-.cnt-consul {
-    border-radius: 5px;
-    position: relative;
-    padding: 11.1rem 1rem 7.2rem 1rem;
-}
-.container__indivConsul {
+.bg__indivConsul {
     background: url("../img/individ1@1x-s.jpg");
-}
-.section__indivConsul {
-    margin-bottom: 7rem;
-}
-.indivConsul {
-    &__title {
-        font-size: 2.8rem;
-        font-family: "Raleway";
-        font-style: normal;
-        font-weight: bold;
-        line-height: 4.3rem;
-        text-align: center;
-        font-feature-settings: "pnum" on, "lnum" on;
-        color: #565b62;
-        margin-bottom: 2rem;
-    }
-    &__text {
-        margin-bottom: 4.5rem;
-    }
-    &__block {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: center;
-        align-content: center;
-    }
-    &__content {
-        margin: 0;
-    }
-}
-.consul-txt {
-    margin-bottom: 1.5rem;
-}
-.spam-icon {
-    width: 3.1rem;
-    height: 3.1rem;
-    position: relative;
-    z-index: 0;
-}
-.block {
-    &__txt {
-        margin: 0 auto;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        gap: 2.8rem;
-    }
-    &__txt-txt {
-        width: 100%;
-        gap: 1.1rem;
-        .txt {
-            align-self: center;
-        }
-    }
-    &__txt-icon {
-        align-self: baseline;
-        width: 9.5%;
-        img {
-            width: 100%;
-        }
-    }
-}
-.block__txt-box,
-.ttxt {
-    width: 90%;
-}
-@media screen and(min-width:411px) {
-    .indivConsul__title {
-        font-size: 3.6rem;
-    }
-}
-@media screen and(min-width:620px) {
-    .indivConsul__title {
-        font-size: 4.1rem;
-        line-height: 5rem;
-    }
-    .block {
-        &__txt-txt {
-            width: 46%;
-            align-self: flex-start;
-        }
-    }
-}
-@media screen and(min-width:768px) {
-    .indivConsul__title {
-        font-size: 4.8rem;
-        line-height: 5.8rem;
-    }
-    .container__indivConsul {
+    padding: 4rem 0;
+    @media (min-width: 768px) {
         background: url("../img/individ1@1x-m.jpg");
     }
-}
-@media screen and(min-width:900px) {
-    .indivConsul__title {
-        font-size: 5.8rem;
-        line-height: 6.8rem;
-    }
-}
-@media screen and(min-width:1020px) {
-    .indivConsul__title {
-        margin: 0 auto;
-        max-width: 75rem;
-        font-size: 7.2rem;
-        line-height: 8.6rem;
-        margin-bottom: 2rem;
-    }
-    .indivConsul__text {
-        margin: 0 auto;
-        max-width: 75rem;
-        margin-bottom: 4.5rem;
-    }
-    .container__indivConsul {
+    @media (min-width: 1020px) {
         background: url("../img/individ1@1x.jpg");
+        padding: 11.1rem 0 7.2rem 0;
     }
 }
-@media screen and(min-width:1083px) {
-    .indivConsul__block {
-        gap: 4rem;
-    }
-}
-@media screen and(min-width:1200px) {
-    .block {
-        &__txt-txt {
-            width: 22%;
-        }
-    }
-}
-@media screen and(min-width:1500px) {
-    .block {
-        &__txt-txt {
-            width: 23%;
+@media (max-width: 415px) {
+    .bg__indivConsul {
+        .title {
+            font-size: 2.8rem;
         }
     }
 }

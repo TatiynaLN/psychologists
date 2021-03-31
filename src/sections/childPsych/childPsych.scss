@@ -1,29 +1,80 @@
 // СТРАНИЦА ДЕТСКИЙ ПСИХОЛОГ
-.container__child {
+.show-modal-3 {
+    margin: 0 auto;
+    padding: 1.5rem 2.5rem;
+}
+.bg__child {
+    padding: 4rem 0;
     background: url("../img/child1@1x-s.jpg");
-}
-li.txt {
-    background: url("../img/icons/spam.svg") no-repeat 0 -0.2rem;
-    background-size: 3rem;
-    padding: 0rem 0 0.5rem 4rem;
-}
-li.block__txt-txts {
-    background: url("../img/icons/icon.svg") no-repeat 0 0;
-    background-size: 2.8rem;
-    padding: 0rem 0 0.5rem 4rem;
-}
-span.txt,
-.consul-txt {
-    display: block;
-}
-//
-@media screen and(min-width:768px) {
-    .container__child {
+    @media (min-width: 768px) {
         background: url("../img/child1@1x-m.jpg");
     }
-}
-@media screen and(min-width:1024px) {
-    .container__child {
+    @media (min-width: 1024px) {
+        padding: 11.1rem 0 6.3rem 0;
         background: url("../img/child1@1x.jpg");
     }
 }
+.occasion {
+    text-align: center;
+    padding-bottom: 4rem;
+    @media (min-width: 768px) {
+        padding-bottom: 6rem;
+    }
+    @media (min-width: 900px) {
+        padding-bottom: 8.3rem;
+    }
+    h2 {
+        margin-bottom: 3.5rem;
+    }
+    li {
+        margin-bottom: 2rem;
+        @media (min-width: 768px) {
+            margin: 1vw;
+        }
+    }
+}
+.occasion__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+    li {
+        background: url("../img/icons/spam.svg") no-repeat 0 -0.2rem;
+        background-size: 3rem;
+        padding: 0rem 0 0.5rem 4rem;
+        width: 100%;
+        @media (min-width: 768px) {
+            max-width: 30rem;
+        }
+        @media (min-width: 900px) {
+            max-width: 31.7rem;
+        }
+    }
+}
+.occasion__box {
+    justify-content: space-between;
+    li {
+        background: url("../img/icons/icon.svg") no-repeat 0 0;
+        background-size: 2.8rem;
+        padding: 0rem 0 0.5rem 4rem;
+        width: 100%;
+        max-width: 65.6rem;
+        @media (min-width: 768px) {
+            max-width: 30rem;
+        }
+        @media (min-width: 900px) {
+            max-width: 38rem;
+        }
+        @media (min-width: 1200px) {
+            max-width: 52rem;
+        }
+        @media (min-width: 1545px) {
+            max-width: 65.6rem;
+        }
+
+        h3 {
+            margin-bottom: 0.6rem;
+        }
+    }
+}
+//

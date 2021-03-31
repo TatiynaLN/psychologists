@@ -61,8 +61,6 @@
         margin-top: 8.1rem;
     }
 }
-@media screen and (min-width: 1200px) {
-}
 @media screen and (min-width: 1420px) {
     .addres {
         align-self: center;
@@ -76,5 +74,14 @@
     }
     .adress__none-desctop {
         display: none;
+    }
+}
+.contact {
+    .addres {
+        a {
+            &::after {
+                top: -0.7rem;
+            }
+        }
     }
 }

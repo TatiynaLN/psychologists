@@ -13,6 +13,9 @@
         background-size: cover;
         background-position: center;
     }
+    @media (min-width: 1424px) {
+        margin-top: 4rem;
+    }
 }
 .section__blogPage {
     margin-bottom: 10.3rem;

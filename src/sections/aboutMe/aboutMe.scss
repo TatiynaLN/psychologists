@@ -19,6 +19,11 @@
                 max-width: 71rem;
             }
         }
+        .pictures {
+            @media (min-width: 1200px) {
+                order: 1;
+            }
+        }
     }
     .pictures {
         width: 100%;
@@ -28,6 +33,7 @@
             margin-right: 0;
             width: 48%;
             max-width: 62rem;
+            order: 1;
         }
     }
 }

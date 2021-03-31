@@ -4,15 +4,17 @@
     @media (min-width: 1120px) {
         margin-bottom: 10rem;
     }
-    @media (min-width: 1650px) {
-        margin-top: 20rem;
-    }
     .text-bgc {
         margin-bottom: 1rem;
     }
 }
+.abouts {
+    @media (min-width: 1650px) {
+        margin-top: 20rem;
+    }
+}
 .about {
-    padding: 4rem;
+    padding: 4rem 0;
     @media (min-width: 1200px) {
         display: flex;
         justify-content: space-between;

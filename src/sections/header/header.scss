@@ -14,15 +14,20 @@
         padding: 0.5rem 0 4.7rem 0;
     }
 }
+// .glav__header {
+//     margin-bottom: 5rem;
+//     @media screen and (min-width: 760px) {
+//         margin-bottom: 7rem;
+//     }
+// }
 .header__top {
     width: 10%;
     padding: 1.43rem 0 0 0;
     z-index: 0;
-    margin-bottom: 5rem;
+
     position: relative;
     @media screen and (min-width: 760px) {
         width: 26.3rem;
-        margin-bottom: 7rem;
     }
     @media (min-width: 1420px) {
         margin: 0 auto;

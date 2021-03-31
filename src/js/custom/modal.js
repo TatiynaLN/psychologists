@@ -131,7 +131,7 @@ function $modal(options) {
     });
     // создадим модальное окно 3
     var modal3 = $modal({
-        content: '<h5>Запись на приём</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
+        content: '<h5>Записаться на приём</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
         <form><div class="input-flex">\
                     <input type="text" name="name" placeholder="Ваше имя" required="required">\
                     <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\

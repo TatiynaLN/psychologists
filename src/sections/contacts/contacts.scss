@@ -1,127 +1,83 @@
 //Страница CONTACTS
 .container__contacts {
+    width: 100%;
+    max-width: 66rem;
+    padding: 4rem 2rem 6rem;
     margin: 0 auto;
-    width: 81%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 6.2rem;
 }
 .contact {
     &__container {
-        margin: 0 auto;
-        width: 81%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        width: 100%;
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
     &__container-top {
         margin-bottom: 8.6rem;
     }
-    &__phone {
-        &:hover .numbers {
-            color: #4dc8c0;
-        }
-    }
-    &__addr {
-        display: flex;
-        justify-content: space-between;
-        align-self: center;
-        width: 26.5rem;
-        align-self: baseline;
-        &:hover a {
-            color: #4dc8c0;
-        }
-    }
-    &__addres {
-        width: auto;
-        align-self: center;
-    }
-    &__phone {
-        display: flex;
-        justify-content: space-between;
-        align-self: center;
-        width: 21rem;
-        align-self: baseline;
-    }
-    &__titles {
-        margin-bottom: 2rem;
-    }
-    &__txt {
-        margin-bottom: 1rem;
-    }
-    &__txt-bottom {
-        margin-bottom: 2.4rem;
-    }
-    &__contact {
-        margin-bottom: 1rem;
-    }
     &__contacts {
-        margin-bottom: 2rem;
-    }
-    &__titl {
-        margin-bottom: 2.8rem;
-    }
-    &__txts {
-        margin-bottom: 2rem;
-    }
-    &__form {
-        margin-bottom: 15.4rem;
+        margin-bottom: 3rem;
+        @media (min-width: 768px) {
+            margin-bottom: 0rem;
+        }
+        @media (min-width: 1200px) {
+            width: 50%;
+            max-width: 63.6rem;
+            margin-bottom: 0rem;
+        }
+        h2 {
+            margin-bottom: 2rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .addres {
+            margin: 2.4rem 0;
+        }
+        .contacts {
+            margin-bottom: 2rem;
+        }
     }
 }
 .info {
-    margin-bottom: 11.1rem;
-    &__titl {
-        margin: 0 auto;
-        max-width: 80%;
-        margin-bottom: 2.8rem;
+    padding: 4rem 0 5rem 0;
+    @media (min-width: 768px) {
+        padding: 8.6rem 0 11rem 0;
+    }
+    h2 {
         text-align: center;
+        margin-bottom: 2.8rem;
+    }
+    .contact__container {
+        display: block;
+        @media (min-width: 1120px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .contact__contacts {
+        width: 100%;
+        @media (min-width: 1200px) {
+            max-width: 54rem;
+        }
+        @media (min-width: 1545px) {
+            max-width: 67rem;
+        }
     }
 }
-.txts {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-    font-feature-settings: "pnum" on, "lnum" on;
-    color: #4f4f4f;
-}
-.tel__contact {
-    align-self: center;
+.contact-form {
+    padding: 0rem 0 7rem 0;
+    @media (min-width: 768px) {
+        padding-bottom: 10rem;
+    }
 }
 @media screen and (min-width: 768px) {
     .contact {
-        &__container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 5rem;
-        }
-        &__phone {
-            width: 19rem;
-        }
-        &__contacts {
-            width: 50%;
-        }
-        &__titles {
-            width: 80%;
-        }
         &__map {
             width: 50%;
-        }
-    }
-}
-@media screen and (min-width: 1360px) {
-    .txts {
-        font-size: 1.8rem;
-        line-height: 2.9rem;
-    }
-}
-@media screen and (min-width: 1400px) {
-    .contact {
-        &__container {
-            gap: 9rem;
+            max-width: 70.6rem;
         }
     }
 }
