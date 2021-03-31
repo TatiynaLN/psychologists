@@ -37,7 +37,14 @@
         }
     }
 }
-@media screen and (min-width: 1560px) {
+.sectionFive-aboutMe {
+    padding-top: 4rem;
+    @media (min-width: 1024px) {
+        padding-top: 6rem;
+    }
+}
+
+@media (min-width: 1560px) {
     .pictures {
         align-self: baseline;
         justify-content: center;

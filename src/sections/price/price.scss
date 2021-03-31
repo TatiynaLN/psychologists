@@ -1,8 +1,7 @@
 // str price
-.price {
-    &__title {
-        margin: 0 auto;
-        margin-bottom: 5rem;
+.pt {
+    @media (min-width: 1424px) {
+        padding-top: 4.6rem;
     }
 }
 //

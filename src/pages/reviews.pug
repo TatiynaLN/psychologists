@@ -1,0 +1,61 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+
+        //- Titles
+        title Отзывы
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+
+        //- Adaptive
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        //- Styles
+        link(rel="stylesheet", href="./wp-content/themes/twentytwenty-child/css/main.min.css")
+        link(rel="stylesheet", href="./wp-content/themes/twentytwenty-child/fonts/fonts.css")
+        link(rel="stylesheet" href="./wp-content/themes/twentytwenty-child/css/swiper-bundle.min.css")
+        //- Favicons
+        link(rel="icon" href="#!" type="image/x-icon") 
+        link(rel="shortcut icon" href="wp-content/themes/twentytwenty-child/img/favicon.ico" type="image/x-icon")
+        link(rel="apple-touch-icon" href="#!")
+
+    body
+        header.header
+            include ../sections/header/header.pug
+        section.section__pricel.pt
+            .container
+                h1.title Отзывы
+        section.sectionSix
+            .reviews-slider.swiper-container
+                .swiper-wrapper.reviews__swiper-wrapper
+                    .swiper-slide.swiper__bg
+                        .slider__contants
+                            p 
+                                i "Легче мне стало уже после первой консультации. Конечно, решения проблем так быстро не нашлись. Но груз с плеч свалился и появилось ощущение, что я не одна...
+                                    |Я многое узнала о себе, научилась прислушиваться к внутреннему голосу и быть более внимательной. Осознала, насколько все-таки общество и пресловутые стереотипы влияют на каждого из нас и могут сделать несчастными. Я больше не боюсь быть самой собой, быть смешной, не такой и это огромное счастье. Мне снова не страшно принимать решения и самое главное - жить осознанно, а не плыть по течению."
+                            h4 Кристина
+                    .swiper-slide.swiper__bg
+                        .slider__contants
+                            p 
+                                i "Легче мне стало уже после первой консультации. Конечно, решения проблем так быстро не нашлись. Но груз с плеч свалился и появилось ощущение, что я не одна...
+                                    |Я многое узнала о себе, научилась прислушиваться к внутреннему голосу и быть более внимательной. Осознала, насколько все-таки общество и пресловутые стереотипы влияют на каждого из нас и могут сделать несчастными. Я больше не боюсь быть самой собой, быть смешной, не такой и это огромное счастье. Мне снова не страшно принимать решения и самое главное - жить осознанно, а не плыть по течению."
+                            h4 Кристина
+                    .swiper-slide.swiper__bg
+                        .slider__contants
+                            p 
+                                i "Легче мне стало уже после первой консультации. Конечно, решения проблем так быстро не нашлись. Но груз с плеч свалился и появилось ощущение, что я не одна...
+                                    |Я многое узнала о себе, научилась прислушиваться к внутреннему голосу и быть более внимательной. Осознала, насколько все-таки общество и пресловутые стереотипы влияют на каждого из нас и могут сделать несчастными. Я больше не боюсь быть самой собой, быть смешной, не такой и это огромное счастье. Мне снова не страшно принимать решения и самое главное - жить осознанно, а не плыть по течению."
+                            h4 Кристина
+            .arow
+                .swiper-buton.swiper-buton-right
+                .swiper-buton.swiper-buton-left
+        // Types of consultations
+        include ../sections/sectionSeven/sectionSeven.pug
+        // FORM
+        include ../sections/sectionEight/sectionEight.pug
+        // END FORM
+        // FOOTER
+        include ../sections/footer/footer.pug
+        include ../sections/footer.pug
