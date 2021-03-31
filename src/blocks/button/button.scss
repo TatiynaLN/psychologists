@@ -1,5 +1,4 @@
 button {
-    background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
     border-radius: 6.25em;
     font-feature-settings: "pnum" on, "lnum" on;
     border: none;
@@ -11,35 +10,45 @@ button {
     display: block;
     font-size: 1.4rem;
     line-height: 140%;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    z-index: 0;
+    color: #ffffff;
     @media (min-width: 1200px) {
         font-size: 1.8rem;
     }
-    &:before {
+    &::before,
+    &::after {
         content: "";
         position: absolute;
-        width: 0;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0;
-        transition: all 0.7s;
-        border-radius: 6.25em;
-    }
-    &:focus:before,
-    &:hover:before {
-        width: 100%;
         left: 0;
-        opacity: 1;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
         background: #e89160;
-        transition: all 0.6s ease;
+        z-index: -1;
+        transform: translate3D(0, -101%, 0);
+        transition: all 0.7s;
     }
-    span {
-        position: relative;
-        color: #ffffff;
-        width: 100%;
+    &:focus::after,
+    &:hover::after {
+        transform: translate3D(0, 0, 0);
+        transform: rotate(0deg);
+    }
+    &::after {
+        width: 130%;
+        transform-origin: 0 bottom;
+        transform: translate3D(-50%, 0, 0) rotate(-50deg);
+    }
+    &::before {
+        background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
+        z-index: -2;
+        transform: translate3D(0, 0, 0);
     }
 }
+
 .show-modal-1 {
     width: 100%;
     max-width: 22rem;

@@ -74,7 +74,11 @@ function $modal(options) {
             _hideModal();
         }
     }
-
+    window.addEventListener('keydown', (e) => {
+        if (e.code === "Escape") {
+            _hideModal();
+        }
+    });
     _elemModal = _createModal(options || {});
 
 
@@ -202,6 +206,11 @@ function $modal(options) {
     });
     window.addEventListener('click', (e) => {
         if (e.target.dataset.dismiss === 'modal') {// этот кусок кода
+            panel.classList.remove('oh');
+        }
+    });
+    window.addEventListener('keydown', (e) => {
+        if (e.code === "Escape") {
             panel.classList.remove('oh');
         }
     });
