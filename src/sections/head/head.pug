@@ -14,10 +14,10 @@ section.head
                 h5.form__title Запись на приём
                 p Заполните форму и я перезвоню вам для уточнения удобного для вас времени
                 .box-input
-                    input(type="text" name='name' placeholder="Ваше имя" required="required")
-                    input(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
-                    button Запись на консультацию
+                    input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
+                    input._req.phone-input(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
+                    button.btn-send Запись на консультацию
                 .form__policy
-                    input#form1(type="checkbox" checked="")
+                    input._req#form1(type="checkbox" checked="")
                     label(for="form1") Вы соглашаетесь с 
                         a(href="#!" target="_blank") условиями обработки персональных данных

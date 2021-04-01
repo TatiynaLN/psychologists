@@ -1,5 +1,12 @@
 footer.footer
     .container
+        ul.menu__list-footer
+                li: a(href="about-me.html") Обо мне
+                li: a(href="services.html") Услуги
+                li: a(href="price.html") Цены
+                li: a(href="reviews.html") Отзывы
+                li: a(href="blog.html") Блог
+                li: a(href="contacts.html") Контакты
         .footer__top-content
             ul.footer__menu-list
                 li: a(href="family-psych.html") Семейная консультация
@@ -9,24 +16,18 @@ footer.footer
             .contacts
                 include ../../blocks/contacts/contacts.pug
             button.btn.show-modal-1(data-toggle="modal-1") Обратный звонок 
-        ul.menu__list-footer
-                li: a(href="about-me.html") Обо мне
-                li: a(href="services.html") Услуги
-                li: a(href="price.html") Цены
-                li: a(href="reviews.html") Отзывы
-                li: a(href="blog.html") Блог
-                li: a(href="contacts.html") Контакты
-        ul.social
-            li
-                a(href='#' target="_blank")
-                    img(src="wp-content/themes/twentytwenty-child/img/icons/youtube.svg" alt="youtube")
-            li
-                a(href='#' target="_blank")
-                    img(src="wp-content/themes/twentytwenty-child/img/icons/instagram.svg" alt="instagram") 
-            li
-                a(href='#' target="_blank")
-                    img(src="wp-content/themes/twentytwenty-child/img/icons/vk.svg" alt="vk") 
-        .policy__footer
+        
+        .footer-footer
+            ul.social
+                li
+                    a(href='#' target="_blank")
+                        img(src="wp-content/themes/twentytwenty-child/img/icons/youtube.svg" alt="youtube")
+                li
+                    a(href='#' target="_blank")
+                        img(src="wp-content/themes/twentytwenty-child/img/icons/instagram.svg" alt="instagram") 
+                li
+                    a(href='#' target="_blank")
+                        img(src="wp-content/themes/twentytwenty-child/img/icons/vk.svg" alt="vk") 
             p
                 a(href="" target="_blank") Политика конфиденциальности сайта
             p

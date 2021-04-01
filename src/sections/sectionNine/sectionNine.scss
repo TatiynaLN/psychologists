@@ -41,8 +41,30 @@
         h3 {
             margin-bottom: 2rem;
         }
+        .picture {
+            position: relative;
+        }
+        .blog__btn {
+            position: absolute;
+            top: 45%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            margin: 0 auto;
+            display: inline;
+            width: 100%;
+            text-align: center;
+            @media (min-width: 540px) {
+                top: 55%;
+            }
+            @media (min-width: 640px) {
+                top: 60%;
+            }
+        }
         a {
-            margin-top: 2rem;
+            // margin-top: 2rem;
+            top: 0;
             color: #fff;
             position: relative;
             transition: all 1s;

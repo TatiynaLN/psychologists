@@ -28,7 +28,7 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     transform: translateY(40%);
     padding: 3rem 1.5rem;
-    overflow: auto;
+    overflow-x: auto;
     .modal__btn-close {
         position: absolute;
         font-size: 3.4rem;
