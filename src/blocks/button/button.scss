@@ -36,16 +36,19 @@ button {
     &:hover::after {
         transform: translate3D(0, 0, 0);
         transform: rotate(0deg);
+        transition: all 0.7s;
     }
     &::after {
         width: 130%;
         transform-origin: 0 bottom;
         transform: translate3D(-50%, 0, 0) rotate(-50deg);
+        transition: all 0.7s;
     }
     &::before {
         background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 0.97%);
         z-index: -2;
         transform: translate3D(0, 0, 0);
+        transition: all 0.7s;
     }
 }
 
