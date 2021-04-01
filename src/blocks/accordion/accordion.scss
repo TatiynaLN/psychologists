@@ -67,14 +67,18 @@
         opacity: 0;
         height: 0;
         padding: 1rem 2rem 2rem 2rem;
-        transition-duration: 0.3s;
-        transition: all 0.3s;
+        // transition: max-height 0.4s ease-out;
+        transition: height 0.3s;
         -webkit-overflow-scrolling: touch;
         -moz-overflow-scrolling: touch;
         -ms-overflow-scrolling: touch;
         -o-overflow-scrolling: touch;
         &::-webkit-scrollbar {
             -webkit-appearance: none;
+        }
+        p {
+            transition: all 0.5s;
+            transform: scale(0.4);
         }
     }
     input[type="checkbox"]:checked ~ .accordion-child {
@@ -88,14 +92,18 @@
             0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
         height: 19.3rem;
         opacity: 1;
-        transition-duration: 0.3s;
-        transition: all 0.3s;
+        transition: height 0.4s;
+
         visibility: visible;
         overflow: auto;
         @media (min-width: 1200px) {
             font-weight: normal;
             font-size: 1.8rem;
             line-height: 2.88rem;
+        }
+        p {
+            transform: scale(1);
+            transition: 0.5s ease-in-out;
         }
     }
 }

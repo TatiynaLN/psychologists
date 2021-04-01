@@ -191,7 +191,6 @@ function $modal(options) {
             modal5.show();
         }
     });
-
     var btns = document.querySelectorAll('.btn');
     let panel = document.getElementsByTagName('body')[0];
     btns.forEach(btn => {
